@@ -9,20 +9,20 @@
 html { scroll-behavior: smooth; background: var(--ink); }
 body { margin: 0; background: var(--ink); color: var(--paper); font-family: Arial, Helvetica, sans-serif; }
 a { color: inherit; text-decoration: none; }
-.nav { position: fixed; z-index: 20; inset: 0 0 auto; height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 var(--pad); background: rgba(23,23,21,.88); backdrop-filter: blur(16px); text-transform: uppercase; letter-spacing: .14em; font-size: .67rem; }
-.nav nav { display: flex; gap: 2rem; }
+.nav { position: fixed; z-index: 20; inset: 0 0 auto; height: 70px; display: flex; align-items: center; justify-content: space-between; padding: 0 var(--pad); background: rgba(23,23,21,.92); backdrop-filter: blur(16px); text-transform: uppercase; letter-spacing: .16em; font-size: .76rem; }
+.nav nav { display: flex; gap: 2.6rem; }
 .nav a { transition: opacity .25s; }
 .nav a:hover { opacity: .55; }
-.wordmark { font-weight: 700; }
+.wordmark { font-weight: 600; letter-spacing: .18em; }
 .hero { position: relative; min-height: 100svh; overflow: hidden; }
-.hero-media { position: absolute; inset: 58px 0 0; background: url('assets/hero-home.jpg') center/cover no-repeat; transform: scale(1.005); }
+.hero-media { position: absolute; inset: 70px 0 0; background: url('assets/hero-home.jpg') center/cover no-repeat; transform: scale(1.005); }
 .hero-grain { position: absolute; inset: 0; opacity: .12; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); mix-blend-mode: screen; }
-.hero-copy { position: absolute; z-index: 2; inset: auto var(--pad) 10vh; display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 1rem; }
-.hero h1 { margin: .5rem 0 0; max-width: 9ch; font-size: clamp(4.2rem, 9.2vw, 9.5rem); line-height: .78; letter-spacing: -.07em; text-transform: uppercase; }
-.eyebrow, .discipline, .location, .scroll-cue { font-size: .65rem; line-height: 1.5; letter-spacing: .18em; text-transform: uppercase; }
-.hero .eyebrow { grid-column: 1 / -1; }
-.discipline { align-self: end; margin: 0 0 .25rem; }
-.location { position: absolute; right: 0; bottom: -5vh; }
+.hero-copy { position: absolute; z-index: 2; inset: 25vh var(--pad) 10vh; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(240px, .7fr); grid-template-rows: auto 1fr auto; align-items: start; column-gap: clamp(3rem, 8vw, 10rem); row-gap: 1rem; }
+.hero h1 { grid-column: 1; grid-row: 2; align-self: start; margin: 1rem 0 0; max-width: 9ch; font-size: clamp(4.4rem, 8.8vw, 9.2rem); line-height: .78; letter-spacing: -.07em; text-transform: uppercase; }
+.eyebrow, .discipline, .location, .scroll-cue { font-size: .72rem; line-height: 1.5; letter-spacing: .18em; text-transform: uppercase; }
+.hero .eyebrow { grid-column: 1; grid-row: 1; align-self: start; }
+.discipline { grid-column: 2; grid-row: 2; align-self: center; justify-self: start; margin: 6vh 0 0; }
+.location { position: static; grid-column: 2; grid-row: 3; justify-self: end; align-self: end; }
 .scroll-cue { position: absolute; z-index: 2; right: var(--pad); bottom: 2rem; display: flex; gap: 1rem; }
 .work { padding: 10rem var(--pad) 3rem; }
 .section-head { display: grid; grid-template-columns: 1fr 2fr; margin-bottom: 8rem; }
@@ -42,42 +42,25 @@ footer { min-height: 42vh; padding: 5rem var(--pad) 2rem; border-top: 1px solid 
 footer div { display: flex; gap: 1.4rem; }
 .project-dialog { width: 100%; max-width: none; min-height: 100%; margin: 0; padding: 0; border: 0; background: var(--ink); color: var(--paper); }
 .project-dialog::backdrop { background: var(--ink); }
-.dialog-close { position: fixed; z-index: 40; top: 1.2rem; right: var(--pad); padding: .7rem 1rem; border: 1px solid var(--line); border-radius: 99px; background: rgba(23,23,21,.82); color: var(--paper); text-transform: uppercase; letter-spacing: .12em; font-size: .65rem; cursor: pointer; }
-.project-hero { min-height: 72svh; padding: 9rem var(--pad) 3rem; display: flex; align-items: end; background-position: center; background-size: cover; position: relative; }
+.dialog-close { position: fixed; z-index: 40; top: 1.45rem; right: var(--pad); display: inline-flex; align-items: center; gap: .65rem; padding: .3rem 0 .45rem; border: 0; border-bottom: 1px solid rgba(233,230,223,.62); border-radius: 0; background: transparent; color: var(--paper); text-transform: uppercase; letter-spacing: .17em; font-size: .72rem; cursor: pointer; text-shadow: 0 1px 14px rgba(0,0,0,.55); transition: opacity .25s ease, gap .25s ease, transform .25s ease; }
+.project-hero { min-height: 44svh; padding: 7rem var(--pad) 2.6rem; display: flex; align-items: end; background-position: center; background-size: cover; position: relative; }
 .project-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.72)); }
 .project-hero > div { position: relative; z-index: 1; }
 .project-hero h2 { margin: .5rem 0 0; max-width: 15ch; font-size: clamp(3.5rem, 8vw, 8.5rem); line-height: .82; letter-spacing: -.06em; text-transform: uppercase; }
 .project-intro { padding: 8rem max(var(--pad), 15vw); display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
 .project-intro p { margin: 0; font-size: clamp(1.1rem, 1.6vw, 1.5rem); line-height: 1.55; }
-.filmstrip { padding: 0 var(--pad) 8rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem; }
-.filmstrip img { width: 100%; height: min(52vw, 660px); object-fit: cover; background: #222; }
-.filmstrip img:nth-child(3n) { grid-column: 1 / -1; height: min(58vw, 790px); }
-.filmstrip--dont-call-me-back img { height: min(43vw, 610px); }
-.filmstrip--dont-call-me-back img:first-child,
-.filmstrip--dont-call-me-back img:last-child { grid-column: 1 / -1; height: min(56vw, 760px); }
-.filmstrip--jump-n-stay { grid-template-columns: 1.3fr .7fr; }
-.filmstrip--jump-n-stay img { height: min(42vw, 600px); }
-.filmstrip--jump-n-stay img:nth-child(3),
-.filmstrip--jump-n-stay img:nth-child(5) { grid-column: 1 / -1; height: min(56vw, 760px); }
-.filmstrip--jump-n-stay img:nth-child(6) { height: min(58vw, 760px); object-position: center top; }
-.filmstrip--follow-your-passion { grid-template-columns: 1.35fr .65fr; }
-.filmstrip--follow-your-passion img { height: min(42vw, 590px); }
-.filmstrip--follow-your-passion img:nth-child(3),
-.filmstrip--follow-your-passion img:nth-child(9) { grid-column: 1 / -1; height: min(52vw, 720px); }
-.filmstrip--follow-your-passion img:nth-child(4),
-.filmstrip--follow-your-passion img:nth-child(5),
-.filmstrip--follow-your-passion img:nth-child(6) { grid-column: auto; height: min(55vw, 720px); object-position: top; }
+
 /* =========================
    PROJECT STORY / VIDEO LOOP
    ========================= */
 
 .project-story {
   position: relative;
-  min-height: 46vh;
+  min-height: 64vh;
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 8rem max(var(--pad), 12vw);
+  padding: 10rem max(var(--pad), 12vw);
 }
 
 .project-story-media {
@@ -102,7 +85,7 @@ footer div { display: flex; gap: 1.4rem; }
 }
 
 .project-story-media video {
-  opacity: .46;
+  opacity: 1;
 }
 
 .project-story-overlay {
@@ -112,9 +95,9 @@ footer div { display: flex; gap: 1.4rem; }
   background:
     linear-gradient(
       90deg,
-      rgba(18,18,16,.88) 0%,
-      rgba(18,18,16,.67) 48%,
-      rgba(18,18,16,.44) 100%
+      rgba(18,18,16,.80) 0%,
+      rgba(18,18,16,.58) 48%,
+      rgba(18,18,16,.34) 100%
     );
 }
 
@@ -163,6 +146,20 @@ footer div { display: flex; gap: 1.4rem; }
   }
 
 }
+
+.dialog-close:hover {
+  opacity: .68;
+  gap: 1rem;
+  transform: translateX(-3px);
+}
+
+.dialog-close-icon {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 720px) {
   .nav { height: 52px; }
   .nav nav { gap: 1.2rem; }
@@ -180,23 +177,176 @@ footer div { display: flex; gap: 1.4rem; }
   .about { padding-block: 8rem; }
   footer { grid-template-columns: 1fr; }
   .project-hero { min-height: 52svh; }
+  .project-story { min-height: 58vh; padding: 6.5rem var(--pad); }
   .project-intro { padding-block: 5rem; }
-  .filmstrip { grid-template-columns: 1fr; }
-  .filmstrip img, .filmstrip img:nth-child(3n) { grid-column: auto; height: 72svh; }
-  .filmstrip--dont-call-me-back img,
-  .filmstrip--dont-call-me-back img:first-child,
-  .filmstrip--dont-call-me-back img:last-child,
-  .filmstrip--jump-n-stay img,
-  .filmstrip--jump-n-stay img:nth-child(3),
-  .filmstrip--jump-n-stay img:nth-child(5),
-  .filmstrip--jump-n-stay img:nth-child(6) { grid-column: auto; height: auto; aspect-ratio: 16 / 10; }
-  .filmstrip--jump-n-stay { grid-template-columns: 1fr; }
-  .filmstrip--follow-your-passion { grid-template-columns: 1fr; }
-  .filmstrip--follow-your-passion img,
-  .filmstrip--follow-your-passion img:nth-child(3),
-  .filmstrip--follow-your-passion img:nth-child(4),
-  .filmstrip--follow-your-passion img:nth-child(5),
-  .filmstrip--follow-your-passion img:nth-child(6),
-  .filmstrip--follow-your-passion img:nth-child(9) { grid-column: auto; height: auto; aspect-ratio: 4 / 3; }
+
+
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+
+/* ========================================
+   ADAPTIVE FULL-BLEED PROJECT GALLERY
+   Full image visible / zero gaps / zero grey.
+   ======================================== */
+
+.filmstrip {
+  width: 100%;
+  padding: 0 0 8rem;
+  display: block;
+  background: var(--ink);
+}
+
+.gallery-row {
+  width: 100%;
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--ink);
+  align-items: start;
+}
+
+.gallery-row--solo {
+  grid-template-columns: 1fr;
+}
+
+.gallery-row--pair {
+  /* Columns are set by JS from each image's real aspect ratio. */
+  width: 100%;
+}
+
+.gallery-cell {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.gallery-cell img.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  background: transparent;
+}
+
+/*
+  Rare case: an unpaired vertical image.
+  Showing a 9:16 at 100vw with no crop would make it almost 178vw tall.
+  We keep the COMPLETE frame at a controlled height and extend the same
+  photograph behind it, so there is still no grey/empty area.
+*/
+.gallery-row--solo-portrait {
+  position: relative;
+  height: min(96svh, 1080px);
+  background: var(--ink);
+}
+
+.gallery-row--solo-portrait .gallery-cell {
+  height: 100%;
+}
+
+.gallery-row--solo-portrait .gallery-cell::before {
+  content: '';
+  position: absolute;
+  inset: -5%;
+  background-image: var(--gallery-bg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(26px) brightness(.48) saturate(.78);
+  transform: scale(1.08);
+}
+
+.gallery-row--solo-portrait .gallery-cell img.gallery-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+
+  .filmstrip {
+    padding-bottom: 5rem;
+  }
+
+  /* Keep the ratio-based two-image composition on mobile too.
+     This prevents crop and grey bars; users simply scroll the natural row. */
+  .gallery-row--pair {
+    grid-template-columns: var(--mobile-columns, inherit);
+  }
+
+  .gallery-row--solo-portrait {
+    height: min(88svh, 900px);
+  }
+
+}
+
+
+/* ========================================
+   FINAL MOBILE NAV / HERO OVERRIDES
+   ======================================== */
+@media (max-width: 720px) {
+  .nav {
+    height: 58px;
+    font-size: .68rem;
+  }
+
+  .nav nav {
+    gap: 1.35rem;
+  }
+
+  .hero-media {
+    inset: 58px 0 0;
+  }
+
+  .hero-copy {
+    inset: 19vh var(--pad) 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: 0;
+    row-gap: .85rem;
+  }
+
+  .hero .eyebrow {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .hero h1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: clamp(4rem, 18vw, 6.8rem);
+  }
+
+  .discipline {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+    justify-self: start;
+    margin: 0 0 4rem;
+  }
+
+  .location {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+  }
+
+  .scroll-cue {
+    bottom: 1.25rem;
+  }
+
+  .dialog-close {
+    top: 1rem;
+    font-size: .66rem;
+  }
+
+}
