@@ -1,12 +1,13 @@
 const SITE = {
-  title: 'Ziad Beranger — Video Editor & Filmmaker, Sydney',
+  title: 'Ziad Beranger / Video Editor & Filmmaker, Sydney',
   description: 'Sydney-based video editor and filmmaker working across branded content, commercial and narrative film.'
 };
 
 /*
   MEDIA WORKFLOW
-  - Replace cover, storyPoster and gallery paths without changing the layout code.
+  - Replace cover and gallery paths without changing the layout code.
   - coverPosition controls the crop: "50% 50%" is centred, "35% 50%" moves it left.
+  - Background loops intentionally use no poster: the transition from hero to film stays clean.
   - featuredVideo is optional. Leave it as null until a full film or teaser is ready.
   - Gallery items may stay as strings, or become { src, alt, ratio } objects.
 */
@@ -16,18 +17,17 @@ const projects = [
     title: 'Lox in a Box',
     category: 'Branded Content / Commercial',
     year: '2026',
-    role: 'Creative Direction · Photography · Cinematography · Editing',
-    intro: 'Photography and film created for Lox in a Box, translating the speed and personality of a Sydney institution into a sharper visual campaign.',
-    context: 'A fast, character-led content package built around Sydney lunch culture and the brand’s unmistakable deli energy.',
-    contribution: 'Developed the visual direction, photographed and filmed the campaign, then shaped its rhythm, colour and sound through post-production.',
+    role: 'Creative Direction / Photography / Cinematography / Editing',
+    intro: 'A character-led image world for a Sydney deli brand with culture, humour and appetite at its core.',
+    context: 'Lox in a Box is a Sydney institution celebrating Polish bagels, family recipes and deli culture across Bondi, Coogee, Paddington and Marrickville. The commission brought that unmistakable personality into a campaign of photography and short-form film.',
+    contribution: 'I developed the visual direction, photographed and filmed the campaign, then edited the work into a coherent set of brand assets with one pace, tone and point of view.',
     facts: [
       ['Client', 'Lox in a Box'],
       ['Location', 'Sydney, Australia'],
-      ['Format', 'Photography · Short-form film']
+      ['Format', 'Photography / Short-form film']
     ],
     video: 'assets/videos/lox-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'https://framerusercontent.com/images/2ieT7KSAQcg3IK8rNt9ryWjR4.jpg?width=2400',
     cover: 'https://framerusercontent.com/images/2ieT7KSAQcg3IK8rNt9ryWjR4.jpg?width=2400',
     coverPosition: '50% 50%',
     gallery: [
@@ -44,10 +44,10 @@ const projects = [
     title: 'Don’t Call Me Back',
     category: 'Narrative Film',
     year: '2026',
-    role: 'Writer · Director · Editor',
-    intro: 'A darkly comic Australian road movie following Mike Ferrari through an increasingly strange landscape. Currently in post-production.',
-    context: 'An independent narrative project where absurd comedy, solitude and sudden violence collide across the Australian landscape.',
-    contribution: 'Written, directed and edited as an authored film, carrying the same visual language from first concept through performance, camera and final cut.',
+    role: 'Writer / Director / Editor',
+    intro: 'A darkly comic Australian road movie where solitude, absurdity and sudden violence share the same horizon.',
+    context: 'Mike Ferrari crosses an increasingly strange Australian landscape as the line between escape and self-destruction begins to blur. The independent short film is currently in post-production.',
+    contribution: 'I wrote and directed the film, shaped its performances and visual language on set, and am carrying the story through the edit to its final rhythm.',
     facts: [
       ['Format', 'Short film'],
       ['Country', 'Australia'],
@@ -55,7 +55,6 @@ const projects = [
     ],
     video: 'assets/videos/dont-call-me-back-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'assets/dont-call-me-back/cover.png',
     cover: 'assets/dont-call-me-back/cover.png',
     coverPosition: '50% 44%',
     gallery: [
@@ -69,19 +68,18 @@ const projects = [
     slug: 'follow-your-passion',
     title: 'Follow Your Passion Media',
     category: 'Creative Content / Digital',
-    year: '2025—2026',
-    role: 'Creative Content Lead · Direction · Editing',
-    intro: 'Creative production for founders, entrepreneurs and client brands—combining editorial thinking, visual direction and end-to-end content delivery.',
-    context: 'Ongoing production inside a fast-moving Gold Coast sales and marketing agency working with founder-led businesses and personal brands.',
-    contribution: 'Led concepts, shoots, editing, art direction and delivery while helping a distributed team maintain a coherent visual standard.',
+    year: '2025 / 2026',
+    role: 'Creative Content Lead / Direction / Editing',
+    intro: 'End-to-end content production built to give fast-moving founder brands one clear and repeatable visual language.',
+    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. The content moves across personal brands, podcasts, campaigns and social platforms.',
+    contribution: 'As Creative Content Lead, I translated strategy into concepts, led shoots and art direction, edited the work, and helped a distributed team deliver a consistent visual standard at speed.',
     facts: [
       ['Studio', 'Follow Your Passion Media'],
-      ['Location', 'Gold Coast · Remote'],
+      ['Location', 'Gold Coast / Remote'],
       ['Role', 'Creative Content Lead']
     ],
     video: 'assets/videos/fyp-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'assets/follow-your-passion/conversation.jpg',
     cover: 'assets/follow-your-passion/conversation.jpg',
     coverPosition: '50% 50%',
     gallery: [
@@ -101,18 +99,17 @@ const projects = [
     title: 'Lost in Wasteland',
     category: 'Photography / Film / Writing',
     year: 'Ongoing',
-    role: 'Creative Direction · Photography · Film',
-    intro: 'An ongoing photographic world made from fragmented memories, fleeting encounters and places suspended somewhere between reality and fiction.',
-    context: 'A personal archive and developing book where photography, moving image and short texts gradually form one incomplete mythology.',
-    contribution: 'Created as a long-term visual language—photographed, written and directed across France and Australia.',
+    role: 'Creative Direction / Photography / Film',
+    intro: 'An evolving photographic world built from fragmented memories, fleeting encounters and places suspended between reality and fiction.',
+    context: 'Lost in Wasteland is a personal archive and developing book where photography, moving image and short texts gradually form one incomplete mythology.',
+    contribution: 'I photograph, film, write and sequence the project across France and Australia, using it as a long-term laboratory for atmosphere, character and visual storytelling.',
     facts: [
-      ['Format', 'Photography · Book · Film'],
-      ['Location', 'France · Australia'],
+      ['Format', 'Photography / Book / Film'],
+      ['Location', 'France / Australia'],
       ['Status', 'Ongoing']
     ],
     video: 'assets/videos/lost-in-wasteland-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'https://framerusercontent.com/images/Q4P391qnOAcOlQkontq86LUc6E.jpg?width=2400',
     cover: 'https://framerusercontent.com/images/Q4P391qnOAcOlQkontq86LUc6E.jpg?width=2400',
     coverPosition: '50% 50%',
     gallery: [
@@ -126,40 +123,38 @@ const projects = [
     slug: 'en-quete-dappart',
     title: 'En quête d’appart',
     category: 'Broadcast Television',
-    year: '2017—2018',
-    role: 'Video Editor · B&O Productions / BFM Business',
-    intro: 'Editing during the programme’s final broadcast season, shaping structure, pace and narrative clarity within a fast-turnaround television workflow.',
+    year: '2017 / 2018',
+    role: 'Video Editor / B&O Productions / BFM Business',
+    intro: 'A year inside a weekly broadcast rhythm, turning varied rushes into clear 52-minute stories under real television deadlines.',
     context: 'A weekly 52-minute factual-entertainment format produced by B&O Productions for BFM Business, combining property stories, interviews and location-led reporting.',
-    contribution: 'Edited complete episodes throughout the final season, turning varied rushes into clear, paced and broadcast-ready narratives under short deadlines.',
+    contribution: 'I edited complete episodes throughout the final season, building structure, pace and narrative clarity while delivering broadcast-ready programmes under short deadlines.',
     facts: [
       ['Production', 'B&O Productions'],
       ['Broadcaster', 'BFM Business'],
-      ['Format', 'Weekly · 52 minutes']
+      ['Format', 'Weekly / 52 minutes']
     ],
     video: 'assets/videos/en-quete-dappart-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'https://framerusercontent.com/images/Z8zHCo5bMkV9QykHgPylnjwcow.png?width=2400',
     cover: 'https://framerusercontent.com/images/Z8zHCo5bMkV9QykHgPylnjwcow.png?width=2400',
     coverPosition: '50% 50%',
     gallery: ['Ap5jD2f7hBcC4a8BYVwFvThmdRk.png']
   },
   {
     slug: 'jump-n-stay',
-    title: 'Jump N Stay',
+    title: 'Jump & Stay',
     category: 'Independent Film / Collaboration',
-    year: '2017—2024',
+    year: '2017 / 2024',
     role: 'Freelance Film Editor',
-    intro: 'A long-term collaboration across fiction, music and independent audiovisual work, including editing contributions across every cut of Moonbeach.',
-    context: 'Independent and collaborative cinema developed with filmmakers Didier Poiraud and Astrid Serafini across fiction, music and experimental forms.',
-    contribution: 'Contributed throughout the full editorial development of Moonbeach, alongside Les Crampets and Blackhouse Sessions, developing a durable instinct for performance, atmosphere and unconventional narrative structure.',
+    intro: 'A long-term editing collaboration across independent fiction, music and experimental film, including every cut of Moonbeach.',
+    context: 'Jump & Stay brings together independent film work led by filmmakers and visual artists Didier Poiraud and Astrid Serafini, moving freely between fiction, music and experimental forms.',
+    contribution: 'I worked as a recurring freelance editor across the collaboration, contributing throughout every cut of Moonbeach and shaping projects including Les Crampets and Blackhouse Sessions.',
     facts: [
-      ['Collaborators', 'Didier Poiraud · Astrid Serafini'],
-      ['Projects', 'Moonbeach · Les Crampets · Blackhouse'],
+      ['Collaborators', 'Didier Poiraud / Astrid Serafini'],
+      ['Projects', 'Moonbeach / Les Crampets / Blackhouse'],
       ['Moonbeach', 'Editing across all cuts']
     ],
     video: 'assets/videos/jump-n-stay-loop.mp4',
     featuredVideo: null,
-    storyPoster: 'assets/jump-n-stay/car-scene.png',
     cover: 'assets/jump-n-stay/car-scene.png',
     coverPosition: '50% 50%',
     gallery: [
@@ -234,13 +229,13 @@ function galleryItemData(item, project, index) {
   if (typeof item === 'string') {
     return {
       src: item,
-      alt: `${project.title} — selected image ${index + 1}`,
+      alt: `${project.title} / Selected image ${index + 1}`,
       ratio: ''
     };
   }
   return {
     src: item.src,
-    alt: item.alt || `${project.title} — selected image ${index + 1}`,
+    alt: item.alt || `${project.title} / Selected image ${index + 1}`,
     ratio: item.ratio || ''
   };
 }
@@ -277,20 +272,19 @@ function showProject(project) {
   const nextProject = projects[(projectIndex + 1) % projects.length];
 
   currentProject = project;
-  document.title = `${project.title} — Ziad Beranger`;
+  document.title = `${project.title} / Ziad Beranger`;
   content.innerHTML = `
     <header class="project-hero" style="background-image:url('${escapeAttribute(project.cover)}'); --cover-position:${escapeAttribute(project.coverPosition || '50% 50%')}">
       <div>
-        <p class="eyebrow">${project.category} · ${project.year}</p>
+        <p class="eyebrow">${project.category} / ${project.year}</p>
         <h2>${project.title}</h2>
       </div>
     </header>
 
     <section class="project-story">
       <div class="project-story-media" aria-hidden="true">
-        <div class="project-story-still" style="background-image:url('${escapeAttribute(project.storyPoster || project.cover)}')"></div>
         ${project.video ? `
-          <video autoplay muted loop playsinline preload="metadata" poster="${escapeAttribute(project.storyPoster || project.cover)}">
+          <video class="project-story-video" autoplay muted loop playsinline preload="auto">
             <source src="${escapeAttribute(project.video)}" type="video/mp4">
           </video>
         ` : ''}
@@ -308,11 +302,11 @@ function showProject(project) {
     <section class="project-details" aria-label="Project notes">
       <p class="eyebrow">Project notes</p>
       <div class="project-detail">
-        <p class="project-detail-label">Context</p>
+        <p class="project-detail-label">The project</p>
         <p>${project.context}</p>
       </div>
       <div class="project-detail">
-        <p class="project-detail-label">Contribution</p>
+        <p class="project-detail-label">My role</p>
         <p>${project.contribution}</p>
       </div>
       <dl class="project-facts">${renderFacts(project)}</dl>
@@ -348,6 +342,14 @@ function showProject(project) {
 
   if (!dialog.open) dialog.showModal();
   dialog.scrollTop = 0;
+
+  const storyVideo = content.querySelector('.project-story-video');
+  if (storyVideo) {
+    const revealVideo = () => storyVideo.classList.add('is-ready');
+    if (storyVideo.readyState >= 3) revealVideo();
+    else storyVideo.addEventListener('canplay', revealVideo, { once: true });
+  }
+
   prepareAdaptiveGallery();
 
   content.querySelector('[data-next-project]')?.addEventListener('click', () => {
@@ -400,7 +402,9 @@ function prepareAdaptiveGallery() {
   };
 
   const buildGallery = () => {
-    const items = images.map(getInfo);
+    const items = images
+      .filter(img => img.dataset.failed !== 'true')
+      .map(getInfo);
     const fragment = document.createDocumentFragment();
     let index = 0;
 
@@ -433,7 +437,14 @@ function prepareAdaptiveGallery() {
   images.forEach(img => {
     if (!img.complete) {
       img.addEventListener('load', buildGallery, { once: true });
-      img.addEventListener('error', buildGallery, { once: true });
+      img.addEventListener('error', () => {
+        img.dataset.failed = 'true';
+        buildGallery();
+      }, { once: true });
+    }
+    else if (img.naturalWidth === 0) {
+      img.dataset.failed = 'true';
+      buildGallery();
     }
   });
 }

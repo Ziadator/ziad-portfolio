@@ -515,11 +515,10 @@ footer a:hover {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: var(--ink-soft);
+  background: #090908;
 }
 
-.project-story-media video,
-.project-story-still {
+.project-story-media video {
   position: absolute;
   inset: -3%;
   width: 106%;
@@ -527,16 +526,15 @@ footer a:hover {
   object-fit: cover;
 }
 
-.project-story-still {
-  background-position: center;
-  background-size: cover;
-  animation: storySlowMove 14s ease-in-out infinite alternate;
-}
-
 .project-story-media video {
   background: #000;
-  opacity: 1;
+  opacity: 0;
   mix-blend-mode: normal;
+  transition: opacity .35s ease;
+}
+
+.project-story-media video.is-ready {
+  opacity: 1;
 }
 
 .project-story-overlay {
@@ -752,11 +750,6 @@ footer a:hover {
 
 .next-project:hover .next-project-arrow {
   transform: translate(.25rem, .25rem);
-}
-
-@keyframes storySlowMove {
-  from { transform: scale(1.02) translate3d(-.5%, 0, 0); }
-  to { transform: scale(1.08) translate3d(.5%, -1%, 0); }
 }
 
 @media (max-width: 900px) {
