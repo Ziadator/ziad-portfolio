@@ -215,8 +215,8 @@ function openProject(project) {
                 muted
                 loop
                 playsinline
-                poster="${project.storyPoster || project.cover}">
-
+                preload="auto">
+                
                 <source
                   src="${project.video}"
                   type="video/mp4">
