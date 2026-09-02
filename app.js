@@ -216,7 +216,7 @@ function openProject(project) {
                 loop
                 playsinline
                 preload="auto">
-                
+
                 <source
                   src="${project.video}"
                   type="video/mp4">
