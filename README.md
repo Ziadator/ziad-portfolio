@@ -157,9 +157,9 @@ The ratio is width divided by height. It prevents layout movement while a lazy i
 
 ## Before publishing
 
-1. Confirm the Instagram URL currently set to `lostinwasteland` in `index.html`.
-2. Confirm the dates for `En quête d’appart` and the exact version of `Moonbeach` edited.
-3. Confirm that `B&O Productions` is the preferred company spelling.
+1. Instagram is linked to `@_mikeferrari_` in `index.html`.
+2. `En quête d’appart` is listed as `2017—2018`, the programme’s final publicly documented season.
+3. The `Moonbeach` credit states that Ziad contributed across all cuts.
 4. Replace remaining Framer-hosted images with local optimized originals.
 5. Create a dedicated 1200 × 630 social preview later and replace the current `og:image` hero URL.
 6. Test every project on desktop and mobile before pushing to production.

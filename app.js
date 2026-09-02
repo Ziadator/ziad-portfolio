@@ -126,11 +126,11 @@ const projects = [
     slug: 'en-quete-dappart',
     title: 'En quête d’appart',
     category: 'Broadcast Television',
-    year: '2015—2017',
+    year: '2017—2018',
     role: 'Video Editor · B&O Productions / BFM Business',
-    intro: 'Editing a weekly 52-minute television programme, shaping structure, pace and narrative clarity within a fast-turnaround broadcast workflow.',
-    context: 'A recurring factual-entertainment format produced for BFM Business, combining property stories, interviews and location-led reporting.',
-    contribution: 'Built complete episodes under short deadlines, turning varied rushes into clear, paced and broadcast-ready narratives.',
+    intro: 'Editing during the programme’s final broadcast season, shaping structure, pace and narrative clarity within a fast-turnaround television workflow.',
+    context: 'A weekly 52-minute factual-entertainment format produced by B&O Productions for BFM Business, combining property stories, interviews and location-led reporting.',
+    contribution: 'Edited complete episodes throughout the final season, turning varied rushes into clear, paced and broadcast-ready narratives under short deadlines.',
     facts: [
       ['Production', 'B&O Productions'],
       ['Broadcaster', 'BFM Business'],
@@ -149,13 +149,13 @@ const projects = [
     category: 'Independent Film / Collaboration',
     year: '2017—2024',
     role: 'Freelance Film Editor',
-    intro: 'A long-term collaboration across fiction, music and independent audiovisual work, including Moonbeach, Les Crampets and Blackhouse Sessions.',
+    intro: 'A long-term collaboration across fiction, music and independent audiovisual work, including editing contributions across every cut of Moonbeach.',
     context: 'Independent and collaborative cinema developed with filmmakers Didier Poiraud and Astrid Serafini across fiction, music and experimental forms.',
-    contribution: 'Edited films and sessions over several years, developing a durable instinct for performance, atmosphere and unconventional narrative structure.',
+    contribution: 'Contributed throughout the full editorial development of Moonbeach, alongside Les Crampets and Blackhouse Sessions, developing a durable instinct for performance, atmosphere and unconventional narrative structure.',
     facts: [
       ['Collaborators', 'Didier Poiraud · Astrid Serafini'],
       ['Projects', 'Moonbeach · Les Crampets · Blackhouse'],
-      ['Role', 'Freelance Film Editor']
+      ['Moonbeach', 'Editing across all cuts']
     ],
     video: 'assets/videos/jump-n-stay-loop.mp4',
     featuredVideo: null,
