@@ -18,7 +18,7 @@ const projects = [
     category: 'Branded Content / Commercial',
     year: '2026',
     role: 'Creative Direction / Photography / Cinematography / Editing',
-    intro: 'A character-led image world for a Sydney deli brand with culture, humour and appetite at its core.',
+    intro: 'A photography and short-form film campaign created for Sydney deli brand Lox in a Box.',
     context: 'Lox in a Box is a Sydney institution celebrating Polish bagels, family recipes and deli culture across Bondi, Coogee, Paddington and Marrickville. The commission brought that unmistakable personality into a campaign of photography and short-form film.',
     contribution: 'I developed the visual direction, photographed and filmed the campaign, then edited the work into a coherent set of brand assets with one pace, tone and point of view.',
     facts: [
@@ -45,12 +45,12 @@ const projects = [
     category: 'Narrative Film',
     year: '2026',
     role: 'Writer / Director / Editor',
-    intro: 'A darkly comic Australian road movie where solitude, absurdity and sudden violence share the same horizon.',
-    context: 'Mike Ferrari crosses an increasingly strange Australian landscape as the line between escape and self-destruction begins to blur. The independent short film is currently in post-production.',
-    contribution: 'I wrote and directed the film, shaped its performances and visual language on set, and am carrying the story through the edit to its final rhythm.',
+    intro: 'An independent Australian road movie written, directed and edited by Ziad Beranger in collaboration with filmmaker Didier Poiraud.',
+    context: 'Mike Ferrari crosses an increasingly strange Australian landscape as the line between escape and self-destruction begins to blur. The short film is currently in post-production.',
+    contribution: 'I wrote, directed and edited the film, shaping its performances, cinematography and final rhythm across production and post.',
     facts: [
+      ['Collaboration', 'Didier Poiraud'],
       ['Format', 'Short film'],
-      ['Country', 'Australia'],
       ['Status', 'In post-production']
     ],
     video: 'assets/videos/dont-call-me-back-loop.mp4',
@@ -70,9 +70,9 @@ const projects = [
     category: 'Creative Content / Digital',
     year: '2025 / 2026',
     role: 'Creative Content Lead / Direction / Editing',
-    intro: 'End-to-end content production built to give fast-moving founder brands one clear and repeatable visual language.',
+    intro: 'Creative content produced across founder campaigns, podcasts and short-form formats for a Gold Coast agency.',
     context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. The content moves across personal brands, podcasts, campaigns and social platforms.',
-    contribution: 'As Creative Content Lead, I translated strategy into concepts, led shoots and art direction, edited the work, and helped a distributed team deliver a consistent visual standard at speed.',
+    contribution: 'As Creative Content Lead, I developed concepts from client briefs, directed and shot content, edited final assets and coordinated delivery with a distributed team.',
     facts: [
       ['Studio', 'Follow Your Passion Media'],
       ['Location', 'Gold Coast / Remote'],
@@ -144,14 +144,14 @@ const projects = [
     title: 'Jump & Stay',
     category: 'Independent Film / Collaboration',
     year: '2017 / 2024',
-    role: 'Freelance Film Editor',
-    intro: 'A long-term editing collaboration across independent fiction, music and experimental film, including every cut of Moonbeach.',
-    context: 'Jump & Stay brings together independent film work led by filmmakers and visual artists Didier Poiraud and Astrid Serafini, moving freely between fiction, music and experimental forms.',
-    contribution: 'I worked as a recurring freelance editor across the collaboration, contributing throughout every cut of Moonbeach and shaping projects including Les Crampets and Blackhouse Sessions.',
+    role: 'Editor / Additional Editor',
+    intro: 'A recurring editing collaboration with director Didier Poiraud and filmmaker Astrid Serafini across fiction, music and experimental film.',
+    context: 'Founded in Nantes by Didier Poiraud and Astrid Serafini, Jump & Stay develops and produces independent audiovisual projects across cinema, music and visual art.',
+    contribution: 'Credited as editor on Moonbeach, I led the edit on selected episodes and supported the edit on others. The wider collaboration also includes Les Crampets and Blackhouse Sessions.',
     facts: [
       ['Collaborators', 'Didier Poiraud / Astrid Serafini'],
-      ['Projects', 'Moonbeach / Les Crampets / Blackhouse'],
-      ['Moonbeach', 'Editing across all cuts']
+      ['Moonbeach', 'Lead editing / Additional editing'],
+      ['Other projects', 'Les Crampets / Blackhouse Sessions']
     ],
     video: 'assets/videos/jump-n-stay-loop.mp4',
     featuredVideo: null,
