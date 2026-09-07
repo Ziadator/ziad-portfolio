@@ -1,165 +1,62 @@
-# Ziad Beranger — portfolio
+# Ziad Beranger — Portfolio 2026
 
-Zero-dependency static portfolio designed for a GitHub / VS Code workflow.
+Version retravaillée du portfolio statique de Ziad Beranger.
 
-## Files to replace in the repository
+## Ce qui a changé
+
+- Les projets sont regroupés en trois univers lisibles : Commercial & Digital, Film & Broadcast et Photography.
+- DECA est intégré comme preuve de montage YouTube, podcast et contenu digital.
+- Une sélection Commercial Photography est séparée de Lost in Wasteland.
+- Chaque page projet fonctionne comme une étude de cas : brief, approche, livrables et valeur.
+- La présentation générale est plus directe pour les agences, marques et recruteurs.
+- Un appel à l’action indique clairement la disponibilité à Sydney et à distance.
+- Les chemins et noms de médias sont désormais cohérents.
+
+## Fichiers principaux
 
 ```text
-index.html
-app.js
-styles.css
-assets/
-  fonts/
-    ArchivoBlack-Regular.ttf
-    CourierPrime-Regular.ttf
-    CourierPrime-Bold.ttf
+index.html        structure générale et textes fixes
+styles.css       identité visuelle et responsive
+app.js           projets, études de cas, galeries et vidéos
+MEDIA-GUIDE.md   liste exacte des médias à ajouter
+CNAME            domaine GitHub Pages
 ```
 
-Keep the rest of the existing `assets` folder. The code continues to use the same media paths wherever possible.
+## Ajouter les médias
 
-## Local preview
+Suivre exactement la nomenclature de `MEDIA-GUIDE.md`. Il suffit ensuite de déposer chaque export dans son dossier : les chemins sont déjà inscrits dans `app.js` et `styles.css`.
 
-From the repository folder:
+Si un média manque, le site reste utilisable, mais son emplacement apparaîtra sombre ou sera ignoré dans la galerie.
+
+## Prévisualiser sur Mac
+
+Ouvrir le dossier dans VS Code, puis lancer depuis le terminal :
 
 ```sh
 python3 -m http.server 4173
 ```
 
-Open `http://localhost:4173`.
+Ouvrir ensuite `http://localhost:4173` dans Safari ou Chrome.
 
-## Editing projects
+## Modifier un projet
 
-All project content lives at the top of `app.js` in the `projects` array. Each project accepts:
+Les textes et médias de chaque projet se trouvent en haut de `app.js` dans le tableau `projects`.
 
-- `cover`: homepage and project hero image;
-- `coverPosition`: focal point of the crop, for example `35% 50%`;
-- `storyPoster`: image shown behind the text while the loop loads;
-- `video`: short muted background loop;
-- `gallery`: ordered image paths;
-- `featuredVideo`: optional full video with controls;
-- `intro`, `context`, `contribution` and `facts`: project copy.
+Les propriétés principales sont :
 
-Projects now have shareable hash links such as:
+- `group` : groupe visible sur la page d’accueil ;
+- `cover` : image de couverture ;
+- `video` : boucle silencieuse d’ambiance ;
+- `featuredVideo` : film principal avec son et commandes ;
+- `gallery` : sélection d’images dans l’ordre d’affichage ;
+- `context`, `contribution`, `deliverables`, `outcome` : contenu commercial de l’étude de cas.
 
-```text
-https://ziadberanger.com/#work/lox-in-a-box
-https://ziadberanger.com/#work/dont-call-me-back
-```
+## Avant la mise en ligne
 
-## Media structure to create
+1. Ajouter les trois polices dans `assets/fonts/`.
+2. Ajouter tous les médias prioritaires indiqués dans `MEDIA-GUIDE.md`.
+3. Vérifier ou corriger les crédits et dates dans `app.js`.
+4. Remplacer `Ziad-Beranger-Resume.pdf` si une nouvelle version du CV est créée.
+5. Tester les pages sur ordinateur et mobile.
+6. Envoyer ensuite le dossier complet vers le dépôt GitHub relié à `ziadberanger.com`.
 
-You do not need to send the media again. Create these paths in the repository and replace the placeholder filenames when your exports are ready:
-
-```text
-assets/
-  hero-home.jpg
-  videos/
-    lox-loop.mp4
-    dont-call-me-back-loop.mp4
-    fyp-loop.mp4
-    lost-in-wasteland-loop.mp4
-    en-quete-dappart-loop.mp4
-    jump-n-stay-loop.mp4
-  lox-in-a-box/
-    gallery-01.jpg ... gallery-06.jpg
-  dont-call-me-back/
-    cover.png
-    beach-body.jpg
-    forest-shirt.jpg
-    hand-rock.jpg
-    sunglasses.jpg
-  follow-your-passion/
-    conversation.jpg
-    camera-bts.png
-    studio-bts.jpeg
-    podcast.png
-    way-to-scale.png
-    monetise-passion.png
-    content-house.png
-    male-portrait.png
-    woman-portrait.png
-    brand-card.png
-  jump-n-stay/
-    car-scene.png
-    guitar.png
-    beach.png
-    character.png
-    silhouettes.png
-    live-stage.png
-    portrait.png
-    vr-scene.png
-```
-
-`Lost in Wasteland` and `En quête d’appart` still use the existing Framer-hosted images for now. They can be localised later by changing their paths in `app.js`.
-
-## Add a clickable film or teaser
-
-Change `featuredVideo: null` inside a project to:
-
-```js
-featuredVideo: {
-  src: 'assets/videos/dont-call-me-back-teaser.mp4',
-  poster: 'assets/dont-call-me-back/teaser-poster.jpg',
-  label: 'Watch teaser',
-  duration: '01:12'
-},
-```
-
-Use this only for two or three projects with a film worth watching in full. The short `video` field remains a silent atmospheric loop.
-
-## Recommended media exports
-
-### Covers and gallery images
-
-- WebP or high-quality progressive JPEG;
-- 2200–2600 px on the longest edge;
-- sRGB;
-- target roughly 300–900 KB per image;
-- use meaningful filenames rather than numbered camera exports.
-
-The first two gallery images load immediately. The rest load progressively.
-
-### Background loops
-
-- MP4, H.264;
-- 6–12 seconds;
-- muted and designed to loop cleanly;
-- 1920 × 1080 preferred for desktop backgrounds;
-- target 3–7 MB;
-- avoid text near the edges because the video uses `object-fit: cover`.
-
-### Clickable videos
-
-- MP4, H.264, 1920 × 1080;
-- stereo AAC audio;
-- add a dedicated poster image;
-- keep large or long films on Vimeo and add an external link instead of hosting a very heavy file in GitHub.
-
-## Gallery control
-
-A gallery entry may be a simple path:
-
-```js
-'assets/lox-in-a-box/gallery-01.webp'
-```
-
-Or an object with better accessibility and an optional known ratio:
-
-```js
-{
-  src: 'assets/lox-in-a-box/gallery-01.webp',
-  alt: 'Lox in a Box bag on the counter beneath the ceiling sculpture',
-  ratio: 1.5
-}
-```
-
-The ratio is width divided by height. It prevents layout movement while a lazy image loads.
-
-## Before publishing
-
-1. Instagram is linked to `@_mikeferrari_` in `index.html`.
-2. `En quête d’appart` is listed as `2017—2018`, the programme’s final publicly documented season.
-3. The `Moonbeach` credit states that Ziad contributed across all cuts.
-4. Replace remaining Framer-hosted images with local optimized originals.
-5. Create a dedicated 1200 × 630 social preview later and replace the current `og:image` hero URL.
-6. Test every project on desktop and mobile before pushing to production.

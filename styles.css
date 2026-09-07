@@ -143,7 +143,7 @@ button:focus-visible {
 }
 
 .hero-media {
-  background: var(--ink-soft) url('assets/hero-home.jpg') center / cover no-repeat;
+  background: var(--ink-soft) url('assets/home/home-hero.webp') center / cover no-repeat;
   transform: scale(1.005);
 }
 
@@ -975,6 +975,152 @@ footer a:hover {
 
   .next-project-title {
     font-size: clamp(2.15rem, 11vw, 4rem);
+  }
+}
+
+/* 2026 portfolio refresh: clearer disciplines and commercial case studies */
+.project-list {
+  border-top: 0;
+}
+
+.project-group {
+  scroll-margin-top: 64px;
+  margin-bottom: clamp(6rem, 10vw, 11rem);
+}
+
+.project-group-head {
+  display: grid;
+  grid-template-columns: .75fr 2.25fr;
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: end;
+  padding: 0 0 1.6rem;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.project-group-head p {
+  margin: 0;
+}
+
+.project-group-head h3 {
+  max-width: 25ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.55rem, 2.5vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.045em;
+  text-transform: uppercase;
+}
+
+.project-group-list {
+  border-top: 0;
+}
+
+.project-group-list .project:last-child {
+  border-bottom-color: var(--line-strong);
+}
+
+.availability {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(2rem, 4vw, 3.5rem) var(--pad);
+  border-block: 1px solid var(--line-strong);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(.8rem, 1vw, 1rem);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.availability p {
+  margin: 0;
+}
+
+.availability a {
+  padding-bottom: .3rem;
+  border-bottom: 1px solid currentColor;
+}
+
+.availability a span {
+  display: inline-block;
+  margin-left: .6rem;
+  transition: transform .25s ease;
+}
+
+.availability a:hover span {
+  transform: translate(.2rem, -.2rem);
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+}
+
+.project-details {
+  grid-template-columns: .7fr 1fr 1fr;
+}
+
+.project-detail--deliverables {
+  grid-column: 2;
+}
+
+.project-detail--outcome {
+  grid-column: 3;
+}
+
+.project-facts {
+  grid-column: 2 / 4;
+}
+
+@media (max-width: 900px) {
+  .project-group-head {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .project-detail--deliverables,
+  .project-detail--outcome,
+  .project-facts {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav nav {
+    gap: .9rem;
+  }
+
+  .project-group {
+    scroll-margin-top: 58px;
+    margin-bottom: 6rem;
+  }
+
+  .project-group-head {
+    grid-template-columns: 1fr;
+    gap: .8rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .project-group-head h3 {
+    font-size: clamp(1.45rem, 7vw, 2.25rem);
+  }
+
+  .availability {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .availability a {
+    width: fit-content;
+  }
+
+  .project-detail--deliverables,
+  .project-detail--outcome,
+  .project-facts {
+    grid-column: 1;
   }
 }
 
