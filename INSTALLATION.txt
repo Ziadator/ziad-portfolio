@@ -1,0 +1,23 @@
+MISE A JOUR 02
+
+1. Ouvre ton dossier actuel ziadberanger.com.
+2. Copie le contenu de ce dossier dans la racine du site.
+3. Accepte le remplacement de index.html, app.js et styles.css.
+4. Fusionne le dossier assets, ne supprime pas tes médias existants.
+5. Recharge le site avec Cmd + Shift + R.
+
+DECA
+
+La page existe déjà. Son image et ses vidéos apparaîtront lorsque les fichiers
+indiqués dans MEDIA-GUIDE.md seront placés dans assets/projects/deca/.
+
+PHOTOGRAPHY
+
+Le menu Photography ouvre maintenant un index Commercial / Art.
+Commercial ouvre Commercial Photography.
+Art ouvre Lost in Wasteland.
+
+IMPORTANT
+
+Ne remplace pas tout ton dossier assets. Il faut seulement le fusionner afin de
+conserver les images et vidéos déjà présentes.

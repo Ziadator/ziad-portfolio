@@ -1,4 +1,4 @@
-# Guide médias — nomenclature exacte
+# Guide médias / nomenclature exacte
 
 Ne pas utiliser d’espaces, d’accents ou de majuscules dans les noms de fichiers. Les noms ci-dessous sont déjà reliés au site : conserve-les exactement.
 
@@ -219,4 +219,3 @@ Dans `assets/fonts/` :
 6. Les boucles vidéo
 7. Les galeries secondaires
 8. Le futur showreel
-

@@ -1,4 +1,4 @@
-# Ziad Beranger — Portfolio 2026
+# Ziad Beranger / Portfolio 2026
 
 Version retravaillée du portfolio statique de Ziad Beranger.
 
@@ -59,4 +59,3 @@ Les propriétés principales sont :
 4. Remplacer `Ziad-Beranger-Resume.pdf` si une nouvelle version du CV est créée.
 5. Tester les pages sur ordinateur et mobile.
 6. Envoyer ensuite le dossier complet vers le dépôt GitHub relié à `ziadberanger.com`.
-

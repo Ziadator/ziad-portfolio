@@ -17,7 +17,7 @@ const GROUPS = [
   {
     id: 'photography',
     label: '03 / Photography',
-    title: 'Commercial clarity with a personal photographic eye.'
+    title: 'Commissioned images / personal worlds.'
   }
 ];
 
@@ -124,6 +124,10 @@ const projects = [
     slug: 'lost-in-wasteland',
     group: 'photography',
     title: 'Lost in Wasteland',
+    hubTitle: 'Art',
+    hubNumber: '02',
+    hubDescription: 'A personal archive of fragments, apparitions and landscapes suspended between memory and fiction.',
+    galleryMode: 'editorial',
     category: 'Photography / Film / Writing',
     year: 'Ongoing',
     role: 'Creative Direction / Photography / Film',
@@ -250,6 +254,10 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   slug: 'commercial-photography',
   group: 'photography',
   title: 'Commercial Photography',
+  hubTitle: 'Commercial',
+  hubNumber: '01',
+  hubDescription: 'Portraits, campaigns, events and brand imagery made to communicate clearly and feel distinctive.',
+  galleryMode: 'editorial',
   category: 'Editorial / Portrait / Brand',
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
@@ -296,6 +304,7 @@ const dialog = document.querySelector('#project-dialog');
 const content = document.querySelector('#project-content');
 const wordmark = document.querySelector('.wordmark');
 const closeButton = document.querySelector('.dialog-close');
+const photographyLink = document.querySelector('.photography-link');
 
 let currentProject = null;
 let lastProjectTrigger = null;
@@ -351,11 +360,61 @@ GROUPS.forEach(group => {
   `;
 
   const groupList = section.querySelector('.project-group-list');
-  groupProjects.forEach(project => {
-    const index = projects.findIndex(item => item.slug === project.slug);
+  groupProjects.forEach((project, index) => {
     groupList.append(createProjectCard(project, index));
   });
   list.append(section);
+});
+
+function showPhotographyHub({ updateHistory = true } = {}) {
+  const photographyProjects = projects.filter(project => project.group === 'photography');
+  currentProject = null;
+  document.title = `Photography / Ziad Beranger`;
+  content.innerHTML = `
+    <header class="photo-hub-hero">
+      <p class="eyebrow">Photography / Selected work</p>
+      <h2>Commercial<br>and Art</h2>
+      <p>Two distinct practices connected by the same interest in atmosphere, people and visual storytelling.</p>
+    </header>
+    <section class="photo-hub-options" aria-label="Photography collections">
+      ${photographyProjects.map(project => `
+        <button class="photo-hub-card" type="button" data-photo-project="${escapeAttribute(project.slug)}">
+          <span class="photo-hub-card-media" aria-hidden="true" style="background-image:url('${escapeAttribute(project.cover)}'); --cover-position:${escapeAttribute(project.coverPosition || '50% 50%')}"></span>
+          <span class="photo-hub-card-shade" aria-hidden="true"></span>
+          <span class="photo-hub-card-number">${project.hubNumber}</span>
+          <span class="photo-hub-card-copy">
+            <strong>${project.hubTitle}</strong>
+            <span>${project.hubDescription}</span>
+          </span>
+          <span class="photo-hub-card-arrow" aria-hidden="true">↘</span>
+        </button>
+      `).join('')}
+    </section>
+  `;
+
+  if (updateHistory) {
+    openedFromIndex = true;
+    history.pushState({ photography: true }, '', '#photography');
+  }
+  if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
+
+  content.querySelectorAll('[data-photo-project]').forEach(button => {
+    button.addEventListener('click', () => {
+      const project = projects.find(item => item.slug === button.dataset.photoProject);
+      if (!project) return;
+      lastProjectTrigger = button;
+      history.pushState({ project: project.slug }, '', `#work/${project.slug}`);
+      showProject(project);
+    });
+  });
+
+  requestAnimationFrame(() => closeButton?.focus());
+}
+
+photographyLink?.addEventListener('click', event => {
+  event.preventDefault();
+  showPhotographyHub();
 });
 
 function galleryItemData(item, project, index) {
@@ -400,9 +459,38 @@ function renderFacts(project) {
     .join('');
 }
 
+function renderGallery(project) {
+  const images = project.gallery
+    .map((item, index) => {
+      const media = galleryItemData(item, project, index);
+      const isPriority = index < 2;
+      return `
+        <figure class="${project.galleryMode === 'editorial' ? 'editorial-gallery-item' : ''}">
+          <img
+            class="gallery-image"
+            src="${escapeAttribute(asset(media.src))}"
+            alt="${escapeAttribute(media.alt)}"
+            ${media.ratio ? `data-ratio="${escapeAttribute(media.ratio)}"` : ''}
+            loading="${isPriority ? 'eager' : 'lazy'}"
+            fetchpriority="${isPriority ? 'high' : 'low'}"
+            decoding="async">
+        </figure>
+      `;
+    })
+    .join('');
+
+  if (project.galleryMode === 'editorial') {
+    return `<section class="editorial-gallery editorial-gallery--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images}</section>`;
+  }
+
+  return `<section class="filmstrip filmstrip--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images}</section>`;
+}
+
 function showProject(project) {
   const projectIndex = projects.findIndex(item => item.slug === project.slug);
-  const nextProject = projects[(projectIndex + 1) % projects.length];
+  const relatedProjects = projects.filter(item => item.group === project.group);
+  const relatedIndex = relatedProjects.findIndex(item => item.slug === project.slug);
+  const nextProject = relatedProjects[(relatedIndex + 1) % relatedProjects.length] || projects[(projectIndex + 1) % projects.length];
 
   currentProject = project;
   document.title = `${project.title} / Ziad Beranger`;
@@ -455,24 +543,7 @@ function showProject(project) {
 
     ${renderFeaturedVideo(project)}
 
-    <section class="filmstrip filmstrip--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">
-      ${project.gallery
-        .map((item, index) => {
-          const media = galleryItemData(item, project, index);
-          const isPriority = index < 2;
-          return `
-            <img
-              class="gallery-image"
-              src="${escapeAttribute(asset(media.src))}"
-              alt="${escapeAttribute(media.alt)}"
-              ${media.ratio ? `data-ratio="${escapeAttribute(media.ratio)}"` : ''}
-              loading="${isPriority ? 'eager' : 'lazy'}"
-              fetchpriority="${isPriority ? 'high' : 'low'}"
-              decoding="async">
-          `;
-        })
-        .join('')}
-    </section>
+    ${renderGallery(project)}
 
     <button class="next-project" type="button" data-next-project="${nextProject.slug}">
       <span class="eyebrow">Next project</span>
@@ -492,6 +563,7 @@ function showProject(project) {
   }
 
   prepareAdaptiveGallery();
+  prepareEditorialGallery();
 
   content.querySelector('[data-next-project]')?.addEventListener('click', () => {
     history.replaceState({ project: nextProject.slug }, '', `#work/${nextProject.slug}`);
@@ -499,6 +571,19 @@ function showProject(project) {
   });
 
   requestAnimationFrame(() => closeButton?.focus());
+}
+
+function prepareEditorialGallery() {
+  const gallery = content.querySelector('.editorial-gallery');
+  if (!gallery) return;
+
+  gallery.querySelectorAll('img').forEach(image => {
+    if (image.complete && image.naturalWidth === 0) {
+      image.closest('figure')?.remove();
+      return;
+    }
+    image.addEventListener('error', () => image.closest('figure')?.remove(), { once: true });
+  });
 }
 
 function prepareAdaptiveGallery() {
@@ -633,7 +718,11 @@ window.addEventListener('popstate', () => {
     openedFromIndex = false;
     showProject(project);
   }
-  else if (currentProject) {
+  else if (location.hash === '#photography') {
+    openedFromIndex = false;
+    showPhotographyHub({ updateHistory: false });
+  }
+  else if (dialog.open) {
     closeProject({ fromHistory: true });
   }
 });
@@ -642,4 +731,8 @@ const initialProject = projectFromHash();
 if (initialProject) {
   openedFromIndex = false;
   showProject(initialProject);
+}
+else if (location.hash === '#photography') {
+  openedFromIndex = false;
+  showPhotographyHub({ updateHistory: false });
 }
