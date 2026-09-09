@@ -2,9 +2,9 @@ MISE A JOUR 02
 
 1. Ouvre ton dossier actuel ziadberanger.com.
 2. Copie le contenu de ce dossier dans la racine du site.
-3. Accepte le remplacement de index.html, app.js et styles.css.
+3. Remplace ensemble index.html, app.js et styles.css. Les nouvelles versions de styles.css et app.js forcent le rechargement du rendu.
 4. Fusionne le dossier assets, ne supprime pas tes médias existants.
-5. Recharge le site avec Cmd + Shift + R.
+5. Recharge le site avec Cmd + Shift + R. Si GitHub Pages sert encore l’ancienne version, attends quelques minutes puis refais ce rechargement forcé.
 
 DECA
 

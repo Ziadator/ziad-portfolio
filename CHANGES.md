@@ -23,6 +23,7 @@
 - Increased the readability of the hero statement on mobile.
 - Reduced the height of mobile project cards so more work is visible sooner.
 - Rebuilt Lost in Wasteland as a continuous full-bleed gallery with no gutters or accidental gaps.
+- Restored the light contact strip with a compatibility selector and cache-busted asset versions.
 - Added a Creative strategy block to relevant case studies.
 - Added canonical and Open Graph metadata.
 - Updated the Instagram link to the Lost in Wasteland account.

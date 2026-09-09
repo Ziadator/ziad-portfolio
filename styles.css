@@ -1106,37 +1106,44 @@ footer a:hover {
   border-bottom-color: var(--line-strong);
 }
 
-.contact-strip {
+.contact-strip,
+.availability {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 2rem;
   align-items: center;
   padding: clamp(2rem, 4vw, 3.5rem) var(--pad);
   border-block: 1px solid var(--line-strong);
-  background: var(--paper);
-  color: var(--ink);
+  border-color: rgba(23, 23, 21, .22);
+  background: #e9e6df !important;
+  color: #171715 !important;
   font-family: var(--mono);
   font-size: clamp(.8rem, 1vw, 1rem);
   letter-spacing: .07em;
   text-transform: uppercase;
 }
 
-.contact-strip p {
+.contact-strip p,
+.availability p {
   margin: 0;
 }
 
-.contact-strip a {
+.contact-strip a,
+.availability a {
+  color: #171715 !important;
   padding-bottom: .3rem;
   border-bottom: 1px solid currentColor;
 }
 
-.contact-strip a span {
+.contact-strip a span,
+.availability a span {
   display: inline-block;
   margin-left: .6rem;
   transition: transform .25s ease;
 }
 
-.contact-strip a:hover span {
+.contact-strip a:hover span,
+.availability a:hover span {
   transform: translate(.2rem, -.2rem);
 }
 
@@ -1279,12 +1286,14 @@ footer a:hover {
     font-size: clamp(1.45rem, 7vw, 2.25rem);
   }
 
-  .contact-strip {
+  .contact-strip,
+  .availability {
     grid-template-columns: 1fr;
     gap: 1.3rem;
   }
 
-  .contact-strip a {
+  .contact-strip a,
+  .availability a {
     width: fit-content;
   }
 
@@ -1513,9 +1522,9 @@ footer a:hover {
 .editorial-gallery--lost-in-wasteland {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: clamp(280px, 42vw, 680px) clamp(250px, 35vw, 560px) clamp(300px, 48vw, 780px) clamp(250px, 36vw, 580px);
-  gap: 0;
-  padding: 0;
-  background: #090908;
+  gap: 0 !important;
+  padding: 0 !important;
+  background: #090908 !important;
 }
 
 .editorial-gallery--lost-in-wasteland .editorial-gallery-item,
@@ -1675,6 +1684,8 @@ footer a:hover {
   .editorial-gallery--lost-in-wasteland {
     grid-template-columns: 1fr;
     grid-template-rows: none;
+    gap: 0 !important;
+    padding: 0 !important;
   }
 
   .editorial-gallery--lost-in-wasteland .editorial-gallery-item,

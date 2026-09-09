@@ -11,7 +11,7 @@ Version retravaillée du portfolio statique de Ziad Beranger.
 - Jump & Stay présente Moonbeach, Les Crampets et Blackhouse Sessions comme une collaboration éditoriale continue.
 - Chaque page projet fonctionne comme une étude de cas : brief, approche, livrables et valeur.
 - La présentation générale distingue clairement le montage, la direction de contenu, le film d’auteur et la photographie.
-- Un appel à l’action indique clairement la disponibilité à Sydney et à distance.
+- Un appel à l’action invite à prendre contact pour les projets, collaborations et demandes professionnelles.
 - Les chemins et noms de médias sont désormais cohérents.
 
 ## Fichiers principaux
