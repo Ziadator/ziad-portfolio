@@ -51,6 +51,8 @@ Ordre narratif conseillé : lieu → produit → humain → lifestyle → détai
 
 Dans `assets/projects/deca/` :
 
+Les trois films ont aussi été retrouvés sur l’ancien portfolio et leurs lecteurs Adobe publics sont maintenant prévus comme solution de continuité. Les exports locaux restent prioritaires dès que les fichiers sont copiés dans le dossier.
+
 | Nom exact | Média à mettre |
 | --- | --- |
 | `deca-cover.webp` | Le cadre le plus premium avec visage, profondeur et décor digital. |
@@ -159,6 +161,8 @@ Cette sélection doit montrer ta capacité à travailler pour un client, pas seu
 Tu peux utiliser ici des images Lox, portraits, anniversaire/événement, clip, mode et projets de marque, à condition que la sélection ne ressemble pas à un doublon de la page Lox.
 
 ## 9. Lost in Wasteland
+
+La galerie est maintenant une séquence pleine largeur sans gouttière ni espace blanc. Les six images actuelles composent une grille continue, puis les nouvelles images s’ajoutent sans casser la séquence. Tu peux donc compléter la liste sans recréer la mise en page.
 
 Dans `assets/projects/lost-in-wasteland/` :
 

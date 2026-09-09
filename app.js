@@ -270,6 +270,7 @@ projects.splice(1, 0, {
       type: 'Digital film',
       status: 'Selected film',
       description: 'A second DECA film showing the same editorial system applied to a different subject.',
+      embed: 'https://www-ccv.adobe.io/v1/player/ccv/KASxyZIzZ_9/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
       video: 'assets/projects/deca/deca-ai-revolution.mp4'
     },
     {
@@ -277,12 +278,14 @@ projects.splice(1, 0, {
       type: 'Interview film',
       status: 'Selected film',
       description: 'An additional interview-led piece, presented alongside the main YouTube film.',
+      embed: 'https://www-ccv.adobe.io/v1/player/ccv/G6EkxrY4HAo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
       video: 'assets/projects/deca/deca-digital-council-interview.mp4'
     }
   ],
   video: 'assets/projects/deca/deca-editing-loop.mp4',
   featuredVideo: {
     src: 'assets/projects/deca/deca-the-house-is-digital.mp4',
+    embed: 'https://www-ccv.adobe.io/v1/player/ccv/PSprnMsY32H/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
     poster: 'assets/projects/deca/deca-the-house-is-digital-poster.webp',
     label: 'Watch selected film',
     duration: '01:55'
@@ -319,7 +322,7 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   facts: [
     ['Formats', 'Campaign / Editorial / Portrait'],
     ['Location', 'Sydney / Australia'],
-    ['Availability', 'Commissioned work']
+    ['Engagement', 'Commissioned work']
   ],
   video: null,
   featuredVideo: null,
@@ -484,16 +487,22 @@ function galleryItemData(item, project, index) {
 
 function renderFeaturedVideo(project) {
   const feature = project.featuredVideo;
-  if (!feature?.src) return '';
+  if (!feature?.src && !feature?.embed) return '';
   return `
     <section class="project-feature" aria-label="${escapeAttribute(feature.label || `Watch ${project.title}`)}">
       <div class="project-feature-head">
         <p class="eyebrow">${feature.label || 'Watch film'}</p>
         ${feature.duration ? `<p class="project-feature-duration">${feature.duration}</p>` : ''}
       </div>
-      <video controls playsinline preload="metadata" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
-        <source src="${escapeAttribute(asset(feature.src))}" type="video/mp4">
-      </video>
+      ${feature.embed ? `
+        <div class="project-feature-embed">
+          <iframe title="${escapeAttribute(feature.label || `Watch ${project.title}`)}" src="${escapeAttribute(feature.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      ` : `
+        <video controls playsinline preload="metadata" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
+          <source src="${escapeAttribute(asset(feature.src))}" type="video/mp4">
+        </video>
+      `}
     </section>
   `;
 }
@@ -520,7 +529,7 @@ function renderRelatedWorks(project) {
       <div class="related-works-grid">
         ${project.relatedWorks.map(work => `
           <article class="related-work">
-            ${work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
+            ${work.embed ? `<div class="related-work-embed"><iframe title="${escapeAttribute(work.title)}" src="${escapeAttribute(work.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>` : work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
             <p class="related-work-type">${escapeAttribute(work.type || 'Selected work')}</p>
             <h3>${escapeAttribute(work.title)}</h3>
             <p class="related-work-status">${escapeAttribute(work.status || '')}</p>
