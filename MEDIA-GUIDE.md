@@ -123,6 +123,8 @@ Dans `assets/projects/en-quete-dappart/` :
 
 ## 7. Jump & Stay
 
+La page présente maintenant la collaboration comme un ensemble : Moonbeach, actuellement en circulation dans les festivals, Les Crampets, en développement, et Blackhouse Sessions. Les fichiers ci-dessous restent les médias actuellement reliés au site. Les vidéos individuelles de ces trois projets seront ajoutées uniquement après confirmation de leurs noms exacts, afin de ne pas casser la nomenclature existante.
+
 Dans `assets/projects/jump-n-stay/` :
 
 | Nom exact | Média à mettre |

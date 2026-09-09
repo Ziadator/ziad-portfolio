@@ -4,11 +4,13 @@ Version retravaillée du portfolio statique de Ziad Beranger.
 
 ## Ce qui a changé
 
-- Les projets sont regroupés en trois univers lisibles : Commercial & Digital, Film & Broadcast et Photography.
+- Les projets sont regroupés par usage professionnel : Editing / Post-production, Direction / Content, Film / Authorship et Photography.
 - DECA est intégré comme preuve de montage YouTube, podcast et contenu digital.
+- DECA présente désormais son rôle éditorial, son positionnement de contenu, ses intros et ses éléments de post-production.
 - Une sélection Commercial Photography est séparée de Lost in Wasteland.
+- Jump & Stay présente Moonbeach, Les Crampets et Blackhouse Sessions comme une collaboration éditoriale continue.
 - Chaque page projet fonctionne comme une étude de cas : brief, approche, livrables et valeur.
-- La présentation générale est plus directe pour les agences, marques et recruteurs.
+- La présentation générale distingue clairement le montage, la direction de contenu, le film d’auteur et la photographie.
 - Un appel à l’action indique clairement la disponibilité à Sydney et à distance.
 - Les chemins et noms de médias sont désormais cohérents.
 
@@ -41,6 +43,8 @@ Ouvrir ensuite `http://localhost:4173` dans Safari ou Chrome.
 ## Modifier un projet
 
 Les textes et médias de chaque projet se trouvent en haut de `app.js` dans le tableau `projects`.
+
+Les chemins des médias existants n’ont pas été renommés. Les nouvelles cartes Jump & Stay utilisent uniquement du texte tant que les noms exacts des exports vidéo de Moonbeach, Les Crampets et Blackhouse Sessions n’ont pas été confirmés dans le dossier `assets`.
 
 Les propriétés principales sont :
 

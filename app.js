@@ -1,22 +1,27 @@
 const SITE = {
-  title: 'Ziad Beranger / Editor, Director & Photographer, Sydney',
-  description: 'Sydney-based video editor, director and photographer creating broadcast, branded, social and narrative work.'
+  title: 'Ziad Beranger / Video Editor, Director & Photographer, Sydney',
+  description: 'Sydney-based video editor, director and photographer working across broadcast television, post-production, branded content, independent film and photography.'
 };
 
 const GROUPS = [
   {
-    id: 'commercial-digital',
-    label: '01 / Commercial & Digital',
-    title: 'Content designed to hold attention and build a brand.'
+    id: 'editing-post',
+    label: '01 / Editing / Post-production',
+    title: 'Structure, rhythm and clarity built in the edit.'
   },
   {
-    id: 'film-broadcast',
-    label: '02 / Film & Broadcast',
-    title: 'Narrative structure, performance and editorial rhythm.'
+    id: 'direction-content',
+    label: '02 / Direction / Content',
+    title: 'From brief to final assets, with one clear visual world.'
+  },
+  {
+    id: 'film-author',
+    label: '03 / Film / Authorship',
+    title: 'Films shaped through writing, direction and editorial instinct.'
   },
   {
     id: 'photography',
-    label: '03 / Photography',
+    label: '04 / Photography',
     title: 'Commissioned images / personal worlds.'
   }
 ];
@@ -32,14 +37,15 @@ const GROUPS = [
 const projects = [
   {
     slug: 'lox-in-a-box',
-    group: 'commercial-digital',
+    group: 'direction-content',
     title: 'Lox in a Box',
     category: 'Branded Content / Commercial',
     year: '2026',
     role: 'Creative Direction / Photography / Cinematography / Editing',
-    intro: 'A photography and short-form film campaign created for Sydney deli brand Lox in a Box.',
-    context: 'Lox in a Box is a Sydney institution celebrating Polish bagels, family recipes and deli culture across Bondi, Coogee, Paddington and Marrickville. The commission brought that unmistakable personality into a campaign of photography and short-form film.',
-    contribution: 'I developed the visual direction, photographed and filmed the campaign, then edited the work into a coherent set of brand assets with one pace, tone and point of view.',
+    intro: 'A photography and short-form film campaign translating Lox in a Box’s deli culture into premium, social-ready brand content.',
+    context: 'Lox in a Box needed a visual system that could make the brand feel immediate, generous and recognisable across locations, products and social platforms. The work had to sell the appetite of the food while keeping the human energy of the places and the people behind them.',
+    contribution: 'I shaped the creative direction, photographed and filmed the campaign, then edited the work into a coherent library of brand assets with one pace, tone and point of view.',
+    strategy: 'Brand position / The visual language balances product desire, human presence and a sense of place, giving the brand material that can work as a campaign image, a short film or a social cutdown.',
     deliverables: 'Campaign photography / Brand film / Social cutdowns',
     outcome: 'A flexible library of premium visual assets designed for the brand’s website, social channels and future campaigns.',
     facts: [
@@ -62,7 +68,7 @@ const projects = [
   },
   {
     slug: 'dont-call-me-back',
-    group: 'film-broadcast',
+    group: 'film-author',
     title: 'Don’t Call Me Back',
     category: 'Narrative Film',
     year: '2026',
@@ -90,7 +96,7 @@ const projects = [
   },
   {
     slug: 'follow-your-passion',
-    group: 'commercial-digital',
+    group: 'direction-content',
     title: 'Follow Your Passion Media',
     category: 'Creative Content / Digital',
     year: '2025 / 2026',
@@ -156,7 +162,7 @@ const projects = [
   },
   {
     slug: 'en-quete-dappart',
-    group: 'film-broadcast',
+    group: 'editing-post',
     title: 'En quête d’appart',
     category: 'Property Television / Broadcast',
     year: '2017 / 2018',
@@ -184,20 +190,43 @@ const projects = [
   },
   {
     slug: 'jump-n-stay',
-    group: 'film-broadcast',
+    group: 'editing-post',
     title: 'Jump & Stay',
     category: 'Independent Film / Collaboration',
     year: '2017 / 2024',
     role: 'Editor / Additional Editor',
-    intro: 'A recurring editing collaboration with director Didier Poiraud and filmmaker Astrid Serafini across fiction, music and experimental film.',
-    context: 'Founded in Nantes by Didier Poiraud and Astrid Serafini, Jump & Stay develops and produces independent audiovisual projects across cinema, music and visual art.',
-    contribution: 'Credited as editor on Moonbeach, I led the edit on selected episodes and supported the edit on others. The wider collaboration also includes Les Crampets and Blackhouse Sessions.',
+    intro: 'An ongoing editing collaboration with Jump & Stay across fiction, music and experimental film.',
+    context: 'Founded in Nantes by Didier Poiraud and Astrid Serafini, Jump & Stay develops independent audiovisual projects across cinema, music and visual art. The collaboration has grown across several formats rather than one isolated film.',
+    contribution: 'I worked as editor and additional editor across the collaboration, leading the edit on Moonbeach and supporting other projects including Les Crampets and Blackhouse Sessions.',
+    strategy: 'Editorial approach / Each project required a different rhythm, from the narrative patience of Moonbeach to the energy of music and live performance. My role was to protect the identity of each film while shaping a clear, finished work.',
     deliverables: 'Narrative edits / Music films / Experimental shorts',
-    outcome: 'A long-running creative collaboration spanning different formats, tones and post-production responsibilities.',
+    outcome: 'Moonbeach is currently circulating through festivals, while Les Crampets is in development. The wider body of work demonstrates sustained editorial trust across different formats and tones.',
+    relatedWorksLabel: 'Selected collaborations',
+    relatedWorksIntro: 'One collaboration, several editorial worlds.',
     facts: [
       ['Collaborators', 'Didier Poiraud / Astrid Serafini'],
-      ['Moonbeach', 'Lead editing / Additional editing'],
+      ['Moonbeach', 'Lead editing / Festival circulation'],
       ['Other projects', 'Les Crampets / Blackhouse Sessions']
+    ],
+    relatedWorks: [
+      {
+        title: 'Moonbeach',
+        type: 'Narrative film',
+        status: 'Festival circulation',
+        description: 'Lead editing and additional editing on a film now moving through festivals.'
+      },
+      {
+        title: 'Les Crampets',
+        type: 'Narrative project',
+        status: 'In development',
+        description: 'Editing collaboration within the wider Jump & Stay body of work.'
+      },
+      {
+        title: 'Blackhouse Sessions',
+        type: 'Music / live film',
+        status: 'Selected collaboration',
+        description: 'A different editorial rhythm, built around performance, atmosphere and live energy.'
+      }
     ],
     video: 'assets/projects/jump-n-stay/jump-n-stay-loop.mp4',
     featuredVideo: null,
@@ -216,20 +245,40 @@ const projects = [
 
 projects.splice(1, 0, {
   slug: 'deca',
-  group: 'commercial-digital',
+  group: 'editing-post',
   title: 'DECA',
   category: 'YouTube / Podcast / Digital Content',
   year: '2025',
-  role: 'Video Editing / Visual Storytelling',
-  intro: 'A series of interview-led films translating conversations about technology and digital culture into clear, engaging online content.',
-  context: 'Created for DECA, the work combines podcast and interview material with a visual structure designed for online audiences. The subjects range from digital transformation to artificial intelligence.',
-  contribution: 'I shaped the conversations in the edit, refined pacing and structure, and used supporting visuals, graphics and sound to turn complex ideas into accessible stories.',
-  deliverables: 'Three digital films / YouTube masters / Social cutdowns',
-  outcome: 'A strong example of long-form and mid-form editorial work built around clarity, retention and speaker authenticity.',
+  role: 'Video Editor / Content Producer / Editorial Strategy',
+  intro: 'Interview-led films for DECA, shaped for YouTube, podcast audiences and social cutdowns.',
+  context: 'DECA needed to turn conversations about technology, artificial intelligence and digital culture into content that felt clear, credible and watchable online. The work had to work as a conversation, a YouTube film and a recognisable content series.',
+  contribution: 'I shaped the conversations in the edit, built the opening language, refined pacing and structure, and used supporting visuals, graphics and sound to make complex ideas easier to follow without flattening the speakers’ personalities.',
+  strategy: 'Content position / I treated DECA as an editorial product rather than a generic corporate interview: a clear hook, a recognisable intro, deliberate pacing and visual cutdowns that can travel across YouTube, podcast and social platforms.',
+  deliverables: 'YouTube films / Podcast video / Intro package / Social cutdowns',
+  outcome: 'A clear example of editorial work that combines storytelling, platform thinking and visual identity, with the cut doing the work of making the subject accessible.',
+  relatedWorksLabel: 'Additional DECA films',
+  relatedWorksIntro: 'The same editorial system applied across different conversations and formats.',
   facts: [
     ['Client', 'DECA'],
     ['Format', 'Interview / Podcast / YouTube'],
-    ['Focus', 'Technology / Digital culture']
+    ['Focus', 'Technology / Digital culture'],
+    ['Role', 'Editing / Positioning / Visual language']
+  ],
+  relatedWorks: [
+    {
+      title: 'AI Revolution',
+      type: 'Digital film',
+      status: 'Selected film',
+      description: 'A second DECA film showing the same editorial system applied to a different subject.',
+      video: 'assets/projects/deca/deca-ai-revolution.mp4'
+    },
+    {
+      title: 'Digital Council Interview',
+      type: 'Interview film',
+      status: 'Selected film',
+      description: 'An additional interview-led piece, presented alongside the main YouTube film.',
+      video: 'assets/projects/deca/deca-digital-council-interview.mp4'
+    }
   ],
   video: 'assets/projects/deca/deca-editing-loop.mp4',
   featuredVideo: {
@@ -241,12 +290,12 @@ projects.splice(1, 0, {
   cover: 'assets/projects/deca/deca-cover.webp',
   coverPosition: '50% 50%',
   gallery: [
-    'assets/projects/deca/deca-speaker-wide.webp',
-    'assets/projects/deca/deca-podcast-two-shot.webp',
-    'assets/projects/deca/deca-ai-revolution-frame.webp',
-    'assets/projects/deca/deca-house-is-digital-frame.webp',
-    'assets/projects/deca/deca-edit-timeline.webp',
-    'assets/projects/deca/deca-detail-frame.webp'
+    { src: 'assets/projects/deca/deca-speaker-wide.webp', alt: 'DECA YouTube interview / speaker wide shot' },
+    { src: 'assets/projects/deca/deca-podcast-two-shot.webp', alt: 'DECA podcast / two guests in conversation' },
+    { src: 'assets/projects/deca/deca-ai-revolution-frame.webp', alt: 'DECA AI Revolution / selected video frame' },
+    { src: 'assets/projects/deca/deca-house-is-digital-frame.webp', alt: 'DECA The House Is Digital / selected video frame' },
+    { src: 'assets/projects/deca/deca-edit-timeline.webp', alt: 'DECA editing timeline / post-production workflow' },
+    { src: 'assets/projects/deca/deca-detail-frame.webp', alt: 'DECA digital culture / detail frame' }
   ]
 });
 
@@ -256,15 +305,16 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   title: 'Commercial Photography',
   hubTitle: 'Commercial',
   hubNumber: '01',
-  hubDescription: 'Portraits, campaigns, events and brand imagery made to communicate clearly and feel distinctive.',
+  hubDescription: 'Commercial, editorial, events and brand imagery made to communicate clearly and feel distinctive.',
   galleryMode: 'editorial',
-  category: 'Editorial / Portrait / Brand',
+  category: 'Commercial / Editorial / Events',
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
   intro: 'Commissioned and self-initiated photographs bringing character, atmosphere and editorial polish to people, places and brands.',
   context: 'This selection brings together portraits, lifestyle imagery, events and commercial details outside the Lost in Wasteland universe.',
   contribution: 'I develop the visual approach, direct subjects and shape light, movement and colour to create photographs that feel distinctive while remaining useful to the client.',
-  deliverables: 'Campaign selects / Portraits / Editorial series / Event imagery',
+  strategy: 'Image direction / The selection moves between product, people, place and atmosphere so a client can see how the same eye adapts to a campaign, an event or a wider brand world.',
+  deliverables: 'Campaign selects / Editorial series / Event imagery / Product detail',
   outcome: 'A focused commercial portfolio showing range without losing a recognisable photographic signature.',
   facts: [
     ['Formats', 'Campaign / Editorial / Portrait'],
@@ -459,6 +509,29 @@ function renderFacts(project) {
     .join('');
 }
 
+function renderRelatedWorks(project) {
+  if (!project.relatedWorks?.length) return '';
+  return `
+    <section class="related-works" aria-label="${escapeAttribute(project.relatedWorksLabel || 'Selected collaborations')}">
+      <div class="related-works-head">
+        <p class="eyebrow">${escapeAttribute(project.relatedWorksLabel || 'Selected collaborations')}</p>
+        <p>${escapeAttribute(project.relatedWorksIntro || 'One collaboration, several editorial worlds.')}</p>
+      </div>
+      <div class="related-works-grid">
+        ${project.relatedWorks.map(work => `
+          <article class="related-work">
+            ${work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
+            <p class="related-work-type">${escapeAttribute(work.type || 'Selected work')}</p>
+            <h3>${escapeAttribute(work.title)}</h3>
+            <p class="related-work-status">${escapeAttribute(work.status || '')}</p>
+            <p>${escapeAttribute(work.description || '')}</p>
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `;
+}
+
 function renderGallery(project) {
   const images = project.gallery
     .map((item, index) => {
@@ -490,7 +563,9 @@ function showProject(project) {
   const projectIndex = projects.findIndex(item => item.slug === project.slug);
   const relatedProjects = projects.filter(item => item.group === project.group);
   const relatedIndex = relatedProjects.findIndex(item => item.slug === project.slug);
-  const nextProject = relatedProjects[(relatedIndex + 1) % relatedProjects.length] || projects[(projectIndex + 1) % projects.length];
+  const nextProject = relatedProjects.length > 1
+    ? relatedProjects[(relatedIndex + 1) % relatedProjects.length]
+    : projects[(projectIndex + 1) % projects.length];
 
   currentProject = project;
   document.title = `${project.title} / Ziad Beranger`;
@@ -538,10 +613,18 @@ function showProject(project) {
         <p class="project-detail-label">Value</p>
         <p>${project.outcome || 'A clear, coherent body of work designed for its audience and platform.'}</p>
       </div>
+      ${project.strategy ? `
+        <div class="project-detail project-detail--strategy">
+          <p class="project-detail-label">Creative strategy</p>
+          <p>${project.strategy}</p>
+        </div>
+      ` : ''}
       <dl class="project-facts">${renderFacts(project)}</dl>
     </section>
 
     ${renderFeaturedVideo(project)}
+
+    ${renderRelatedWorks(project)}
 
     ${renderGallery(project)}
 

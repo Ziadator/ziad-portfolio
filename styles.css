@@ -233,6 +233,71 @@ button:focus-visible {
   opacity: .6;
 }
 
+.hero .discipline {
+  max-width: 23ch;
+  font-family: var(--sans);
+  font-size: clamp(1.1rem, 1.55vw, 1.55rem);
+  line-height: 1.18;
+  letter-spacing: -.02em;
+  text-transform: none;
+}
+
+.role-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-block: 1px solid var(--line-strong);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.role-nav a {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: start;
+  min-width: 0;
+  padding: 1.45rem var(--pad);
+  border-right: 1px solid rgba(23, 23, 21, .22);
+  font-family: var(--mono);
+  transition: background .25s ease, color .25s ease;
+}
+
+.role-nav a:last-child {
+  border-right: 0;
+}
+
+.role-nav a:hover,
+.role-nav a:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.role-nav-number,
+.role-nav a > span:last-child {
+  font-size: .76rem;
+  letter-spacing: .1em;
+}
+
+.role-nav strong,
+.role-nav small {
+  display: block;
+}
+
+.role-nav strong {
+  font-size: .9rem;
+  line-height: 1.25;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.role-nav small {
+  margin-top: .45rem;
+  font-family: var(--sans);
+  font-size: .9rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
 .work {
   padding: 8rem var(--pad) 2rem;
 }
@@ -828,6 +893,12 @@ footer a:hover {
     margin: 0 0 3.6rem;
   }
 
+  .hero .discipline {
+    max-width: 24ch;
+    font-size: 1.18rem;
+    line-height: 1.2;
+  }
+
   .location {
     grid-area: 4 / 1;
     justify-self: start;
@@ -863,7 +934,7 @@ footer a:hover {
   }
 
   .project {
-    min-height: clamp(420px, 64svh, 580px);
+    min-height: clamp(360px, 56svh, 500px);
   }
 
   .project-copy {
@@ -1072,8 +1143,84 @@ footer a:hover {
   grid-column: 3;
 }
 
+.project-detail--strategy {
+  grid-column: 2 / 4;
+}
+
 .project-facts {
   grid-column: 2 / 4;
+}
+
+.related-works {
+  padding: 2.4rem var(--pad) 7rem;
+  border-top: 1px solid var(--line);
+  background: #141411;
+}
+
+.related-works-head {
+  display: grid;
+  grid-template-columns: .7fr 2.3fr;
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: start;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.related-works-head p {
+  margin: 0;
+}
+
+.related-works-head > p:last-child {
+  font-size: clamp(1.1rem, 1.65vw, 1.55rem);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.related-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.related-work {
+  min-width: 0;
+  padding: 1.35rem 1.35rem 1.8rem;
+  background: var(--ink);
+}
+
+.related-work video {
+  display: block;
+  width: calc(100% + 2.7rem);
+  margin: -1.35rem -1.35rem 1.35rem;
+  background: #000;
+}
+
+.related-work-type,
+.related-work-status {
+  margin: 0 0 .65rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.related-work h3 {
+  margin: 0 0 .7rem;
+  font-family: var(--display);
+  font-size: clamp(1.7rem, 2.8vw, 3rem);
+  line-height: .9;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+}
+
+.related-work > p:last-child {
+  max-width: 28rem;
+  margin: 0;
+  color: #c8c4bc;
+  font-size: .98rem;
+  line-height: 1.45;
 }
 
 @media (max-width: 900px) {
@@ -1083,6 +1230,7 @@ footer a:hover {
 
   .project-detail--deliverables,
   .project-detail--outcome,
+  .project-detail--strategy,
   .project-facts {
     grid-column: 2;
   }
@@ -1119,6 +1267,7 @@ footer a:hover {
 
   .project-detail--deliverables,
   .project-detail--outcome,
+  .project-detail--strategy,
   .project-facts {
     grid-column: 1;
   }
@@ -1429,5 +1578,32 @@ footer a:hover {
 
   .editorial-gallery-item img {
     max-height: 82svh;
+  }
+
+  .role-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .role-nav a {
+    border-right: 0;
+    border-bottom: 1px solid rgba(23, 23, 21, .22);
+    padding-block: 1.2rem;
+  }
+
+  .role-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .related-works {
+    padding-block: 2rem 5rem;
+  }
+
+  .related-works-head {
+    grid-template-columns: 1fr;
+    gap: .8rem;
+  }
+
+  .related-works-grid {
+    grid-template-columns: 1fr;
   }
 }
