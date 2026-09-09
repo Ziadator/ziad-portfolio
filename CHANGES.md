@@ -3,8 +3,8 @@
 ## Positioning
 
 - The main identity is now explicit: Video Editor / Director / Photographer.
-- The homepage directs visitors to Editing / Post-production, Direction / Content and Photography.
-- Editing appears first so post-production studios can understand the strongest professional entry point immediately.
+- The homepage leads with Commercial / Digital, then Editing / Post-production, Film / Authorship and Photography.
+- The role navigation still makes Editing / Post-production explicit, so post-production studios can reach the relevant work immediately.
 
 ## Project pages
 
@@ -12,8 +12,15 @@
 - DECA includes the main film plus the two additional films already listed in `MEDIA-GUIDE.md`.
 - The three public Adobe Portfolio players from the former DECA page are wired as a fallback while local exports are being gathered.
 - The former DECA cover image has been recovered as `assets/projects/deca/deca-cover.webp`.
+- Added the organic DECA cover `assets/projects/deca/deca-cover-organic.webp`, built around the real presenter rather than a generated-looking title frame.
+- Refined the DECA cover with the futuristic Australian parliament visual from the podcast identity: `assets/projects/deca/deca-cover-organic-v2.webp`.
+- Added a new `En quête d’appart` cover with the presenters inside a Parisian apartment and a recognisable Eiffel Tower view.
 - Jump & Stay now explains the wider collaboration, Moonbeach festival circulation, Les Crampets development and Blackhouse Sessions.
 - LOX in a Box now explains the brand position behind the photography and short-form content.
+- LOX in a Box now credits Ziad clearly for concept, scripts, creative direction, camera, photography and editing.
+- DECA now credits Ziad clearly for scripts, direction, camera, editing, intro package and content strategy.
+- Follow Your Passion Media now explains that Ziad wrote scripts and shot lists, directed and filmed productions, edited key assets and dispatched work across the wider team.
+- Don’t Call Me Back now credits Ziad clearly as writer, director, camera and editor.
 - Commercial Photography no longer uses “Portraits” as a top-level category.
 
 ## Responsive and conversion work

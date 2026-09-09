@@ -4,13 +4,14 @@ Version retravaillée du portfolio statique de Ziad Beranger.
 
 ## Ce qui a changé
 
-- Les projets sont regroupés par usage professionnel : Editing / Post-production, Direction / Content, Film / Authorship et Photography.
+- Les projets sont regroupés par usage professionnel : Commercial / Digital, Editing / Post-production, Film / Authorship et Photography.
 - DECA est intégré comme preuve de montage YouTube, podcast et contenu digital.
 - DECA présente désormais son rôle éditorial, son positionnement de contenu, ses intros et ses éléments de post-production.
 - Une sélection Commercial Photography est séparée de Lost in Wasteland.
 - Jump & Stay présente Moonbeach, Les Crampets et Blackhouse Sessions comme une collaboration éditoriale continue.
 - Chaque page projet fonctionne comme une étude de cas : brief, approche, livrables et valeur.
-- La présentation générale distingue clairement le montage, la direction de contenu, le film d’auteur et la photographie.
+- La présentation générale distingue clairement le travail commercial et digital, le montage, le film d’auteur et la photographie.
+- Les études de cas précisent désormais quand Ziad a écrit, dirigé, filmé et monté le projet, ainsi que son rôle de script, de direction et de coordination chez Follow Your Passion Media.
 - Un appel à l’action invite à prendre contact pour les projets, collaborations et demandes professionnelles.
 - Les chemins et noms de médias sont désormais cohérents.
 

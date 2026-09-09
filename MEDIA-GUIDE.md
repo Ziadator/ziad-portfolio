@@ -55,7 +55,9 @@ Les trois films ont aussi été retrouvés sur l’ancien portfolio et leurs lec
 
 | Nom exact | Média à mettre |
 | --- | --- |
-| `deca-cover.webp` | Le cadre le plus premium avec visage, profondeur et décor digital. |
+| `deca-cover-organic-v2.webp` | Cover recommandée : présentatrice en situation devant le bâtiment futuriste de l’univers DECA, sans interface ni texte. |
+| `deca-cover-organic.webp` | Première variante organique, à conserver pour comparaison. |
+| `deca-cover.webp` | Ancienne cover de secours, à conserver si tu veux comparer les deux versions. |
 | `deca-editing-loop.mp4` | Boucle muette de 6 à 10 secondes combinant 3 ou 4 moments. |
 | `deca-the-house-is-digital.mp4` | Film principal affiché sur la page, export avec son. |
 | `deca-the-house-is-digital-poster.webp` | Image d’ouverture propre du film principal, sans interface de lecteur. |
@@ -116,7 +118,8 @@ Dans `assets/projects/en-quete-dappart/` :
 
 | Nom exact | Média à mettre |
 | --- | --- |
-| `enquete-cover.webp` | Cadre broadcast net avec présentateur ou visite immobilière. |
+| `enquete-cover-paris.webp` | Cover recommandée : les présentateurs dans un appartement parisien avec vue reconnaissable sur Paris. |
+| `enquete-cover.webp` | Ancienne cover de secours, à conserver pour comparaison. |
 | `enquete-editing-loop.mp4` | Boucle courte alternant visite, interview et séquence présentateur. |
 | `enquete-presenter.webp` | Présentateur face caméra. |
 | `enquete-apartment-visit.webp` | Visite ou découverte d’un appartement. |

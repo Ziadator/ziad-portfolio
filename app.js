@@ -5,14 +5,14 @@ const SITE = {
 
 const GROUPS = [
   {
-    id: 'editing-post',
-    label: '01 / Editing / Post-production',
-    title: 'Structure, rhythm and clarity built in the edit.'
+    id: 'direction-content',
+    label: '01 / Commercial / Digital',
+    title: 'One visual world from brief to final asset.'
   },
   {
-    id: 'direction-content',
-    label: '02 / Direction / Content',
-    title: 'From brief to final assets, with one clear visual world.'
+    id: 'editing-post',
+    label: '02 / Editing / Post-production',
+    title: 'Structure, rhythm and clarity built in the edit.'
   },
   {
     id: 'film-author',
@@ -41,10 +41,10 @@ const projects = [
     title: 'Lox in a Box',
     category: 'Branded Content / Commercial',
     year: '2026',
-    role: 'Creative Direction / Photography / Cinematography / Editing',
+    role: 'Creative Direction / Script / Camera / Photography / Editing',
     intro: 'A photography and short-form film campaign translating Lox in a Box’s deli culture into premium, social-ready brand content.',
     context: 'Lox in a Box needed a visual system that could make the brand feel immediate, generous and recognisable across locations, products and social platforms. The work had to sell the appetite of the food while keeping the human energy of the places and the people behind them.',
-    contribution: 'I shaped the creative direction, photographed and filmed the campaign, then edited the work into a coherent library of brand assets with one pace, tone and point of view.',
+    contribution: 'I developed the concept and scripts, directed and filmed the campaign, photographed the brand and edited the final assets into one coherent visual world with a clear pace, tone and point of view.',
     strategy: 'Brand position / The visual language balances product desire, human presence and a sense of place, giving the brand material that can work as a campaign image, a short film or a social cutdown.',
     deliverables: 'Campaign photography / Brand film / Social cutdowns',
     outcome: 'A flexible library of premium visual assets designed for the brand’s website, social channels and future campaigns.',
@@ -72,10 +72,10 @@ const projects = [
     title: 'Don’t Call Me Back',
     category: 'Narrative Film',
     year: '2026',
-    role: 'Writer / Director / Editor',
-    intro: 'An independent Australian road movie written, directed and edited by Ziad Beranger in collaboration with filmmaker Didier Poiraud.',
+    role: 'Writer / Director / Camera / Editor',
+    intro: 'An independent Australian road movie written, directed, filmed and edited by Ziad Beranger in collaboration with filmmaker Didier Poiraud.',
     context: 'Mike Ferrari crosses an increasingly strange Australian landscape as the line between escape and self-destruction begins to blur. The short film is currently in post-production.',
-    contribution: 'I wrote, directed and edited the film, shaping its performances, cinematography and final rhythm across production and post.',
+    contribution: 'I wrote the scripts, directed the performances, filmed the project and edited the final film, shaping its visual language and rhythm across production and post.',
     deliverables: 'Short film / Trailer / Key stills',
     outcome: 'A complete independent film that demonstrates authorship across writing, direction and post-production.',
     facts: [
@@ -100,10 +100,10 @@ const projects = [
     title: 'Follow Your Passion Media',
     category: 'Creative Content / Digital',
     year: '2025 / 2026',
-    role: 'Creative Content Lead / Direction / Editing',
-    intro: 'Creative content produced across founder campaigns, podcasts and short-form formats for a Gold Coast agency.',
-    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. The content moves across personal brands, podcasts, campaigns and social platforms.',
-    contribution: 'As Creative Content Lead, I developed concepts from client briefs, directed and shot content, edited final assets and coordinated delivery with a distributed team.',
+    role: 'Creative Content Lead / Scriptwriting / Direction / Editing',
+    intro: 'As Creative Content Lead, I wrote scripts, shaped concepts, directed and filmed productions, edited key assets and dispatched work across a distributed team.',
+    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. The content system moved from brief to script, shoot, edit and delivery across personal brands, podcasts, campaigns and social platforms.',
+    contribution: 'I translated briefs into scripts and shot lists, directed and filmed the content, edited selected pieces, then briefed and dispatched remaining work to editors and designers across the team while coordinating delivery.',
     deliverables: 'Founder content / Podcast video / Social campaigns / Short-form edits',
     outcome: 'A repeatable production workflow capable of turning one shoot into multiple platform-ready assets.',
     facts: [
@@ -179,7 +179,7 @@ const projects = [
     ],
     video: 'assets/projects/en-quete-dappart/enquete-editing-loop.mp4',
     featuredVideo: null,
-    cover: 'assets/projects/en-quete-dappart/enquete-cover.webp',
+    cover: 'assets/projects/en-quete-dappart/enquete-cover-paris.webp',
     coverPosition: '50% 50%',
     gallery: [
       'assets/projects/en-quete-dappart/enquete-presenter.webp',
@@ -249,10 +249,10 @@ projects.splice(1, 0, {
   title: 'DECA',
   category: 'YouTube / Podcast / Digital Content',
   year: '2025',
-  role: 'Video Editor / Content Producer / Editorial Strategy',
-  intro: 'Interview-led films for DECA, shaped for YouTube, podcast audiences and social cutdowns.',
+  role: 'Writer / Director / Camera / Editor / Content Strategy',
+  intro: 'Interview-led films for DECA, written, directed, filmed and edited for YouTube, podcast audiences and social cutdowns.',
   context: 'DECA needed to turn conversations about technology, artificial intelligence and digital culture into content that felt clear, credible and watchable online. The work had to work as a conversation, a YouTube film and a recognisable content series.',
-  contribution: 'I shaped the conversations in the edit, built the opening language, refined pacing and structure, and used supporting visuals, graphics and sound to make complex ideas easier to follow without flattening the speakers’ personalities.',
+  contribution: 'I wrote the scripts and editorial structure, directed and filmed the interviews and podcast material, then edited the films, opening package and social cutdowns. I also used supporting visuals, graphics and sound to make complex ideas easier to follow without flattening the speakers’ personalities.',
   strategy: 'Content position / I treated DECA as an editorial product rather than a generic corporate interview: a clear hook, a recognisable intro, deliberate pacing and visual cutdowns that can travel across YouTube, podcast and social platforms.',
   deliverables: 'YouTube films / Podcast video / Intro package / Social cutdowns',
   outcome: 'A clear example of editorial work that combines storytelling, platform thinking and visual identity, with the cut doing the work of making the subject accessible.',
@@ -262,7 +262,7 @@ projects.splice(1, 0, {
     ['Client', 'DECA'],
     ['Format', 'Interview / Podcast / YouTube'],
     ['Focus', 'Technology / Digital culture'],
-    ['Role', 'Editing / Positioning / Visual language']
+    ['Role', 'Writing / Direction / Camera / Editing / Positioning']
   ],
   relatedWorks: [
     {
@@ -290,7 +290,7 @@ projects.splice(1, 0, {
     label: 'Watch selected film',
     duration: '01:55'
   },
-  cover: 'assets/projects/deca/deca-cover.webp',
+  cover: 'assets/projects/deca/deca-cover-organic-v2.webp',
   coverPosition: '50% 50%',
   gallery: [
     { src: 'assets/projects/deca/deca-speaker-wide.webp', alt: 'DECA YouTube interview / speaker wide shot' },
