@@ -38,3 +38,5 @@
 ## Media safety
 
 Existing asset paths were preserved. No filename was invented or renamed. The individual Jump & Stay films remain text-only until their exact exported filenames are confirmed in the media folder.
+
+Trigger GitHub Pages rebuild — 2026-09-14
