@@ -54,7 +54,13 @@ const projects = [
       ['Format', 'Photography / Short-form film']
     ],
     video: 'assets/projects/lox-in-a-box/lox-brand-loop.mp4',
-    featuredVideo: null,
+    featuredVideo: {
+      src: 'assets/projects/lox-in-a-box/lox-reel.mp4',
+      label: 'Watch the reel',
+      duration: '14 seconds',
+      vertical: true,
+      loop: true
+    },
     cover: 'assets/projects/lox-in-a-box/lox-cover.webp',
     coverPosition: '50% 50%',
     gallery: [
@@ -63,7 +69,10 @@ const projects = [
       'assets/projects/lox-in-a-box/lox-team-service.webp',
       'assets/projects/lox-in-a-box/lox-bag-street.webp',
       'assets/projects/lox-in-a-box/lox-food-detail.webp',
-      'assets/projects/lox-in-a-box/lox-interior-wide.webp'
+      'assets/projects/lox-in-a-box/lox-interior-wide.webp',
+      // Optional JPEG photographs, numbered 07 to 18. Missing files are omitted.
+      ...Array.from({ length: 12 }, (_, index) =>
+        `assets/projects/lox-in-a-box/lox-photo-${String(index + 7).padStart(2, '0')}.jpg`)
     ]
   },
   {
@@ -489,7 +498,7 @@ function renderFeaturedVideo(project) {
   const feature = project.featuredVideo;
   if (!feature?.src && !feature?.embed) return '';
   return `
-    <section class="project-feature" aria-label="${escapeAttribute(feature.label || `Watch ${project.title}`)}">
+    <section class="project-feature${feature.vertical ? ' project-feature--vertical' : ''}" aria-label="${escapeAttribute(feature.label || `Watch ${project.title}`)}">
       <div class="project-feature-head">
         <p class="eyebrow">${feature.label || 'Watch film'}</p>
         ${feature.duration ? `<p class="project-feature-duration">${feature.duration}</p>` : ''}
@@ -499,7 +508,7 @@ function renderFeaturedVideo(project) {
           <iframe title="${escapeAttribute(feature.label || `Watch ${project.title}`)}" src="${escapeAttribute(feature.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       ` : `
-        <video controls playsinline preload="metadata" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
+        <video controls playsinline ${feature.loop ? 'loop' : ''} preload="metadata" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
           <source src="${escapeAttribute(asset(feature.src))}" type="video/mp4">
         </video>
       `}

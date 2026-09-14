@@ -1,23 +1,42 @@
-MISE A JOUR 02
+LOX / Reel et photos
 
-1. Ouvre ton dossier actuel ziadberanger.com.
-2. Copie le contenu de ce dossier dans la racine du site.
-3. Remplace ensemble index.html, app.js et styles.css. Les nouvelles versions de styles.css et app.js forcent le rechargement du rendu.
-4. Fusionne le dossier assets, ne supprime pas tes médias existants.
-5. Recharge le site avec Cmd + Shift + R. Si GitHub Pages sert encore l’ancienne version, attends quelques minutes puis refais ce rechargement forcé.
+1. Remplacer app.js et styles.css a la racine du site par les fichiers fournis.
+2. Ajouter assets/projects/lox-in-a-box/lox-reel.mp4 au meme chemin sur le site.
+   Fusionner les dossiers : conserver toutes les photos deja presentes.
+3. Pour les nouvelles photos, exporter de vrais fichiers JPEG (.jpg en minuscules),
+   puis les nommer lox-photo-07.jpg, lox-photo-08.jpg, etc. jusqu'a lox-photo-18.jpg.
+   Les placer dans assets/projects/lox-in-a-box/.
+   Ces 12 emplacements supplementaires sont deja declares dans app.js.
+   Les fichiers absents sont retires de l'affichage lorsque leur chargement echoue.
+   L'ordre des photos supplementaires suit les numeros.
+   Ne pas simplement renommer une extension .webp ou .png en .jpg : exporter en JPEG.
+   Conseil : environ 2000 pixels sur le grand cote, moins de 500 Ko par photo si possible.
 
-DECA
+Les six noms de photos existants restent inchanges :
+lox-storefront.webp
+lox-product-hero.webp
+lox-team-service.webp
+lox-bag-street.webp
+lox-food-detail.webp
+lox-interior-wide.webp
 
-La page existe déjà. Son image et ses vidéos apparaîtront lorsque les fichiers
-indiqués dans MEDIA-GUIDE.md seront placés dans assets/projects/deca/.
+La couverture reste lox-cover.webp.
+Pour plus de 18 photos, ajouter les chemins supplementaires a la galerie LOX dans app.js.
 
-PHOTOGRAPHY
+La loop d'ambiance existante est conservee :
+assets/projects/lox-in-a-box/lox-brand-loop.mp4
+Ne pas supprimer ou remplacer ce fichier.
 
-Le menu Photography ouvre maintenant un index Commercial / Art.
-Commercial ouvre Commercial Photography.
-Art ouvre Lost in Wasteland.
+Un lecteur separe affiche le Reel fourni (14 secondes), vertical 9:16,
+avec commandes et son a la lecture. Il demarre lorsque le visiteur appuie
+sur Lecture, puis tourne en boucle. La video n'est pas recadree.
+Ordre : introduction, loop d'ambiance, texte du projet, lecteur, galerie.
 
-IMPORTANT
+Le fichier lox-reel.mp4 inclus provient de la video envoyee dans le chat.
+Si ta video dans ton dossier video est une autre version, copie cette version
+sous le nom lox-reel.mp4 dans assets/projects/lox-in-a-box/ a sa place.
+Un fichier dans un dossier de ton ordinateur n'est pas ajoute automatiquement
+au site : il faut le copier dans le projet et publier les changements.
 
-Ne remplace pas tout ton dossier assets. Il faut seulement le fusionner afin de
-conserver les images et vidéos déjà présentes.
+index.html n'est pas inclus : conserver la version avec Instagram _mikeferrari_.
+Apres publication, recharger avec Cmd + Maj + R puis ouvrir LOX depuis Work.
