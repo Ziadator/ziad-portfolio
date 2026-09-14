@@ -41,13 +41,12 @@ const projects = [
     title: 'Lox in a Box',
     category: 'Branded Content / Commercial',
     year: '2026',
-    role: 'Creative Direction / Script / Camera / Photography / Editing',
-    intro: 'A photography and short-form film campaign translating Lox in a Box’s deli culture into premium, social-ready brand content.',
-    context: 'Lox in a Box needed a visual system that could make the brand feel immediate, generous and recognisable across locations, products and social platforms. The work had to sell the appetite of the food while keeping the human energy of the places and the people behind them.',
-    contribution: 'I developed the concept and scripts, directed and filmed the campaign, photographed the brand and edited the final assets into one coherent visual world with a clear pace, tone and point of view.',
-    strategy: 'Brand position / The visual language balances product desire, human presence and a sense of place, giving the brand material that can work as a campaign image, a short film or a social cutdown.',
-    deliverables: 'Campaign photography / Brand film / Social cutdowns',
-    outcome: 'A flexible library of premium visual assets designed for the brand’s website, social channels and future campaigns.',
+    role: 'Creative Direction / Camera / Photography / Editing',
+    intro: 'Photography and a short-form film capturing the food, people and atmosphere of Lox in a Box, Sydney.',
+    context: 'Bring the deli’s identity into focus through its food, everyday gestures and sense of place.',
+    contribution: 'I shaped the creative direction, filmed and photographed the deli, then edited the Reel around its everyday rhythm.',
+    compactCaseStudy: true,
+    featuredFirst: true,
     facts: [
       ['Client', 'Lox in a Box'],
       ['Location', 'Sydney, Australia'],
@@ -56,7 +55,10 @@ const projects = [
     video: 'assets/projects/lox-in-a-box/lox-brand-loop.mp4',
     featuredVideo: {
       src: 'assets/projects/lox-in-a-box/lox-reel.mp4',
-      label: 'Watch the reel',
+      label: 'Campaign reel',
+      title: 'Deli culture in motion.',
+      description: 'From the camera to the cut: a 14-second Reel, filmed and edited alongside the photographs below.',
+      poster: 'assets/projects/lox-in-a-box/lox-reel-poster.webp',
       duration: '14 seconds',
       vertical: true,
       loop: true
@@ -64,16 +66,106 @@ const projects = [
     cover: 'assets/projects/lox-in-a-box/lox-cover.webp',
     coverPosition: '50% 50%',
     gallery: [
-      'assets/projects/lox-in-a-box/lox-storefront.webp',
-      'assets/projects/lox-in-a-box/lox-product-hero.webp',
-      'assets/projects/lox-in-a-box/lox-team-service.webp',
-      'assets/projects/lox-in-a-box/lox-bag-street.webp',
-      'assets/projects/lox-in-a-box/lox-food-detail.webp',
-      'assets/projects/lox-in-a-box/lox-interior-wide.webp',
-      // Optional JPEG photographs, numbered 07 to 18. Missing files are omitted.
-      ...Array.from({ length: 12 }, (_, index) =>
-        `assets/projects/lox-in-a-box/lox-photo-${String(index + 7).padStart(2, '0')}.jpg`)
-    ]
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-storefront-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-storefront-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-storefront-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-storefront-2400.webp 2048w",
+            "sizes": "100vw",
+            "width": 2048,
+            "height": 1280,
+            "ratio": 1.6,
+            "alt": "Golden cherub suspended in the deli"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-product-hero-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-product-hero-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-product-hero-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-product-hero-2400.webp 2048w",
+            "sizes": "100vw",
+            "width": 2048,
+            "height": 1152,
+            "ratio": 1.7777777777777777,
+            "alt": "Filled bagels on branded wrapping"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-team-service-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-team-service-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-team-service-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-team-service-2400.webp 2048w",
+            "sizes": "100vw",
+            "width": 2048,
+            "height": 1268,
+            "ratio": 1.615141955835962,
+            "alt": "Preparing food behind the deli counter"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-bag-street-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-bag-street-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-bag-street-1280.webp 1152w",
+            "sizes": "100vw",
+            "width": 1152,
+            "height": 2048,
+            "ratio": 0.5625,
+            "alt": "Lox in a Box bag carried in the street"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-food-detail-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-food-detail-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-food-detail-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-food-detail-2400.webp 2048w",
+            "sizes": "100vw",
+            "width": 2048,
+            "height": 1156,
+            "ratio": 1.7716262975778547,
+            "alt": "Fresh bagels and ingredients on display"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-interior-wide-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-interior-wide-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-interior-wide-1280.webp 1206w",
+            "sizes": "100vw",
+            "width": 1206,
+            "height": 1800,
+            "ratio": 0.67,
+            "alt": "Coffee and food at an outdoor table"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-photo-07-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-photo-07-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-photo-07-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-photo-07-2400.webp 2400w",
+            "sizes": "100vw",
+            "width": 4320,
+            "height": 7680,
+            "ratio": 0.5625,
+            "alt": "Pouring milk into a coffee"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-photo-08-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-photo-08-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-photo-08-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-photo-08-2400.webp 2400w",
+            "sizes": "100vw",
+            "width": 8480,
+            "height": 4768,
+            "ratio": 1.778523489932886,
+            "alt": "A box of freshly prepared bagels"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-photo-09-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-photo-09-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-photo-09-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-photo-09-2400.webp 2400w",
+            "sizes": "100vw",
+            "width": 7680,
+            "height": 4320,
+            "ratio": 1.7777777777777777,
+            "alt": "Serving a tray of food in the deli"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-photo-10-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-photo-10-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-photo-10-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-photo-10-2400.webp 2400w",
+            "sizes": "100vw",
+            "width": 3840,
+            "height": 2160,
+            "ratio": 1.7777777777777777,
+            "alt": "Customers and staff inside the deli"
+      },
+      {
+            "src": "assets/projects/lox-in-a-box/optimized/lox-photo-11-1280.webp",
+            "srcset": "assets/projects/lox-in-a-box/optimized/lox-photo-11-640.webp 640w, assets/projects/lox-in-a-box/optimized/lox-photo-11-1280.webp 1280w, assets/projects/lox-in-a-box/optimized/lox-photo-11-2400.webp 2400w",
+            "sizes": "100vw",
+            "width": 5664,
+            "height": 8480,
+            "ratio": 0.6679245283018868,
+            "alt": "Lox in a Box bag in warm window light"
+      }
+]
   },
   {
     slug: 'dont-call-me-back',
@@ -429,6 +521,7 @@ GROUPS.forEach(group => {
 });
 
 function showPhotographyHub({ updateHistory = true } = {}) {
+  delete content.dataset.project;
   const photographyProjects = projects.filter(project => project.group === 'photography');
   currentProject = null;
   document.title = `Photography / Ziad Beranger`;
@@ -490,6 +583,7 @@ function galleryItemData(item, project, index) {
   return {
     src: item.src,
     alt: item.alt || `${project.title} / Selected image ${index + 1}`,
+    ...item,
     ratio: item.ratio || ''
   };
 }
@@ -503,12 +597,13 @@ function renderFeaturedVideo(project) {
         <p class="eyebrow">${feature.label || 'Watch film'}</p>
         ${feature.duration ? `<p class="project-feature-duration">${feature.duration}</p>` : ''}
       </div>
-      ${feature.embed ? `
+      ${feature.vertical ? `<div class="project-feature-copy"><h3>${feature.title}</h3><p>${feature.description}</p><p class="project-feature-note">Play with sound / 9:16</p></div>` : ''}
+      ${feature.embed && !feature.src ? `
         <div class="project-feature-embed">
           <iframe title="${escapeAttribute(feature.label || `Watch ${project.title}`)}" src="${escapeAttribute(feature.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       ` : `
-        <video controls playsinline ${feature.loop ? 'loop' : ''} preload="metadata" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
+        <video aria-label="${escapeAttribute(feature.label || `Watch ${project.title}`)}" controls playsinline ${feature.loop ? 'loop' : ''} preload="${feature.vertical ? 'none' : 'metadata'}" ${feature.poster ? `poster="${escapeAttribute(asset(feature.poster))}"` : ''}>
           <source src="${escapeAttribute(asset(feature.src))}" type="video/mp4">
         </video>
       `}
@@ -554,13 +649,14 @@ function renderGallery(project) {
   const images = project.gallery
     .map((item, index) => {
       const media = galleryItemData(item, project, index);
-      const isPriority = index < 2;
+      const isPriority = index < 2 && !project.featuredFirst;
       return `
         <figure class="${project.galleryMode === 'editorial' ? 'editorial-gallery-item' : ''}">
           <img
             class="gallery-image"
             src="${escapeAttribute(asset(media.src))}"
             alt="${escapeAttribute(media.alt)}"
+            ${media.srcset ? `srcset="${escapeAttribute(media.srcset)}" sizes="${escapeAttribute(media.sizes)}" width="${media.width}" height="${media.height}"` : ''}
             ${media.ratio ? `data-ratio="${escapeAttribute(media.ratio)}"` : ''}
             loading="${isPriority ? 'eager' : 'lazy'}"
             fetchpriority="${isPriority ? 'high' : 'low'}"
@@ -586,6 +682,7 @@ function showProject(project) {
     : projects[(projectIndex + 1) % projects.length];
 
   currentProject = project;
+  content.dataset.project = project.slug;
   document.title = `${project.title} / Ziad Beranger`;
   content.innerHTML = `
     <header class="project-hero" style="background-image:url('${escapeAttribute(project.cover)}'); --cover-position:${escapeAttribute(project.coverPosition || '50% 50%')}">
@@ -613,7 +710,9 @@ function showProject(project) {
       </div>
     </section>
 
-    <section class="project-details" aria-label="Case study">
+    ${project.featuredFirst ? renderFeaturedVideo(project) : ''}
+
+    <section class="project-details${project.compactCaseStudy ? ' project-details--compact' : ''}" aria-label="Case study">
       <p class="eyebrow">Case study</p>
       <div class="project-detail">
         <p class="project-detail-label">The brief</p>
@@ -623,6 +722,7 @@ function showProject(project) {
         <p class="project-detail-label">My approach</p>
         <p>${project.contribution}</p>
       </div>
+      ${project.compactCaseStudy ? '' : `
       <div class="project-detail project-detail--deliverables">
         <p class="project-detail-label">Deliverables</p>
         <p>${project.deliverables || 'Final campaign assets'}</p>
@@ -638,9 +738,10 @@ function showProject(project) {
         </div>
       ` : ''}
       <dl class="project-facts">${renderFacts(project)}</dl>
+      `}
     </section>
 
-    ${renderFeaturedVideo(project)}
+    ${project.featuredFirst ? '' : renderFeaturedVideo(project)}
 
     ${renderRelatedWorks(project)}
 
@@ -661,6 +762,24 @@ function showProject(project) {
     const revealVideo = () => storyVideo.classList.add('is-ready');
     if (storyVideo.readyState >= 3) revealVideo();
     else storyVideo.addEventListener('canplay', revealVideo, { once: true });
+  }
+
+  const featuredPlayer = content.querySelector('.project-feature video');
+  if (featuredPlayer && project.featuredVideo?.embed) {
+    const showEmbedFallback = () => {
+      if (!featuredPlayer.isConnected) return;
+      const wrapper = document.createElement('div');
+      wrapper.className = 'project-feature-embed';
+      const frame = document.createElement('iframe');
+      frame.title = project.featuredVideo.label || `Watch ${project.title}`;
+      frame.src = project.featuredVideo.embed;
+      frame.allow = 'autoplay; fullscreen; picture-in-picture';
+      frame.allowFullscreen = true;
+      wrapper.append(frame);
+      featuredPlayer.replaceWith(wrapper);
+    };
+    featuredPlayer.addEventListener('error', showEmbedFallback, { once: true });
+    featuredPlayer.querySelector('source')?.addEventListener('error', showEmbedFallback, { once: true });
   }
 
   prepareAdaptiveGallery();
@@ -708,7 +827,7 @@ function prepareAdaptiveGallery() {
   const makeCell = item => {
     const cell = document.createElement('div');
     cell.className = `gallery-cell gallery-cell--${item.type}`;
-    cell.style.setProperty('--gallery-bg', `url("${item.img.currentSrc || item.img.src}")`);
+    if (!item.img.hasAttribute('srcset')) cell.style.setProperty('--gallery-bg', `url("${item.img.currentSrc || item.img.src}")`);
     cell.append(item.img);
     return cell;
   };
@@ -723,7 +842,14 @@ function prepareAdaptiveGallery() {
   const makePairRow = (first, second) => {
     const row = document.createElement('div');
     row.className = 'gallery-row gallery-row--pair';
-    row.style.gridTemplateColumns = `${first.ratio}fr ${second.ratio}fr`;
+    row.style.setProperty('--gallery-columns', `${first.ratio}fr ${second.ratio}fr`);
+    // Match responsive downloads to the actual columns; mobile LOX images stack.
+    [first, second].forEach(item => {
+      if (item.img.hasAttribute('srcset')) {
+        const share = (100 * item.ratio / (first.ratio + second.ratio)).toFixed(3);
+        item.img.sizes = `(max-width: 720px) 100vw, ${share}vw`;
+      }
+    });
     row.append(makeCell(first), makeCell(second));
     return row;
   };
@@ -763,7 +889,7 @@ function prepareAdaptiveGallery() {
   buildGallery();
   images.forEach(img => {
     if (!img.complete) {
-      img.addEventListener('load', buildGallery, { once: true });
+      if (!img.dataset.ratio) img.addEventListener('load', buildGallery, { once: true });
       img.addEventListener('error', () => {
         img.dataset.failed = 'true';
         buildGallery();
