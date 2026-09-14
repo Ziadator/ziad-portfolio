@@ -399,7 +399,7 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
   intro: 'Food, people and places. A selection of photographs connected by warm light, texture and everyday gestures.',
-  context: 'From a shared table to a street portrait, this edit moves between food, people and the spaces around them.',
+  context: 'From street portraits and sunlit scenes to shared tables, this edit moves between people, places and food.',
   contribution: 'Light, colour and small details connect the images, while the sequence shifts between close views and wider scenes.',
   detailLabels: ['The selection', 'The visual approach'],
   facts: [],
@@ -409,60 +409,6 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   coverPosition: '50% 50%',
   gallery: [
     {
-        "src": "assets/projects/commercial-photography/optimized/onion-rings-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/onion-rings-640.webp 640w, assets/projects/commercial-photography/optimized/onion-rings-1200.webp 1200w, assets/projects/commercial-photography/optimized/onion-rings-1800.webp 1800w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 3762,
-        "height": 2405,
-        "ratio": 1.5642411642411642,
-        "alt": "Golden onion rings served in a metal bowl"
-    },
-    {
-        "src": "assets/projects/commercial-photography/optimized/bagel-table-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/bagel-table-640.webp 640w, assets/projects/commercial-photography/optimized/bagel-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/bagel-table-1800.webp 1800w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 2880,
-        "height": 1800,
-        "ratio": 1.6,
-        "alt": "Hands sharing filled bagels across a table"
-    },
-    {
-        "src": "assets/projects/commercial-photography/optimized/coffee-pour-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/coffee-pour-640.webp 640w, assets/projects/commercial-photography/optimized/coffee-pour-1200.webp 1200w, assets/projects/commercial-photography/optimized/coffee-pour-1800.webp 1350w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 4320,
-        "height": 7680,
-        "ratio": 0.5625,
-        "alt": "Milk poured into a cup of coffee"
-    },
-    {
-        "src": "assets/projects/commercial-photography/optimized/pastry-service-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/pastry-service-640.webp 640w, assets/projects/commercial-photography/optimized/pastry-service-1200.webp 1200w, assets/projects/commercial-photography/optimized/pastry-service-1800.webp 1800w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 7680,
-        "height": 4320,
-        "ratio": 1.7777777777777777,
-        "alt": "A person holding a tray of pastries in the deli"
-    },
-    {
-        "src": "assets/projects/commercial-photography/optimized/salad-table-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/salad-table-640.webp 640w, assets/projects/commercial-photography/optimized/salad-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/salad-table-1800.webp 1800w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 8480,
-        "height": 4768,
-        "ratio": 1.778523489932886,
-        "alt": "A fork and knife above a fresh salad"
-    },
-    {
-        "src": "assets/projects/commercial-photography/optimized/outdoor-table-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/outdoor-table-640.webp 640w, assets/projects/commercial-photography/optimized/outdoor-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/outdoor-table-1800.webp 1603w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 5664,
-        "height": 8480,
-        "ratio": 0.6679245283018868,
-        "alt": "Coffee, food and a newspaper at an outdoor table"
-    },
-    {
         "src": "assets/projects/commercial-photography/optimized/street-portrait-1200.webp",
         "srcset": "assets/projects/commercial-photography/optimized/street-portrait-640.webp 640w, assets/projects/commercial-photography/optimized/street-portrait-1200.webp 1200w, assets/projects/commercial-photography/optimized/street-portrait-1800.webp 1603w",
         "sizes": "(max-width: 720px) 100vw, 50vw",
@@ -470,6 +416,15 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
         "height": 8480,
         "ratio": 0.6679245283018868,
         "alt": "A woman in a patterned dress walking past a leafy terrace"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/balcony-portrait-640.webp 640w, assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp 1200w, assets/projects/commercial-photography/optimized/balcony-portrait-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4240,
+        "height": 2832,
+        "ratio": 1.497175141242938,
+        "alt": "A woman holding a cocktail beside a yellow window"
     },
     {
         "src": "assets/projects/commercial-photography/optimized/summer-detail-1200.webp",
@@ -490,15 +445,6 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
         "alt": "Two cocktails on a yellow window ledge"
     },
     {
-        "src": "assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp",
-        "srcset": "assets/projects/commercial-photography/optimized/balcony-portrait-640.webp 640w, assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp 1200w, assets/projects/commercial-photography/optimized/balcony-portrait-1800.webp 1800w",
-        "sizes": "(max-width: 720px) 100vw, 50vw",
-        "width": 4240,
-        "height": 2832,
-        "ratio": 1.497175141242938,
-        "alt": "A woman holding a cocktail beside a yellow window"
-    },
-    {
         "src": "assets/projects/commercial-photography/optimized/deli-bag-1200.webp",
         "srcset": "assets/projects/commercial-photography/optimized/deli-bag-640.webp 640w, assets/projects/commercial-photography/optimized/deli-bag-1200.webp 1200w, assets/projects/commercial-photography/optimized/deli-bag-1800.webp 1603w",
         "sizes": "(max-width: 720px) 100vw, 50vw",
@@ -506,6 +452,60 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
         "height": 8480,
         "ratio": 0.6679245283018868,
         "alt": "A Lox in a Box bag in a patch of window light"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/outdoor-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/outdoor-table-640.webp 640w, assets/projects/commercial-photography/optimized/outdoor-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/outdoor-table-1800.webp 1603w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 5664,
+        "height": 8480,
+        "ratio": 0.6679245283018868,
+        "alt": "Coffee, food and a newspaper at an outdoor table"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/coffee-pour-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/coffee-pour-640.webp 640w, assets/projects/commercial-photography/optimized/coffee-pour-1200.webp 1200w, assets/projects/commercial-photography/optimized/coffee-pour-1800.webp 1350w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4320,
+        "height": 7680,
+        "ratio": 0.5625,
+        "alt": "Milk poured into a cup of coffee"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/pastry-service-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/pastry-service-640.webp 640w, assets/projects/commercial-photography/optimized/pastry-service-1200.webp 1200w, assets/projects/commercial-photography/optimized/pastry-service-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 7680,
+        "height": 4320,
+        "ratio": 1.7777777777777777,
+        "alt": "A person holding a tray of pastries in the deli"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/onion-rings-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/onion-rings-640.webp 640w, assets/projects/commercial-photography/optimized/onion-rings-1200.webp 1200w, assets/projects/commercial-photography/optimized/onion-rings-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 3762,
+        "height": 2405,
+        "ratio": 1.5642411642411642,
+        "alt": "Golden onion rings served in a metal bowl"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/salad-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/salad-table-640.webp 640w, assets/projects/commercial-photography/optimized/salad-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/salad-table-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 8480,
+        "height": 4768,
+        "ratio": 1.778523489932886,
+        "alt": "A fork and knife above a fresh salad"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/bagel-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/bagel-table-640.webp 640w, assets/projects/commercial-photography/optimized/bagel-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/bagel-table-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 2880,
+        "height": 1800,
+        "ratio": 1.6,
+        "alt": "Hands sharing filled bagels across a table"
     }
 ]
 });
@@ -720,9 +720,11 @@ function renderGallery(project) {
     .map((item, index) => {
       const media = galleryItemData(item, project, index);
       if (project.galleryMode === 'selection') {
-        const partner = project.gallery[index % 2 ? index - 1 : index + 1];
-        const share = partner ? 100 * media.ratio / (media.ratio + partner.ratio) : 0;
-        media.sizes = `(max-width: 720px) calc(100vw - 2.7rem), ${partner ? `${share.toFixed(2)}vw` : '640px'}`;
+        const lastTriple = project.gallery.length % 2 === 1 && index >= project.gallery.length - 3;
+        const rowStart = lastTriple ? project.gallery.length - 3 : index - index % 2;
+        const row = project.gallery.slice(rowStart, rowStart + (lastTriple ? 3 : 2));
+        const share = 100 * media.ratio / row.reduce((sum, item) => sum + item.ratio, 0);
+        media.sizes = `(max-width: 720px) calc(100vw - 2.7rem), ${share.toFixed(2)}vw`;
       }
       const isPriority = index < 2 && !project.featuredFirst && !project.galleryFirst;
       return `
@@ -742,10 +744,12 @@ function renderGallery(project) {
 
   if (project.galleryMode === 'selection') {
     const rows = [];
-    for (let i = 0; i < images.length; i += 2) {
-      const first = galleryItemData(project.gallery[i], project, i);
-      const second = project.gallery[i + 1] && galleryItemData(project.gallery[i + 1], project, i + 1);
-      rows.push(`<div class="selection-gallery-row${second ? '' : ' selection-gallery-row--solo'}" style="--columns:${first.ratio}fr ${second?.ratio || 1}fr">${images[i]}${images[i + 1] || ''}</div>`);
+    for (let i = 0; i < images.length;) {
+      const count = images.length - i === 3 ? 3 : Math.min(2, images.length - i);
+      const columns = project.gallery.slice(i, i + count)
+        .map((item, offset) => `${galleryItemData(item, project, i + offset).ratio}fr`).join(' ');
+      rows.push(`<div class="selection-gallery-row" style="--columns:${columns}">${images.slice(i, i + count).join('')}</div>`);
+      i += count;
     }
     return `<section class="selection-gallery" aria-label="${escapeAttribute(project.title)} gallery">${rows.join('')}</section>`;
   }
