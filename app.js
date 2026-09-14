@@ -391,17 +391,17 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   title: 'Commercial Photography',
   hubTitle: 'Commercial',
   hubNumber: '01',
-  hubDescription: 'Food, portraits and everyday scenes, connected by light, colour and a sense of place.',
+  hubDescription: 'Distinctive photography. A visual world of your own.',
   galleryMode: 'selection',
   galleryFirst: true,
   compactCaseStudy: true,
   category: 'Food / Lifestyle / Portraits',
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
-  intro: 'Food, people and places. A selection of photographs connected by warm light, texture and everyday gestures.',
-  context: 'From street portraits and sunlit scenes to shared tables, this edit moves between people, places and food.',
-  contribution: 'Light, colour and small details connect the images, while the sequence shifts between close views and wider scenes.',
-  detailLabels: ['The selection', 'The visual approach'],
+  intro: 'Give your brand a visual world of its own. Photography with character, warmth and a point of view.',
+  context: 'People, places and products, connected by light, colour and atmosphere.',
+  contribution: 'I bring a photographic eye and creative direction to images that feel distinctive, personal and alive.',
+  detailLabels: ['A visual world', 'My approach'],
   facts: [],
   video: null,
   featuredVideo: null,
@@ -720,11 +720,7 @@ function renderGallery(project) {
     .map((item, index) => {
       const media = galleryItemData(item, project, index);
       if (project.galleryMode === 'selection') {
-        const lastTriple = project.gallery.length % 2 === 1 && index >= project.gallery.length - 3;
-        const rowStart = lastTriple ? project.gallery.length - 3 : index - index % 2;
-        const row = project.gallery.slice(rowStart, rowStart + (lastTriple ? 3 : 2));
-        const share = 100 * media.ratio / row.reduce((sum, item) => sum + item.ratio, 0);
-        media.sizes = `(max-width: 720px) calc(100vw - 2.7rem), ${share.toFixed(2)}vw`;
+        media.sizes = '(max-width: 720px) 88vw, 65vw';
       }
       const isPriority = index < 2 && !project.featuredFirst && !project.galleryFirst;
       return `
@@ -746,9 +742,7 @@ function renderGallery(project) {
     const rows = [];
     for (let i = 0; i < images.length;) {
       const count = images.length - i === 3 ? 3 : Math.min(2, images.length - i);
-      const columns = project.gallery.slice(i, i + count)
-        .map((item, offset) => `${galleryItemData(item, project, i + offset).ratio}fr`).join(' ');
-      rows.push(`<div class="selection-gallery-row" style="--columns:${columns}">${images.slice(i, i + count).join('')}</div>`);
+      rows.push(`<div class="selection-gallery-row">${images.slice(i, i + count).join('')}</div>`);
       i += count;
     }
     return `<section class="selection-gallery" aria-label="${escapeAttribute(project.title)} gallery">${rows.join('')}</section>`;
