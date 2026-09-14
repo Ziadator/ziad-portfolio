@@ -1,0 +1,288 @@
+[
+  {
+    "original": "lox-storefront.webp",
+    "bytes": 771145,
+    "width": 2048,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-storefront-640.webp",
+        "width": 640,
+        "height": 400,
+        "bytes": 61750
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-storefront-1280.webp",
+        "width": 1280,
+        "height": 800,
+        "bytes": 325878
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-storefront-2400.webp",
+        "width": 2048,
+        "height": 1280,
+        "bytes": 983170
+      }
+    ]
+  },
+  {
+    "original": "lox-product-hero.webp",
+    "bytes": 629479,
+    "width": 2048,
+    "height": 1152,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-product-hero-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 78264
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-product-hero-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 298178
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-product-hero-2400.webp",
+        "width": 2048,
+        "height": 1152,
+        "bytes": 714284
+      }
+    ]
+  },
+  {
+    "original": "lox-team-service.webp.jpg",
+    "bytes": 690276,
+    "width": 2048,
+    "height": 1268,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-team-service-640.webp",
+        "width": 640,
+        "height": 396,
+        "bytes": 59436
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-team-service-1280.webp",
+        "width": 1280,
+        "height": 792,
+        "bytes": 283758
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-team-service-2400.webp",
+        "width": 2048,
+        "height": 1268,
+        "bytes": 841416
+      }
+    ]
+  },
+  {
+    "original": "lox-bag-street.webp",
+    "bytes": 84294,
+    "width": 1152,
+    "height": 2048,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-bag-street-640.webp",
+        "width": 640,
+        "height": 1138,
+        "bytes": 59682
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-bag-street-1280.webp",
+        "width": 1152,
+        "height": 2048,
+        "bytes": 110610
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-bag-street-2400.webp",
+        "width": 1152,
+        "height": 2048,
+        "bytes": 110610
+      }
+    ]
+  },
+  {
+    "original": "lox-food-detail.webp",
+    "bytes": 442137,
+    "width": 2048,
+    "height": 1156,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-food-detail-640.webp",
+        "width": 640,
+        "height": 361,
+        "bytes": 32738
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-food-detail-1280.webp",
+        "width": 1280,
+        "height": 722,
+        "bytes": 157954
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-food-detail-2400.webp",
+        "width": 2048,
+        "height": 1156,
+        "bytes": 453408
+      }
+    ]
+  },
+  {
+    "original": "lox-interior-wide.webp",
+    "bytes": 442667,
+    "width": 1206,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-interior-wide-640.webp",
+        "width": 640,
+        "height": 955,
+        "bytes": 129366
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-interior-wide-1280.webp",
+        "width": 1206,
+        "height": 1800,
+        "bytes": 436862
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-interior-wide-2400.webp",
+        "width": 1206,
+        "height": 1800,
+        "bytes": 436862
+      }
+    ]
+  },
+  {
+    "original": "lox-photo-07.jpg",
+    "bytes": 28273700,
+    "width": 4320,
+    "height": 7680,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-07-640.webp",
+        "width": 640,
+        "height": 1138,
+        "bytes": 37018
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-07-1280.webp",
+        "width": 1280,
+        "height": 2276,
+        "bytes": 301412
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-07-2400.webp",
+        "width": 2400,
+        "height": 4267,
+        "bytes": 2201372
+      }
+    ]
+  },
+  {
+    "original": "lox-photo-08.jpg",
+    "bytes": 41985075,
+    "width": 8480,
+    "height": 4768,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-08-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 48876
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-08-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 226988
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-08-2400.webp",
+        "width": 2400,
+        "height": 1349,
+        "bytes": 1049230
+      }
+    ]
+  },
+  {
+    "original": "lox-photo-09.jpg",
+    "bytes": 28138907,
+    "width": 7680,
+    "height": 4320,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-09-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 28522
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-09-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 73032
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-09-2400.webp",
+        "width": 2400,
+        "height": 1350,
+        "bytes": 366448
+      }
+    ]
+  },
+  {
+    "original": "lox-photo-10.jpg",
+    "bytes": 2330880,
+    "width": 3840,
+    "height": 2160,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-10-640.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 38392
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-10-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 99758
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-10-2400.webp",
+        "width": 2400,
+        "height": 1350,
+        "bytes": 240890
+      }
+    ]
+  },
+  {
+    "original": "lox-photo-11.jpg",
+    "bytes": 25810886,
+    "width": 5664,
+    "height": 8480,
+    "variants": [
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-11-640.webp",
+        "width": 640,
+        "height": 958,
+        "bytes": 82974
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-11-1280.webp",
+        "width": 1280,
+        "height": 1916,
+        "bytes": 595204
+      },
+      {
+        "src": "assets/projects/lox-in-a-box/optimized/lox-photo-11-2400.webp",
+        "width": 2400,
+        "height": 3593,
+        "bytes": 2911554
+      }
+    ]
+  }
+]
