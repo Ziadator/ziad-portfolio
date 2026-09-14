@@ -189,10 +189,9 @@ const projects = [
     cover: 'assets/projects/dont-call-me-back/dcmb-cover.webp',
     coverPosition: '50% 44%',
     gallery: [
-      'assets/projects/dont-call-me-back/dcmb-beach-wide.webp',
-      'assets/projects/dont-call-me-back/dcmb-forest-portrait.webp',
-      'assets/projects/dont-call-me-back/dcmb-hand-detail.webp',
-      'assets/projects/dont-call-me-back/dcmb-car-sunglasses.webp'
+      'assets/projects/dont-call-me-back/beach-body.jpg',
+      'assets/projects/dont-call-me-back/forest-shirt.jpg',
+      'assets/projects/dont-call-me-back/hand-rock.jpg',
     ]
   },
   {
@@ -219,12 +218,6 @@ const projects = [
     gallery: [
       'assets/projects/follow-your-passion/fyp-camera-bts.webp',
       'assets/projects/follow-your-passion/fyp-studio-bts.webp',
-      'assets/projects/follow-your-passion/fyp-podcast-set.webp',
-      'assets/projects/follow-your-passion/fyp-way-to-scale.webp',
-      'assets/projects/follow-your-passion/fyp-monetise-passion.webp',
-      'assets/projects/follow-your-passion/fyp-content-house.webp',
-      'assets/projects/follow-your-passion/fyp-founder-portrait.webp',
-      'assets/projects/follow-your-passion/fyp-female-portrait.webp'
     ]
   },
   {
@@ -248,7 +241,7 @@ const projects = [
       ['Location', 'France / Australia'],
       ['Status', 'Ongoing']
     ],
-    video: 'assets/projects/lost-in-wasteland/wasteland-atmosphere-loop.mp4',
+    video: 'assets/projects/lost-in-wasteland/lost-in-wasteland-loop.mp4',
     featuredVideo: null,
     cover: 'assets/projects/lost-in-wasteland/wasteland-cover.webp',
     coverPosition: '50% 50%',
@@ -283,10 +276,6 @@ const projects = [
     cover: 'assets/projects/en-quete-dappart/enquete-cover-paris.webp',
     coverPosition: '50% 50%',
     gallery: [
-      'assets/projects/en-quete-dappart/enquete-presenter.webp',
-      'assets/projects/en-quete-dappart/enquete-apartment-visit.webp',
-      'assets/projects/en-quete-dappart/enquete-interview.webp',
-      'assets/projects/en-quete-dappart/enquete-broadcast-frame.webp'
     ]
   },
   {
@@ -336,10 +325,8 @@ const projects = [
     gallery: [
       'assets/projects/jump-n-stay/jns-guitar.webp',
       'assets/projects/jump-n-stay/jns-beach.webp',
-      'assets/projects/jump-n-stay/jns-character.webp',
-      'assets/projects/jump-n-stay/jns-silhouettes.webp',
-      'assets/projects/jump-n-stay/jns-live-stage.webp',
-      'assets/projects/jump-n-stay/jns-portrait.webp'
+      'assets/projects/jump-n-stay/character-web.webp',
+      'assets/projects/jump-n-stay/live-stage-web.webp',
     ]
   }
 ];
@@ -394,12 +381,7 @@ projects.splice(1, 0, {
   cover: 'assets/projects/deca/deca-cover-organic-v2.webp',
   coverPosition: '50% 50%',
   gallery: [
-    { src: 'assets/projects/deca/deca-speaker-wide.webp', alt: 'DECA YouTube interview / speaker wide shot' },
-    { src: 'assets/projects/deca/deca-podcast-two-shot.webp', alt: 'DECA podcast / two guests in conversation' },
-    { src: 'assets/projects/deca/deca-ai-revolution-frame.webp', alt: 'DECA AI Revolution / selected video frame' },
     { src: 'assets/projects/deca/deca-house-is-digital-frame.webp', alt: 'DECA The House Is Digital / selected video frame' },
-    { src: 'assets/projects/deca/deca-edit-timeline.webp', alt: 'DECA editing timeline / post-production workflow' },
-    { src: 'assets/projects/deca/deca-detail-frame.webp', alt: 'DECA digital culture / detail frame' }
   ]
 });
 
@@ -409,36 +391,123 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   title: 'Commercial Photography',
   hubTitle: 'Commercial',
   hubNumber: '01',
-  hubDescription: 'Commercial, editorial, events and brand imagery made to communicate clearly and feel distinctive.',
-  galleryMode: 'editorial',
-  category: 'Commercial / Editorial / Events',
+  hubDescription: 'Food, portraits and everyday scenes, connected by light, colour and a sense of place.',
+  galleryMode: 'selection',
+  galleryFirst: true,
+  compactCaseStudy: true,
+  category: 'Food / Lifestyle / Portraits',
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
-  intro: 'Commissioned and self-initiated photographs bringing character, atmosphere and editorial polish to people, places and brands.',
-  context: 'This selection brings together portraits, lifestyle imagery, events and commercial details outside the Lost in Wasteland universe.',
-  contribution: 'I develop the visual approach, direct subjects and shape light, movement and colour to create photographs that feel distinctive while remaining useful to the client.',
-  strategy: 'Image direction / The selection moves between product, people, place and atmosphere so a client can see how the same eye adapts to a campaign, an event or a wider brand world.',
-  deliverables: 'Campaign selects / Editorial series / Event imagery / Product detail',
-  outcome: 'A focused commercial portfolio showing range without losing a recognisable photographic signature.',
-  facts: [
-    ['Formats', 'Campaign / Editorial / Portrait'],
-    ['Location', 'Sydney / Australia'],
-    ['Engagement', 'Commissioned work']
-  ],
+  intro: 'Food, people and places. A selection of photographs connected by warm light, texture and everyday gestures.',
+  context: 'From a shared table to a street portrait, this edit moves between food, people and the spaces around them.',
+  contribution: 'Light, colour and small details connect the images, while the sequence shifts between close views and wider scenes.',
+  detailLabels: ['The selection', 'The visual approach'],
+  facts: [],
   video: null,
   featuredVideo: null,
-  cover: 'assets/projects/commercial-photography/photo-cover.webp',
+  cover: 'assets/projects/commercial-photography/optimized/cocktails-1200.webp',
   coverPosition: '50% 50%',
   gallery: [
-    'assets/projects/commercial-photography/photo-portrait-editorial.webp',
-    'assets/projects/commercial-photography/photo-brand-lifestyle.webp',
-    'assets/projects/commercial-photography/photo-event-atmosphere.webp',
-    'assets/projects/commercial-photography/photo-product-detail.webp',
-    'assets/projects/commercial-photography/photo-people-motion.webp',
-    'assets/projects/commercial-photography/photo-location-wide.webp',
-    'assets/projects/commercial-photography/photo-night-flash.webp',
-    'assets/projects/commercial-photography/photo-final-signature.webp'
-  ]
+    {
+        "src": "assets/projects/commercial-photography/optimized/onion-rings-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/onion-rings-640.webp 640w, assets/projects/commercial-photography/optimized/onion-rings-1200.webp 1200w, assets/projects/commercial-photography/optimized/onion-rings-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 3762,
+        "height": 2405,
+        "ratio": 1.5642411642411642,
+        "alt": "Golden onion rings served in a metal bowl"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/bagel-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/bagel-table-640.webp 640w, assets/projects/commercial-photography/optimized/bagel-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/bagel-table-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 2880,
+        "height": 1800,
+        "ratio": 1.6,
+        "alt": "Hands sharing filled bagels across a table"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/coffee-pour-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/coffee-pour-640.webp 640w, assets/projects/commercial-photography/optimized/coffee-pour-1200.webp 1200w, assets/projects/commercial-photography/optimized/coffee-pour-1800.webp 1350w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4320,
+        "height": 7680,
+        "ratio": 0.5625,
+        "alt": "Milk poured into a cup of coffee"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/pastry-service-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/pastry-service-640.webp 640w, assets/projects/commercial-photography/optimized/pastry-service-1200.webp 1200w, assets/projects/commercial-photography/optimized/pastry-service-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 7680,
+        "height": 4320,
+        "ratio": 1.7777777777777777,
+        "alt": "A person holding a tray of pastries in the deli"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/salad-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/salad-table-640.webp 640w, assets/projects/commercial-photography/optimized/salad-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/salad-table-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 8480,
+        "height": 4768,
+        "ratio": 1.778523489932886,
+        "alt": "A fork and knife above a fresh salad"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/outdoor-table-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/outdoor-table-640.webp 640w, assets/projects/commercial-photography/optimized/outdoor-table-1200.webp 1200w, assets/projects/commercial-photography/optimized/outdoor-table-1800.webp 1603w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 5664,
+        "height": 8480,
+        "ratio": 0.6679245283018868,
+        "alt": "Coffee, food and a newspaper at an outdoor table"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/street-portrait-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/street-portrait-640.webp 640w, assets/projects/commercial-photography/optimized/street-portrait-1200.webp 1200w, assets/projects/commercial-photography/optimized/street-portrait-1800.webp 1603w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 5664,
+        "height": 8480,
+        "ratio": 0.6679245283018868,
+        "alt": "A woman in a patterned dress walking past a leafy terrace"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/summer-detail-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/summer-detail-640.webp 640w, assets/projects/commercial-photography/optimized/summer-detail-1200.webp 1200w, assets/projects/commercial-photography/optimized/summer-detail-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4240,
+        "height": 2832,
+        "ratio": 1.497175141242938,
+        "alt": "A hand holding a cold drink in warm afternoon light"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/cocktails-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/cocktails-640.webp 640w, assets/projects/commercial-photography/optimized/cocktails-1200.webp 1200w, assets/projects/commercial-photography/optimized/cocktails-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4240,
+        "height": 2832,
+        "ratio": 1.497175141242938,
+        "alt": "Two cocktails on a yellow window ledge"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/balcony-portrait-640.webp 640w, assets/projects/commercial-photography/optimized/balcony-portrait-1200.webp 1200w, assets/projects/commercial-photography/optimized/balcony-portrait-1800.webp 1800w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 4240,
+        "height": 2832,
+        "ratio": 1.497175141242938,
+        "alt": "A woman holding a cocktail beside a yellow window"
+    },
+    {
+        "src": "assets/projects/commercial-photography/optimized/deli-bag-1200.webp",
+        "srcset": "assets/projects/commercial-photography/optimized/deli-bag-640.webp 640w, assets/projects/commercial-photography/optimized/deli-bag-1200.webp 1200w, assets/projects/commercial-photography/optimized/deli-bag-1800.webp 1603w",
+        "sizes": "(max-width: 720px) 100vw, 50vw",
+        "width": 5664,
+        "height": 8480,
+        "ratio": 0.6679245283018868,
+        "alt": "A Lox in a Box bag in a patch of window light"
+    }
+]
 });
 
 const asset = name => {
@@ -646,12 +715,18 @@ function renderRelatedWorks(project) {
 }
 
 function renderGallery(project) {
+  if (!project.gallery.length) return '';
   const images = project.gallery
     .map((item, index) => {
       const media = galleryItemData(item, project, index);
-      const isPriority = index < 2 && !project.featuredFirst;
+      if (project.galleryMode === 'selection') {
+        const partner = project.gallery[index % 2 ? index - 1 : index + 1];
+        const share = partner ? 100 * media.ratio / (media.ratio + partner.ratio) : 0;
+        media.sizes = `(max-width: 720px) calc(100vw - 2.7rem), ${partner ? `${share.toFixed(2)}vw` : '640px'}`;
+      }
+      const isPriority = index < 2 && !project.featuredFirst && !project.galleryFirst;
       return `
-        <figure class="${project.galleryMode === 'editorial' ? 'editorial-gallery-item' : ''}">
+        <figure class="${project.galleryMode === 'editorial' ? 'editorial-gallery-item' : project.galleryMode === 'selection' ? 'selection-gallery-item' : ''}">
           <img
             class="gallery-image"
             src="${escapeAttribute(asset(media.src))}"
@@ -663,14 +738,23 @@ function renderGallery(project) {
             decoding="async">
         </figure>
       `;
-    })
-    .join('');
+    });
 
-  if (project.galleryMode === 'editorial') {
-    return `<section class="editorial-gallery editorial-gallery--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images}</section>`;
+  if (project.galleryMode === 'selection') {
+    const rows = [];
+    for (let i = 0; i < images.length; i += 2) {
+      const first = galleryItemData(project.gallery[i], project, i);
+      const second = project.gallery[i + 1] && galleryItemData(project.gallery[i + 1], project, i + 1);
+      rows.push(`<div class="selection-gallery-row${second ? '' : ' selection-gallery-row--solo'}" style="--columns:${first.ratio}fr ${second?.ratio || 1}fr">${images[i]}${images[i + 1] || ''}</div>`);
+    }
+    return `<section class="selection-gallery" aria-label="${escapeAttribute(project.title)} gallery">${rows.join('')}</section>`;
   }
 
-  return `<section class="filmstrip filmstrip--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images}</section>`;
+  if (project.galleryMode === 'editorial') {
+    return `<section class="editorial-gallery editorial-gallery--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images.join('')}</section>`;
+  }
+
+  return `<section class="filmstrip filmstrip--${project.slug}" aria-label="${escapeAttribute(project.title)} gallery">${images.join('')}</section>`;
 }
 
 function showProject(project) {
@@ -710,16 +794,18 @@ function showProject(project) {
       </div>
     </section>
 
+    ${project.galleryFirst ? renderGallery(project) : ''}
+
     ${project.featuredFirst ? renderFeaturedVideo(project) : ''}
 
     <section class="project-details${project.compactCaseStudy ? ' project-details--compact' : ''}" aria-label="Case study">
       <p class="eyebrow">Case study</p>
       <div class="project-detail">
-        <p class="project-detail-label">The brief</p>
+        <p class="project-detail-label">${project.detailLabels?.[0] || 'The brief'}</p>
         <p>${project.context}</p>
       </div>
       <div class="project-detail">
-        <p class="project-detail-label">My approach</p>
+        <p class="project-detail-label">${project.detailLabels?.[1] || 'My approach'}</p>
         <p>${project.contribution}</p>
       </div>
       ${project.compactCaseStudy ? '' : `
@@ -745,7 +831,7 @@ function showProject(project) {
 
     ${renderRelatedWorks(project)}
 
-    ${renderGallery(project)}
+    ${project.galleryFirst ? '' : renderGallery(project)}
 
     <button class="next-project" type="button" data-next-project="${nextProject.slug}">
       <span class="eyebrow">Next project</span>
