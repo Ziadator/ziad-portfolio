@@ -43,6 +43,8 @@ const projects = [
     year: '2026',
     role: 'Creative Direction / Camera / Photography / Editing',
     intro: 'Photography and a short-form film capturing the food, people and atmosphere of Lox in a Box, Sydney.',
+    noteTitle: 'Stop rushing. Take a break.',
+    note: 'A visual direction built around the pleasure of a pause: food textures, everyday gestures and the life of the deli. Natural moments and direct flash bring the photographs and film into the same warm, lively world.',
     featuredFirst: true,
     facts: [
       ['Client', 'Lox in a Box'],
@@ -195,11 +197,13 @@ const projects = [
     year: '2025 / 2026',
     role: 'Creative Content Lead / Direction / Camera / Photography / Editing',
     intro: 'Films and photographs for Follow Your Passion Media and its clients, produced on the Gold Coast.',
+    noteTitle: 'One agency, different voices.',
+    note: 'The work moved between the agency’s own communication and projects for entrepreneurs, coaches and founder-led businesses. I developed concepts and scripts, organised shoots and directed clients on camera, while coordinating production and feedback with a remote team of editors and designers.',
+    studioSequence: true,
     featuredFirst: true,
     relatedWorks: [],
     galleryLabel: 'Behind the scenes',
     galleryIntro: '',
-    productionNote: 'Shoot planning, client direction and coordination of a remote team of editors and designers.',
     facts: [
       ['Studio', 'Follow Your Passion Media'],
       ['Location', 'Gold Coast / Remote'],
@@ -277,6 +281,8 @@ const projects = [
     year: '2017 / 2024',
     role: 'Editor / Additional Editor',
     intro: 'Film and music projects with Jump & Stay, founded in Nantes by Didier Poiraud and Astrid Serafini.',
+    noteTitle: 'A continuing collaboration.',
+    note: 'The collaboration spans fiction, music and experimental film, including the edit of Moonbeach and contributions to Les Crampets and Blackhouse Sessions.',
     relatedWorksLabel: 'Selected collaborations',
     relatedWorksIntro: '',
     facts: [
@@ -325,6 +331,8 @@ projects.splice(1, 0, {
   year: '2025',
   role: 'Writing / Direction / Camera / Editing / Sound',
   intro: 'Conversations on technology, artificial intelligence and digital culture. A series of films and interviews for DECA.',
+  noteTitle: 'Making complex ideas tangible.',
+  note: 'I developed the scripts, directed and filmed the conversations, and shaped the image and sound through the edit. Supporting imagery, graphics and deliberate changes of pace bring abstract subjects into view while leaving room for the speakers’ personalities. The films extend into podcast video and shorter social formats.',
   relatedWorksLabel: 'Further films',
   relatedWorksIntro: '',
   facts: [
@@ -643,7 +651,7 @@ function renderFeaturedVideo(project) {
         <p class="eyebrow">${feature.label || 'Watch film'}</p>
         ${feature.duration ? `<p class="project-feature-duration">${feature.duration}</p>` : ''}
       </div>
-      ${feature.vertical ? `<div class="project-feature-copy"><h3>${feature.title}</h3><p>${feature.description}</p><p class="project-feature-note">Play with sound / 9:16</p></div>` : ''}
+      ${feature.vertical ? `<div class="project-feature-copy"><h3>${feature.title}</h3>${feature.description ? `<p>${feature.description}</p>` : ''}<p class="project-feature-note">Play with sound / 9:16</p></div>` : ''}
       ${feature.embed && !feature.src ? `
         <div class="project-feature-embed">
           <iframe title="${escapeAttribute(feature.label || `Watch ${project.title}`)}" src="${escapeAttribute(feature.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -677,7 +685,7 @@ function renderRelatedWorks(project) {
         <p class="eyebrow">${escapeAttribute(project.relatedWorksLabel || 'Selected collaborations')}</p>
         ${project.relatedWorksIntro ? `<p>${escapeAttribute(project.relatedWorksIntro)}</p>` : ''}
       </div>
-      <div class="related-works-grid">
+      <div class="related-works-grid" style="--work-count:${Math.min(project.relatedWorks.length, 3)}">
         ${project.relatedWorks.map(work => `
           <article class="related-work${work.vertical ? ' related-work--vertical' : ''}">
             ${work.embed ? `<div class="related-work-embed"><iframe title="${escapeAttribute(work.title)}" src="${escapeAttribute(work.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>` : work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
@@ -690,6 +698,21 @@ function renderRelatedWorks(project) {
       </div>
     </section>
   `;
+}
+
+function renderStudioSequence(project) {
+  return `<section class="studio-sequence" aria-label="FYP: motion and studio photographs">
+    <p class="eyebrow">Motion &amp; studio</p>
+    <div class="studio-sequence-grid">
+      <figure class="studio-sequence-reel">
+        <video controls playsinline preload="none" poster="assets/projects/follow-your-passion/fyp-texture-poster.webp" aria-label="FYP Texture Message, 11 seconds">
+          <source src="assets/projects/follow-your-passion/fyp-texture-message.mp4" type="video/mp4">
+        </video>
+        <figcaption>Texture Message / 00:11</figcaption>
+      </figure>
+      ${project.gallery.map(item => `<figure><img src="${escapeAttribute(asset(item.src))}" alt="${escapeAttribute(item.alt)}" loading="lazy" decoding="async"></figure>`).join('')}
+    </div>
+  </section>`;
 }
 
 function renderGallery(project) {
@@ -770,12 +793,14 @@ function showProject(project) {
 
     ${project.featuredFirst ? renderFeaturedVideo(project) : ''}
 
+    ${project.note ? `<section class="project-note" aria-label="About the project"><h3>${escapeAttribute(project.noteTitle)}</h3><p>${escapeAttribute(project.note)}</p></section>` : ''}
+
     ${project.featuredFirst ? '' : renderFeaturedVideo(project)}
 
     ${renderRelatedWorks(project)}
 
-    ${!project.galleryFirst && project.galleryLabel ? `<div class="project-gallery-heading"><p class="eyebrow">${escapeAttribute(project.galleryLabel)}</p>${project.galleryIntro ? `<p>${escapeAttribute(project.galleryIntro)}</p>` : ''}</div>` : ''}
-    ${project.galleryFirst ? '' : renderGallery(project)}
+    ${!project.galleryFirst && !project.studioSequence && project.galleryLabel ? `<div class="project-gallery-heading"><p class="eyebrow">${escapeAttribute(project.galleryLabel)}</p>${project.galleryIntro ? `<p>${escapeAttribute(project.galleryIntro)}</p>` : ''}</div>` : ''}
+    ${project.studioSequence ? renderStudioSequence(project) : project.galleryFirst ? '' : renderGallery(project)}
 
     <section class="project-colophon" aria-label="Project information">
       <dl>${renderFacts(project)}</dl>
