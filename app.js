@@ -327,24 +327,23 @@ projects.splice(1, 0, {
   slug: 'deca',
   group: 'editing-post',
   title: 'DECA',
-  category: 'YouTube / Podcast / Digital Content',
+  category: 'Podcast / Launch Campaign',
   year: '2025',
-  role: 'Writing / Direction / Camera / Editing / Sound',
-  intro: 'Conversations on technology, artificial intelligence and digital culture. A series of films and interviews for DECA.',
-  noteTitle: 'Making complex ideas tangible.',
-  note: 'I developed the scripts, directed and filmed the conversations, and shaped the image and sound through the edit. Supporting imagery, graphics and deliberate changes of pace bring abstract subjects into view while leaving room for the speakers’ personalities. The films extend into podcast video and shorter social formats.',
-  relatedWorksLabel: 'Further films',
+  role: 'Scriptwriting / Production / Direction / Camera / Post-production',
+  intro: 'Three campaign films and a podcast intro and outro for The House Is Digital, a podcast by the Digital Economy Council of Australia.',
+  noteTitle: 'Introducing the podcast. Bringing people on board.',
+  note: 'The commission brought together three films with distinct purposes: inviting political and industry guests, approaching potential sponsors, and introducing the podcast through a main launch film. I wrote the scripts, produced and filmed the material, and completed the post-production, including editing, graphics and sound. I also created the podcast intro and outro, giving the series a shared opening and closing identity.',
+  relatedWorksLabel: 'Campaign films',
   relatedWorksIntro: '',
   facts: [
     ['Client', 'DECA'],
-    ['Format', 'Interview / Podcast / YouTube'],
-    ['Focus', 'Technology / Digital culture'],
-    ['Role', 'Writing / Direction / Camera / Editing / Positioning']
+    ['Podcast', 'The House Is Digital'],
+    ['Commission', '3 promotional films / Podcast intro & outro']
   ],
   relatedWorks: [
     {
       title: 'AI Revolution',
-      type: 'Digital film',
+      type: 'Campaign film',
       status: 'Selected film',
       description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/KASxyZIzZ_9/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
@@ -352,7 +351,7 @@ projects.splice(1, 0, {
     },
     {
       title: 'Digital Council Interview',
-      type: 'Interview film',
+      type: 'Campaign film',
       status: 'Selected film',
       description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/G6EkxrY4HAo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
