@@ -507,7 +507,8 @@ Object.assign(commercialBoardProject, {
   galleryFirst: true,
   intro: '',
   category: 'Jewellery / Lifestyle / Portraits',
-  cover: 'assets/projects/commercial-photography/diamond-hand.webp',
+  cover: 'assets/projects/commercial-photography/08022026-DSC09945.jpg',
+  galleryRows: [4, 3, 4],
   gallery: [
   {
     "src": "assets/projects/commercial-photography/diamond-hand.webp",
@@ -529,6 +530,13 @@ Object.assign(commercialBoardProject, {
     "height": 1068,
     "ratio": 1.4981273408239701,
     "alt": "Cocktails on a yellow table"
+  },
+  {
+    "src": "assets/projects/commercial-photography/24_TheBag.jpg",
+    "width": 1367,
+    "height": 2048,
+    "ratio": 0.66748046875,
+    "alt": "Lox in a Box bag on a leather armchair"
   },
   {
     "src": "assets/projects/commercial-photography/craft.webp",
@@ -564,6 +572,13 @@ Object.assign(commercialBoardProject, {
     "height": 1068,
     "ratio": 1.4981273408239701,
     "alt": "Cocktail beside balcony cacti"
+  },
+  {
+    "src": "assets/projects/commercial-photography/22_BreakTime.jpg",
+    "width": 1367,
+    "height": 2048,
+    "ratio": 0.66748046875,
+    "alt": "Bagel and coffee during a work break"
   },
   {
     "src": "assets/projects/commercial-photography/workbench.webp",
@@ -794,8 +809,9 @@ function renderStudioSequence(project) {
 
 function renderCommercialMoodboard(project) {
   const rows = [];
-  for (let start = 0; start < project.gallery.length; start += 3) {
-    const figures = project.gallery.slice(start, start + 3).map((photo, offset) => `
+  for (let start = 0; start < project.gallery.length;) {
+    const rowSize = project.galleryRows?.[rows.length] || 3;
+    const figures = project.gallery.slice(start, start + rowSize).map((photo, offset) => `
       <figure style="--photo-ratio:${Number(photo.ratio) || 1}">
         <img src="${escapeAttribute(photo.src)}"
           width="${Number(photo.width)}" height="${Number(photo.height)}"
@@ -803,6 +819,7 @@ function renderCommercialMoodboard(project) {
           loading="${start === 0 ? 'eager' : 'lazy'}" decoding="async">
       </figure>`).join('');
     rows.push(`<div class="commercial-board-row">${figures}</div>`);
+    start += rowSize;
   }
   return `<section class="commercial-board" aria-label="Commercial photography">${rows.join('')}</section>`;
 }
