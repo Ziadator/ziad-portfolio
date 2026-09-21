@@ -500,10 +500,82 @@ const asset = name => {
 };
 
 
-const commercialBoardProject = projects.find(p => p.slug === 'commercial-photography');
-Object.assign(commercialBoardProject, {galleryMode:'moodboard', intro:'', category:'Jewellery / Lifestyle / Portraits', cover:"assets/projects/commercial-photography/diamond-hand.webp", gallery:[{"src": "assets/projects/commercial-photography/diamond-hand.webp", "width": 1390, "height": 1800, "ratio": 0.7722222222222223, "alt": "Diamond ring on a hand"}, {"src": "assets/projects/commercial-photography/street.webp", "width": 1201, "height": 1800, "ratio": 0.6672222222222223, "alt": "Portrait beside a leafy courtyard"}, {"src": "assets/projects/commercial-photography/cocktails.webp", "width": 1800, "height": 1201, "ratio": 1.4987510407993339, "alt": "Cocktails on a yellow table"}, {"src": "assets/projects/commercial-photography/craft.webp", "width": 1390, "height": 1800, "ratio": 0.7722222222222223, "alt": "Jeweller working with a fine tool"}, {"src": "assets/projects/commercial-photography/rings.webp", "width": 1800, "height": 1013, "ratio": 1.7769002961500493, "alt": "Gold rings in warm light"}, {"src": "assets/projects/commercial-photography/artisan.webp", "width": 1012, "height": 1800, "ratio": 0.5622222222222222, "alt": "Jeweller at the workbench"}, {"src": "assets/projects/commercial-photography/blue-rings.webp", "width": 1012, "height": 1800, "ratio": 0.5622222222222222, "alt": "Rings on a blue display"}, {"src": "assets/projects/commercial-photography/balcony.webp", "width": 1800, "height": 1201, "ratio": 1.4987510407993339, "alt": "Cocktail beside balcony cacti"}, {"src": "assets/projects/commercial-photography/workbench.webp", "width": 1012, "height": 1800, "ratio": 0.5622222222222222, "alt": "Ring on a wooden workbench"}]});
+// Commercial Photography: filenames match the existing folder exactly.
+const commercialBoardProject = projects.find(project => project.slug === 'commercial-photography');
+Object.assign(commercialBoardProject, {
+  galleryMode: 'moodboard',
+  galleryFirst: true,
+  intro: '',
+  category: 'Jewellery / Lifestyle / Portraits',
+  cover: 'assets/projects/commercial-photography/diamond-hand.webp',
+  gallery: [
+  {
+    "src": "assets/projects/commercial-photography/diamond-hand.webp",
+    "width": 1236,
+    "height": 1600,
+    "ratio": 0.7725,
+    "alt": "Diamond ring on a hand"
+  },
+  {
+    "src": "assets/projects/commercial-photography/street.webp",
+    "width": 1068,
+    "height": 1600,
+    "ratio": 0.6675,
+    "alt": "Portrait beside a leafy courtyard"
+  },
+  {
+    "src": "assets/projects/commercial-photography/cocktails.webp",
+    "width": 1600,
+    "height": 1068,
+    "ratio": 1.4981273408239701,
+    "alt": "Cocktails on a yellow table"
+  },
+  {
+    "src": "assets/projects/commercial-photography/craft.webp",
+    "width": 1236,
+    "height": 1600,
+    "ratio": 0.7725,
+    "alt": "Jeweller working with a fine tool"
+  },
+  {
+    "src": "assets/projects/commercial-photography/rings.webp",
+    "width": 1600,
+    "height": 900,
+    "ratio": 1.7777777777777777,
+    "alt": "Gold rings in warm light"
+  },
+  {
+    "src": "assets/projects/commercial-photography/artisan.webp",
+    "width": 900,
+    "height": 1600,
+    "ratio": 0.5625,
+    "alt": "Jeweller at the workbench"
+  },
+  {
+    "src": "assets/projects/commercial-photography/blue-rings.webp",
+    "width": 900,
+    "height": 1600,
+    "ratio": 0.5625,
+    "alt": "Rings on a blue display"
+  },
+  {
+    "src": "assets/projects/commercial-photography/balcony.webp",
+    "width": 1600,
+    "height": 1068,
+    "ratio": 1.4981273408239701,
+    "alt": "Cocktail beside balcony cacti"
+  },
+  {
+    "src": "assets/projects/commercial-photography/workbench.webp",
+    "width": 900,
+    "height": 1600,
+    "ratio": 0.5625,
+    "alt": "Ring on a wooden workbench"
+  }
+]
+});
 const commercialBoardStyles = document.createElement('style');
-commercialBoardStyles.textContent = "#project-content[data-project=\"commercial-photography\"]{background:#131310;min-height:100vh;padding:64px 18px 24px!important} .commercial-board{max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:8px}.commercial-board-row{display:flex;align-items:flex-start;gap:8px}.commercial-board figure{margin:0!important;min-width:0;padding:0!important;overflow:visible!important;align-self:flex-start}.commercial-board img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;transform:none!important;position:static!important;opacity:1!important}@media(max-width:600px){#project-content[data-project=\"commercial-photography\"]{padding:58px 8px 16px!important}.commercial-board,.commercial-board-row{gap:5px}.commercial-board-row{flex-wrap:wrap}.commercial-board figure{flex:1 1 calc(50% - 5px)!important}.commercial-board figure:last-child{flex-basis:100%!important}.commercial-board img{max-height:78svh!important;object-fit:contain!important}}";
+commercialBoardStyles.textContent = "\n#project-content[data-project=\"commercial-photography\"] { background:#131310; min-height:100vh; padding:64px 18px 24px!important; }\n.commercial-board { display:flex; flex-direction:column; gap:8px; max-width:1440px; margin:0 auto; }\n.commercial-board-row { display:flex; gap:8px; align-items:flex-start; }\n.commercial-board figure { flex:var(--photo-ratio) 1 0; min-width:0; margin:0!important; padding:0!important; overflow:visible!important; }\n.commercial-board img { display:block!important; width:100%!important; height:auto!important; max-height:none!important; object-fit:contain!important; position:static!important; transform:none!important; opacity:1!important; }\n@media(max-width:720px) {\n #project-content[data-project=\"commercial-photography\"] { padding:60px 8px 12px!important; }\n .commercial-board { display:block; column-count:2; column-gap:6px; }\n .commercial-board-row { display:contents; }\n .commercial-board figure { display:block; width:100%; margin:0 0 6px!important; break-inside:avoid; }\n}\n";
 document.head.append(commercialBoardStyles);
 const escapeAttribute = value =>
   String(value ?? '')
@@ -720,8 +792,23 @@ function renderStudioSequence(project) {
   </section>`;
 }
 
+function renderCommercialMoodboard(project) {
+  const rows = [];
+  for (let start = 0; start < project.gallery.length; start += 3) {
+    const figures = project.gallery.slice(start, start + 3).map((photo, offset) => `
+      <figure style="--photo-ratio:${Number(photo.ratio) || 1}">
+        <img src="${escapeAttribute(photo.src)}"
+          width="${Number(photo.width)}" height="${Number(photo.height)}"
+          alt="${escapeAttribute(photo.alt)}"
+          loading="${start === 0 ? 'eager' : 'lazy'}" decoding="async">
+      </figure>`).join('');
+    rows.push(`<div class="commercial-board-row">${figures}</div>`);
+  }
+  return `<section class="commercial-board" aria-label="Commercial photography">${rows.join('')}</section>`;
+}
+
 function renderGallery(project) {
-  if (project.galleryMode === 'moodboard') return "<section class=\"commercial-board\" aria-label=\"Commercial photography\"><div class=\"commercial-board-row\"><figure style=\"flex:0.7722222222222223 1 0\"><img src=\"assets/projects/commercial-photography/diamond-hand.webp\" width=\"1390\" height=\"1800\" alt=\"Diamond ring on a hand\"></figure><figure style=\"flex:0.6672222222222223 1 0\"><img src=\"assets/projects/commercial-photography/street.webp\" width=\"1201\" height=\"1800\" alt=\"Portrait beside a leafy courtyard\"></figure><figure style=\"flex:1.4987510407993339 1 0\"><img src=\"assets/projects/commercial-photography/cocktails.webp\" width=\"1800\" height=\"1201\" alt=\"Cocktails on a yellow table\"></figure></div><div class=\"commercial-board-row\"><figure style=\"flex:0.7722222222222223 1 0\"><img src=\"assets/projects/commercial-photography/craft.webp\" width=\"1390\" height=\"1800\" alt=\"Jeweller working with a fine tool\"></figure><figure style=\"flex:1.7769002961500493 1 0\"><img src=\"assets/projects/commercial-photography/rings.webp\" width=\"1800\" height=\"1013\" alt=\"Gold rings in warm light\"></figure><figure style=\"flex:0.5622222222222222 1 0\"><img src=\"assets/projects/commercial-photography/artisan.webp\" width=\"1012\" height=\"1800\" alt=\"Jeweller at the workbench\"></figure></div><div class=\"commercial-board-row\"><figure style=\"flex:0.5622222222222222 1 0\"><img src=\"assets/projects/commercial-photography/blue-rings.webp\" width=\"1012\" height=\"1800\" alt=\"Rings on a blue display\"></figure><figure style=\"flex:1.4987510407993339 1 0\"><img src=\"assets/projects/commercial-photography/balcony.webp\" width=\"1800\" height=\"1201\" alt=\"Cocktail beside balcony cacti\"></figure><figure style=\"flex:0.5622222222222222 1 0\"><img src=\"assets/projects/commercial-photography/workbench.webp\" width=\"1012\" height=\"1800\" alt=\"Ring on a wooden workbench\"></figure></div></section>";
+  if (project.galleryMode === 'moodboard') return renderCommercialMoodboard(project);
 
   if (!project.gallery.length) return '';
   const images = project.gallery
