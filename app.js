@@ -7,22 +7,22 @@ const GROUPS = [
   {
     id: 'direction-content',
     label: '01 / Commercial / Digital',
-    title: 'One visual world from brief to final asset.'
+    title: 'Commercial / Digital'
   },
   {
     id: 'editing-post',
     label: '02 / Editing / Post-production',
-    title: 'Structure, rhythm and clarity built in the edit.'
+    title: 'Film / Television'
   },
   {
     id: 'film-author',
     label: '03 / Film / Authorship',
-    title: 'Films shaped through writing, direction and editorial instinct.'
+    title: 'Independent film'
   },
   {
     id: 'photography',
     label: '04 / Photography',
-    title: 'Commissioned images / personal worlds.'
+    title: 'Photography'
   }
 ];
 
@@ -43,9 +43,6 @@ const projects = [
     year: '2026',
     role: 'Creative Direction / Camera / Photography / Editing',
     intro: 'Photography and a short-form film capturing the food, people and atmosphere of Lox in a Box, Sydney.',
-    context: 'Bring the deli’s identity into focus through its food, everyday gestures and sense of place.',
-    contribution: 'I shaped the creative direction, filmed and photographed the deli, then edited the Reel around its everyday rhythm.',
-    compactCaseStudy: true,
     featuredFirst: true,
     facts: [
       ['Client', 'Lox in a Box'],
@@ -56,8 +53,8 @@ const projects = [
     featuredVideo: {
       src: 'assets/projects/lox-in-a-box/lox-reel.mp4',
       label: 'Campaign reel',
-      title: 'Deli culture in motion.',
-      description: 'From the camera to the cut: a 14-second Reel, filmed and edited alongside the photographs below.',
+      title: 'Stop rushing. Take a break.',
+      description: '',
       poster: 'assets/projects/lox-in-a-box/lox-reel-poster.webp',
       duration: '14 seconds',
       vertical: true,
@@ -174,11 +171,7 @@ const projects = [
     category: 'Narrative Film',
     year: '2026',
     role: 'Writer / Director / Camera / Editor',
-    intro: 'An independent Australian road movie written, directed, filmed and edited by Ziad Beranger in collaboration with filmmaker Didier Poiraud.',
-    context: 'Mike Ferrari crosses an increasingly strange Australian landscape as the line between escape and self-destruction begins to blur. The short film is currently in post-production.',
-    contribution: 'I wrote the scripts, directed the performances, filmed the project and edited the final film, shaping its visual language and rhythm across production and post.',
-    deliverables: 'Short film / Trailer / Key stills',
-    outcome: 'A complete independent film that demonstrates authorship across writing, direction and post-production.',
+    intro: 'Mike Ferrari crosses an increasingly strange Australian landscape, somewhere between escape and self-destruction. An independent short film, currently in post-production.',
     facts: [
       ['Collaboration', 'Didier Poiraud'],
       ['Format', 'Short film'],
@@ -201,26 +194,12 @@ const projects = [
     category: 'Creative Content / Digital',
     year: '2025 / 2026',
     role: 'Creative Content Lead / Direction / Camera / Photography / Editing',
-    intro: 'Content production for an agency and its clients. I developed concepts, organised and directed shoots, created video and photography, and coordinated delivery with a remote creative team.',
-    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. I created content for both the agency’s own communication and multiple client projects, adapting the approach to each brand, brief and person on camera.',
-    contribution: 'My work covered concepts, scripts, shoot planning, directing clients on camera, filming, photography and editing. Alongside hands-on production, I briefed editors and designers, managed feedback and coordinated creative delivery across the remote team.',
-    deliverables: 'Agency promotional films / Client video & photography / Podcast content / Social edits / Advertising creatives',
-    outcome: 'One point of creative continuity, from the client brief and the shoot through to edits, feedback and final delivery.',
-    detailLabels: ['Agency & client work', 'My role'],
+    intro: 'Films and photographs for Follow Your Passion Media and its clients, produced on the Gold Coast.',
     featuredFirst: true,
-    relatedWorksLabel: 'Short-form & motion',
-    relatedWorksIntro: 'A different pace: typography, texture and rhythm in a vertical format.',
-    relatedWorks: [{
-      title: 'You and your vision',
-      type: 'Vertical motion piece / 00:11',
-      status: 'Typography / Texture / Editing',
-      description: 'A short typographic piece built around changing words, textured imagery and visual rhythm. Play with sound.',
-      video: 'assets/projects/follow-your-passion/fyp-texture-message.mp4',
-      poster: 'assets/projects/follow-your-passion/fyp-texture-poster.webp',
-      vertical: true
-    }],
+    relatedWorks: [],
     galleryLabel: 'Behind the scenes',
-    galleryIntro: 'On set: directing people, shaping the light and capturing the material that carries the edit.',
+    galleryIntro: '',
+    productionNote: 'Shoot planning, client direction and coordination of a remote team of editors and designers.',
     facts: [
       ['Studio', 'Follow Your Passion Media'],
       ['Location', 'Gold Coast / Remote'],
@@ -231,8 +210,7 @@ const projects = [
       src: 'assets/projects/follow-your-passion/fyp-eve-promo.mp4',
       poster: 'assets/projects/follow-your-passion/fyp-eve-poster.webp',
       label: 'FYP / Agency promotional film',
-      duration: '01:20',
-      caption: 'A promotional film for Follow Your Passion Media itself, combining a direct-to-camera presentation, behind-the-scenes footage and text-led editing. Play with sound.'
+      duration: '01:20'
     },
     cover: 'assets/projects/follow-your-passion/fyp-cover.webp',
     coverPosition: '50% 50%',
@@ -252,11 +230,7 @@ const projects = [
     category: 'Photography / Film / Writing',
     year: 'Ongoing',
     role: 'Creative Direction / Photography / Film',
-    intro: 'An evolving photographic world built from fragmented memories, fleeting encounters and places suspended between reality and fiction.',
-    context: 'Lost in Wasteland is a personal archive and developing book where photography, moving image and short texts gradually form one incomplete mythology.',
-    contribution: 'I photograph, film, write and sequence the project across France and Australia, using it as a long-term laboratory for atmosphere, character and visual storytelling.',
-    deliverables: 'Photography series / Moving image / Writing / Book development',
-    outcome: 'An evolving visual language that informs my commissioned work while remaining a distinct personal world.',
+    intro: 'Fragments, encounters and landscapes. A personal photographic series made between France and Australia.',
     facts: [
       ['Format', 'Photography / Book / Film'],
       ['Location', 'France / Australia'],
@@ -282,11 +256,7 @@ const projects = [
     category: 'Property Television / Broadcast',
     year: '2017 / 2018',
     role: 'Video Editor / B&O Productions',
-    intro: 'Video editor on En quête d’appart, a weekly 52-minute French property television programme produced by B&O Productions for BFM Business.',
-    context: 'En quête d’appart followed property searches through apartment visits, interviews and presenter-led sequences, combining practical information with an accessible television format.',
-    contribution: 'As part of the editing team during the programme’s final season, I cut one 52-minute programme per week, shaping visits, interviews and location footage into a clear, broadcast-ready episode.',
-    deliverables: 'Weekly 52-minute broadcast episodes',
-    outcome: 'Consistent, deadline-driven delivery of clear long-form television storytelling in a professional production environment.',
+    intro: 'A weekly 52-minute property television programme produced by B&O Productions for BFM Business, France.',
     facts: [
       ['Production', 'B&O Productions'],
       ['Broadcaster', 'BFM Business / France'],
@@ -306,14 +276,9 @@ const projects = [
     category: 'Independent Film / Collaboration',
     year: '2017 / 2024',
     role: 'Editor / Additional Editor',
-    intro: 'An ongoing editing collaboration with Jump & Stay across fiction, music and experimental film.',
-    context: 'Founded in Nantes by Didier Poiraud and Astrid Serafini, Jump & Stay develops independent audiovisual projects across cinema, music and visual art. The collaboration has grown across several formats rather than one isolated film.',
-    contribution: 'I worked as editor and additional editor across the collaboration, leading the edit on Moonbeach and supporting other projects including Les Crampets and Blackhouse Sessions.',
-    strategy: 'Editorial approach / Each project required a different rhythm, from the narrative patience of Moonbeach to the energy of music and live performance. My role was to protect the identity of each film while shaping a clear, finished work.',
-    deliverables: 'Narrative edits / Music films / Experimental shorts',
-    outcome: 'Moonbeach is currently circulating through festivals, while Les Crampets is in development. The wider body of work demonstrates sustained editorial trust across different formats and tones.',
+    intro: 'Film and music projects with Jump & Stay, founded in Nantes by Didier Poiraud and Astrid Serafini.',
     relatedWorksLabel: 'Selected collaborations',
-    relatedWorksIntro: 'One collaboration, several editorial worlds.',
+    relatedWorksIntro: '',
     facts: [
       ['Collaborators', 'Didier Poiraud / Astrid Serafini'],
       ['Moonbeach', 'Lead editing / Festival circulation'],
@@ -324,19 +289,19 @@ const projects = [
         title: 'Moonbeach',
         type: 'Narrative film',
         status: 'Festival circulation',
-        description: 'Lead editing and additional editing on a film now moving through festivals.'
+        description: 'Editing: Ziad Beranger.'
       },
       {
         title: 'Les Crampets',
         type: 'Narrative project',
         status: 'In development',
-        description: 'Editing collaboration within the wider Jump & Stay body of work.'
+        description: ''
       },
       {
         title: 'Blackhouse Sessions',
         type: 'Music / live film',
         status: 'Selected collaboration',
-        description: 'A different editorial rhythm, built around performance, atmosphere and live energy.'
+        description: ''
       }
     ],
     video: 'assets/projects/jump-n-stay/jump-n-stay-loop.mp4',
@@ -358,15 +323,10 @@ projects.splice(1, 0, {
   title: 'DECA',
   category: 'YouTube / Podcast / Digital Content',
   year: '2025',
-  role: 'Writer / Director / Camera / Editor / Content Strategy',
-  intro: 'Interview-led films for DECA, written, directed, filmed and edited for YouTube, podcast audiences and social cutdowns.',
-  context: 'DECA needed to turn conversations about technology, artificial intelligence and digital culture into content that felt clear, credible and watchable online. The work had to work as a conversation, a YouTube film and a recognisable content series.',
-  contribution: 'I wrote the scripts and editorial structure, directed and filmed the interviews and podcast material, then edited the films, opening package and social cutdowns. I also used supporting visuals, graphics and sound to make complex ideas easier to follow without flattening the speakers’ personalities.',
-  strategy: 'Content position / I treated DECA as an editorial product rather than a generic corporate interview: a clear hook, a recognisable intro, deliberate pacing and visual cutdowns that can travel across YouTube, podcast and social platforms.',
-  deliverables: 'YouTube films / Podcast video / Intro package / Social cutdowns',
-  outcome: 'A clear example of editorial work that combines storytelling, platform thinking and visual identity, with the cut doing the work of making the subject accessible.',
-  relatedWorksLabel: 'Additional DECA films',
-  relatedWorksIntro: 'The same editorial system applied across different conversations and formats.',
+  role: 'Writing / Direction / Camera / Editing / Sound',
+  intro: 'Conversations on technology, artificial intelligence and digital culture. A series of films and interviews for DECA.',
+  relatedWorksLabel: 'Further films',
+  relatedWorksIntro: '',
   facts: [
     ['Client', 'DECA'],
     ['Format', 'Interview / Podcast / YouTube'],
@@ -378,7 +338,7 @@ projects.splice(1, 0, {
       title: 'AI Revolution',
       type: 'Digital film',
       status: 'Selected film',
-      description: 'A second DECA film showing the same editorial system applied to a different subject.',
+      description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/KASxyZIzZ_9/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
       video: 'assets/projects/deca/deca-ai-revolution.mp4'
     },
@@ -386,7 +346,7 @@ projects.splice(1, 0, {
       title: 'Digital Council Interview',
       type: 'Interview film',
       status: 'Selected film',
-      description: 'An additional interview-led piece, presented alongside the main YouTube film.',
+      description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/G6EkxrY4HAo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
       video: 'assets/projects/deca/deca-digital-council-interview.mp4'
     }
@@ -396,7 +356,7 @@ projects.splice(1, 0, {
     src: 'assets/projects/deca/deca-the-house-is-digital.mp4',
     embed: 'https://www-ccv.adobe.io/v1/player/ccv/PSprnMsY32H/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
     poster: 'assets/projects/deca/deca-the-house-is-digital-poster.webp',
-    label: 'Watch selected film',
+    label: 'The House Is Digital',
     duration: '01:55'
   },
   cover: 'assets/projects/deca/deca-cover-organic-v2.webp',
@@ -412,17 +372,13 @@ projects.splice(projects.findIndex(item => item.slug === 'lost-in-wasteland'), 0
   title: 'Commercial Photography',
   hubTitle: 'Commercial',
   hubNumber: '01',
-  hubDescription: 'Distinctive photography. A visual world of your own.',
+  hubDescription: 'People, places and commissioned work.',
   galleryMode: 'selection',
   galleryFirst: true,
-  compactCaseStudy: true,
   category: 'Food / Lifestyle / Portraits',
   year: 'Selected work',
   role: 'Photographer / Creative Direction',
-  intro: 'Give your brand a visual world of its own. Photography with character, warmth and a point of view.',
-  context: 'People, places and products, connected by light, colour and atmosphere.',
-  contribution: 'I bring a photographic eye and creative direction to images that feel distinctive, personal and alive.',
-  detailLabels: ['A visual world', 'My approach'],
+  intro: 'Selected photographs of people, places and everyday details.',
   facts: [],
   video: null,
   featuredVideo: null,
@@ -703,7 +659,7 @@ function renderFeaturedVideo(project) {
 }
 
 function renderFacts(project) {
-  return project.facts
+  return [['Credits', project.role], ...project.facts.filter(([label]) => !['Role', 'Client', 'Studio', 'Focus', 'Other projects', 'Moonbeach'].includes(label))]
     .map(([label, value]) => `
       <div class="project-fact">
         <dt>${label}</dt>
@@ -719,7 +675,7 @@ function renderRelatedWorks(project) {
     <section class="related-works" aria-label="${escapeAttribute(project.relatedWorksLabel || 'Selected collaborations')}">
       <div class="related-works-head">
         <p class="eyebrow">${escapeAttribute(project.relatedWorksLabel || 'Selected collaborations')}</p>
-        <p>${escapeAttribute(project.relatedWorksIntro || 'One collaboration, several editorial worlds.')}</p>
+        ${project.relatedWorksIntro ? `<p>${escapeAttribute(project.relatedWorksIntro)}</p>` : ''}
       </div>
       <div class="related-works-grid">
         ${project.relatedWorks.map(work => `
@@ -727,8 +683,8 @@ function renderRelatedWorks(project) {
             ${work.embed ? `<div class="related-work-embed"><iframe title="${escapeAttribute(work.title)}" src="${escapeAttribute(work.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>` : work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
             <p class="related-work-type">${escapeAttribute(work.type || 'Selected work')}</p>
             <h3>${escapeAttribute(work.title)}</h3>
-            <p class="related-work-status">${escapeAttribute(work.status || '')}</p>
-            <p>${escapeAttribute(work.description || '')}</p>
+            ${work.status && work.status !== 'Selected film' && work.status !== 'Selected collaboration' ? `<p class="related-work-status">${escapeAttribute(work.status)}</p>` : ''}
+            ${work.description ? `<p>${escapeAttribute(work.description)}</p>` : ''}
           </article>
         `).join('')}
       </div>
@@ -806,10 +762,6 @@ function showProject(project) {
         <div class="project-story-overlay"></div>
       </div>
       <div class="project-story-copy">
-        <div class="project-story-meta">
-          <p>${project.role}</p>
-          <p>${project.year}</p>
-        </div>
         <p class="project-story-description">${project.intro}</p>
       </div>
     </section>
@@ -818,41 +770,17 @@ function showProject(project) {
 
     ${project.featuredFirst ? renderFeaturedVideo(project) : ''}
 
-    <section class="project-details${project.compactCaseStudy ? ' project-details--compact' : ''}" aria-label="Case study">
-      <p class="eyebrow">Case study</p>
-      <div class="project-detail">
-        <p class="project-detail-label">${project.detailLabels?.[0] || 'The brief'}</p>
-        <p>${project.context}</p>
-      </div>
-      <div class="project-detail">
-        <p class="project-detail-label">${project.detailLabels?.[1] || 'My approach'}</p>
-        <p>${project.contribution}</p>
-      </div>
-      ${project.compactCaseStudy ? '' : `
-      <div class="project-detail project-detail--deliverables">
-        <p class="project-detail-label">Deliverables</p>
-        <p>${project.deliverables || 'Final campaign assets'}</p>
-      </div>
-      <div class="project-detail project-detail--outcome">
-        <p class="project-detail-label">Value</p>
-        <p>${project.outcome || 'A clear, coherent body of work designed for its audience and platform.'}</p>
-      </div>
-      ${project.strategy ? `
-        <div class="project-detail project-detail--strategy">
-          <p class="project-detail-label">Creative strategy</p>
-          <p>${project.strategy}</p>
-        </div>
-      ` : ''}
-      <dl class="project-facts">${renderFacts(project)}</dl>
-      `}
-    </section>
-
     ${project.featuredFirst ? '' : renderFeaturedVideo(project)}
 
     ${renderRelatedWorks(project)}
 
-    ${!project.galleryFirst && project.galleryLabel ? `<div class="project-gallery-heading"><p class="eyebrow">${escapeAttribute(project.galleryLabel)}</p><p>${escapeAttribute(project.galleryIntro || '')}</p></div>` : ''}
+    ${!project.galleryFirst && project.galleryLabel ? `<div class="project-gallery-heading"><p class="eyebrow">${escapeAttribute(project.galleryLabel)}</p>${project.galleryIntro ? `<p>${escapeAttribute(project.galleryIntro)}</p>` : ''}</div>` : ''}
     ${project.galleryFirst ? '' : renderGallery(project)}
+
+    <section class="project-colophon" aria-label="Project information">
+      <dl>${renderFacts(project)}</dl>
+      ${project.productionNote ? `<p>${escapeAttribute(project.productionNote)}</p>` : ''}
+    </section>
 
     <button class="next-project" type="button" data-next-project="${nextProject.slug}">
       <span class="eyebrow">Next project</span>

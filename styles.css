@@ -1305,6 +1305,26 @@ footer a:hover {
   }
 }
 
+.project-colophon {
+  padding: 2.5rem var(--pad) 3.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.project-colophon dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+  margin: 0;
+}
+
+.project-colophon .project-fact { min-width: 0; }
+.project-colophon dd { margin: .5rem 0 0; line-height: 1.5; }
+.project-colophon > p { max-width: 42rem; color: var(--muted); line-height: 1.5; margin: 1.5rem 0 0; }
+
+@media (max-width: 640px) {
+  .project-colophon dl { grid-template-columns: 1fr; }
+}
+
 .related-works {
   padding: 2.4rem var(--pad) 7rem;
   border-top: 1px solid var(--line);

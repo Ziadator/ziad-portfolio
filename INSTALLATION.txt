@@ -1,42 +1,17 @@
-LOX / Reel et photos
+PORTFOLIO — VERSION EDITORIALE
 
-1. Remplacer app.js et styles.css a la racine du site par les fichiers fournis.
-2. Ajouter assets/projects/lox-in-a-box/lox-reel.mp4 au meme chemin sur le site.
-   Fusionner les dossiers : conserver toutes les photos deja presentes.
-3. Pour les nouvelles photos, exporter de vrais fichiers JPEG (.jpg en minuscules),
-   puis les nommer lox-photo-07.jpg, lox-photo-08.jpg, etc. jusqu'a lox-photo-18.jpg.
-   Les placer dans assets/projects/lox-in-a-box/.
-   Ces 12 emplacements supplementaires sont deja declares dans app.js.
-   Les fichiers absents sont retires de l'affichage lorsque leur chargement echoue.
-   L'ordre des photos supplementaires suit les numeros.
-   Ne pas simplement renommer une extension .webp ou .png en .jpg : exporter en JPEG.
-   Conseil : environ 2000 pixels sur le grand cote, moins de 500 Ko par photo si possible.
+Remplacer app.js, index.html et styles.css a la racine du site, puis publier
+avec la methode habituelle. Conserver tout le dossier assets actuel.
+Cette archive contient uniquement les trois fichiers corriges et cette notice.
 
-Les six noms de photos existants restent inchanges :
-lox-storefront.webp
-lox-product-hero.webp
-lox-team-service.webp
-lox-bag-street.webp
-lox-food-detail.webp
-lox-interior-wide.webp
+Accueil simplifie, textes des huit projets raccourcis, rubriques commerciales
+supprimees. Credits et informations factuelles regroupes en fin de projet.
+FYP : bloc Texture retire de la page ; ses fichiers peuvent rester dans assets.
+EVE et les photos de tournage restent visibles en attendant les nouveaux medias.
 
-La couverture reste lox-cover.webp.
-Pour plus de 18 photos, ajouter les chemins supplementaires a la galerie LOX dans app.js.
+Apres publication : recharger sans cache, ouvrir FYP, LOX et DECA sur mobile
+et ordinateur et verifier la lecture des films et l'affichage des credits.
 
-La loop d'ambiance existante est conservee :
-assets/projects/lox-in-a-box/lox-brand-loop.mp4
-Ne pas supprimer ou remplacer ce fichier.
-
-Un lecteur separe affiche le Reel fourni (14 secondes), vertical 9:16,
-avec commandes et son a la lecture. Il demarre lorsque le visiteur appuie
-sur Lecture, puis tourne en boucle. La video n'est pas recadree.
-Ordre : introduction, loop d'ambiance, texte du projet, lecteur, galerie.
-
-Le fichier lox-reel.mp4 inclus provient de la video envoyee dans le chat.
-Si ta video dans ton dossier video est une autre version, copie cette version
-sous le nom lox-reel.mp4 dans assets/projects/lox-in-a-box/ a sa place.
-Un fichier dans un dossier de ton ordinateur n'est pas ajoute automatiquement
-au site : il faut le copier dans le projet et publier les changements.
-
-index.html n'est pas inclus : conserver la version avec Instagram _mikeferrari_.
-Apres publication, recharger avec Cmd + Maj + R puis ouvrir LOX depuis Work.
+Validation effectuee : syntaxe JavaScript, generation des huit pages projet,
+preservation des chemins des medias (sauf retrait du bloc Texture).
+Le rendu visuel dans un navigateur n'a pas pu etre controle ici.
