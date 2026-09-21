@@ -1,0 +1,28 @@
+FYP — integration video / 21 septembre 2026
+
+Ce dossier est une mise a jour a fusionner avec ton site existant.
+Ce n'est pas une copie complete du site.
+
+1. Remplacer app.js, styles.css et index.html a la racine du site.
+2. Fusionner le dossier assets fourni avec le dossier assets du site.
+   Ne pas supprimer les anciens fichiers : les autres projets et les images
+   FYP existantes continuent de les utiliser.
+3. Publier ces changements sur ton hebergement habituel.
+4. Recharger la page et ouvrir Follow Your Passion Media.
+
+Contenu ajoute :
+- EVE : film promotionnel de FYP, 1 min 20, horizontal 1080p avec son.
+- Texture Message : film typographique vertical, 11 s, 720 x 1280 avec son.
+- Une affiche extraite de chaque video.
+- Texte clarifiant le travail pour l'agence ET ses clients, les tournages,
+  la photographie, le montage et la coordination de l'equipe distante.
+- Une introduction aux photos de tournage existantes.
+
+Ordre : couverture et introduction / EVE / etude de cas / motion vertical /
+coulisses. Les deux films se lancent au clic, sans recadrage.
+
+Les projets LOX et DECA conservent leur contenu existant.
+Les fichiers fournis ne publient pas automatiquement le site.
+
+Verifier apres publication : lecture des deux films avec son sur ordinateur
+et mobile, affichage vertical entier, puis ouverture de LOX et DECA.

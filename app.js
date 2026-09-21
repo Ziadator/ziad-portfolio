@@ -200,24 +200,45 @@ const projects = [
     title: 'Follow Your Passion Media',
     category: 'Creative Content / Digital',
     year: '2025 / 2026',
-    role: 'Creative Content Lead / Scriptwriting / Direction / Editing',
-    intro: 'As Creative Content Lead, I wrote scripts, shaped concepts, directed and filmed productions, edited key assets and dispatched work across a distributed team.',
-    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. The content system moved from brief to script, shoot, edit and delivery across personal brands, podcasts, campaigns and social platforms.',
-    contribution: 'I translated briefs into scripts and shot lists, directed and filmed the content, edited selected pieces, then briefed and dispatched remaining work to editors and designers across the team while coordinating delivery.',
-    deliverables: 'Founder content / Podcast video / Social campaigns / Short-form edits',
-    outcome: 'A repeatable production workflow capable of turning one shoot into multiple platform-ready assets.',
+    role: 'Creative Content Lead / Direction / Camera / Photography / Editing',
+    intro: 'Content production for an agency and its clients. I developed concepts, organised and directed shoots, created video and photography, and coordinated delivery with a remote creative team.',
+    context: 'Follow Your Passion Media is a Gold Coast sales and marketing agency working with entrepreneurs, coaches and founder-led businesses. I created content for both the agency’s own communication and multiple client projects, adapting the approach to each brand, brief and person on camera.',
+    contribution: 'My work covered concepts, scripts, shoot planning, directing clients on camera, filming, photography and editing. Alongside hands-on production, I briefed editors and designers, managed feedback and coordinated creative delivery across the remote team.',
+    deliverables: 'Agency promotional films / Client video & photography / Podcast content / Social edits / Advertising creatives',
+    outcome: 'One point of creative continuity, from the client brief and the shoot through to edits, feedback and final delivery.',
+    detailLabels: ['Agency & client work', 'My role'],
+    featuredFirst: true,
+    relatedWorksLabel: 'Short-form & motion',
+    relatedWorksIntro: 'A different pace: typography, texture and rhythm in a vertical format.',
+    relatedWorks: [{
+      title: 'You and your vision',
+      type: 'Vertical motion piece / 00:11',
+      status: 'Typography / Texture / Editing',
+      description: 'A short typographic piece built around changing words, textured imagery and visual rhythm. Play with sound.',
+      video: 'assets/projects/follow-your-passion/fyp-texture-message.mp4',
+      poster: 'assets/projects/follow-your-passion/fyp-texture-poster.webp',
+      vertical: true
+    }],
+    galleryLabel: 'Behind the scenes',
+    galleryIntro: 'On set: directing people, shaping the light and capturing the material that carries the edit.',
     facts: [
       ['Studio', 'Follow Your Passion Media'],
       ['Location', 'Gold Coast / Remote'],
       ['Role', 'Creative Content Lead']
     ],
     video: 'assets/projects/follow-your-passion/fyp-content-loop.mp4',
-    featuredVideo: null,
+    featuredVideo: {
+      src: 'assets/projects/follow-your-passion/fyp-eve-promo.mp4',
+      poster: 'assets/projects/follow-your-passion/fyp-eve-poster.webp',
+      label: 'FYP / Agency promotional film',
+      duration: '01:20',
+      caption: 'A promotional film for Follow Your Passion Media itself, combining a direct-to-camera presentation, behind-the-scenes footage and text-led editing. Play with sound.'
+    },
     cover: 'assets/projects/follow-your-passion/fyp-cover.webp',
     coverPosition: '50% 50%',
     gallery: [
-      'assets/projects/follow-your-passion/fyp-camera-bts.webp',
-      'assets/projects/follow-your-passion/fyp-studio-bts.webp',
+      { src: 'assets/projects/follow-your-passion/fyp-camera-bts.webp', alt: 'Behind the scenes at FYP: camera operator filming a presenter in the studio' },
+      { src: 'assets/projects/follow-your-passion/fyp-studio-bts.webp', alt: 'FYP studio shoot: seated presenter and coloured lighting setup' },
     ]
   },
   {
@@ -676,6 +697,7 @@ function renderFeaturedVideo(project) {
           <source src="${escapeAttribute(asset(feature.src))}" type="video/mp4">
         </video>
       `}
+      ${feature.caption ? `<p class="project-feature-caption">${escapeAttribute(feature.caption)}</p>` : ''}
     </section>
   `;
 }
@@ -701,7 +723,7 @@ function renderRelatedWorks(project) {
       </div>
       <div class="related-works-grid">
         ${project.relatedWorks.map(work => `
-          <article class="related-work">
+          <article class="related-work${work.vertical ? ' related-work--vertical' : ''}">
             ${work.embed ? `<div class="related-work-embed"><iframe title="${escapeAttribute(work.title)}" src="${escapeAttribute(work.embed)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>` : work.video ? `<video controls playsinline preload="metadata" ${work.poster ? `poster="${escapeAttribute(work.poster)}"` : ''}><source src="${escapeAttribute(work.video)}" type="video/mp4"></video>` : ''}
             <p class="related-work-type">${escapeAttribute(work.type || 'Selected work')}</p>
             <h3>${escapeAttribute(work.title)}</h3>
@@ -829,6 +851,7 @@ function showProject(project) {
 
     ${renderRelatedWorks(project)}
 
+    ${!project.galleryFirst && project.galleryLabel ? `<div class="project-gallery-heading"><p class="eyebrow">${escapeAttribute(project.galleryLabel)}</p><p>${escapeAttribute(project.galleryIntro || '')}</p></div>` : ''}
     ${project.galleryFirst ? '' : renderGallery(project)}
 
     <button class="next-project" type="button" data-next-project="${nextProject.slug}">

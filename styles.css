@@ -1245,6 +1245,66 @@ footer a:hover {
   grid-column: 2 / 4;
 }
 
+/* FYP: a featured agency film, a portrait motion piece and production stills. */
+#project-content[data-project="follow-your-passion"] .project-feature-caption {
+  max-width: 50rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.25rem 0 0;
+}
+
+#project-content[data-project="follow-your-passion"] .related-works-grid {
+  grid-template-columns: 1fr;
+}
+
+#project-content[data-project="follow-your-passion"] .related-work--vertical {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  gap: .8rem clamp(2rem, 6vw, 7rem);
+  padding: 2.5rem 0 0;
+  background: #141411;
+}
+
+#project-content[data-project="follow-your-passion"] .related-work--vertical video {
+  grid-column: 1;
+  grid-row: 1 / 5;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  margin: 0;
+}
+
+#project-content[data-project="follow-your-passion"] .related-work--vertical > :not(video) {
+  grid-column: 2;
+  margin: 0;
+}
+
+#project-content[data-project="follow-your-passion"] .project-gallery-heading {
+  padding: 2.5rem var(--pad);
+  border-top: 1px solid var(--line);
+}
+
+#project-content[data-project="follow-your-passion"] .project-gallery-heading > p:last-child {
+  max-width: 42rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  #project-content[data-project="follow-your-passion"] .related-work--vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #project-content[data-project="follow-your-passion"] .related-work--vertical video {
+    max-width: 340px;
+    align-self: center;
+    margin-bottom: .5rem;
+  }
+}
+
 .related-works {
   padding: 2.4rem var(--pad) 7rem;
   border-top: 1px solid var(--line);
