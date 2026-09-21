@@ -267,10 +267,7 @@ const projects = [
       ['Format', 'Weekly property television / 52 minutes']
     ],
     video: 'assets/projects/en-quete-dappart/enquete-editing-loop.mp4',
-    featuredVideo: {
-      embed: 'https://www.youtube-nocookie.com/embed/UjXRyQgd2HE?playsinline=1&rel=0',
-      label: 'Watch the episode / BFM Business / 2017'
-    },
+    featuredVideo: null,
     cover: 'assets/projects/en-quete-dappart/enquete-cover-paris.webp',
     coverPosition: '50% 50%',
     gallery: [
@@ -345,16 +342,16 @@ projects.splice(1, 0, {
   ],
   relatedWorks: [
     {
-      title: 'Guest invitation',
-      type: 'Political outreach',
+      title: 'AI Revolution',
+      type: 'Campaign film',
       status: 'Selected film',
       description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/KASxyZIzZ_9/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
       video: 'assets/projects/deca/deca-ai-revolution.mp4'
     },
     {
-      title: 'Sponsor presentation',
-      type: 'Sponsorship outreach',
+      title: 'Digital Council Interview',
+      type: 'Campaign film',
       status: 'Selected film',
       description: '',
       embed: 'https://www-ccv.adobe.io/v1/player/ccv/G6EkxrY4HAo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
@@ -366,7 +363,7 @@ projects.splice(1, 0, {
     src: 'assets/projects/deca/deca-the-house-is-digital.mp4',
     embed: 'https://www-ccv.adobe.io/v1/player/ccv/PSprnMsY32H/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View',
     poster: 'assets/projects/deca/deca-the-house-is-digital-poster.webp',
-    label: 'The House Is Digital / Launch film',
+    label: 'The House Is Digital',
     duration: '01:55'
   },
   cover: 'assets/projects/deca/deca-cover-organic-v2.webp',
