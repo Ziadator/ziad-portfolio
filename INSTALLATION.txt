@@ -1,19 +1,7 @@
-PORTFOLIO — PROMESSE ET PROJETS
-
-Remplacer app.js, styles.css et index.html a la racine du site.
-Conserver tout le dossier assets, puis publier avec la methode habituelle.
-
-La promesse de creation d'un univers revient sur l'accueil. Les textes DECA,
-FYP, LOX et Jump & Stay donnent du contexte aux oeuvres, avec les credits
-conserves en fin de page.
-
-FYP : EVE reste le film principal. Texture Message revient dans une composition
-avec les deux photographies de tournage. Sur mobile, le Reel precede les photos.
-Les fichiers Texture et son affiche sont inclus a leurs chemins d'origine,
-au cas ou ils auraient ete supprimes lors de la version precedente.
-
-Les grilles de films et de credits s'adaptent au nombre d'elements presents.
-
-Code et contenu generes verifies. Controle visuel complet en navigateur non
-effectue ici. Apres publication, verifier FYP et DECA sur mobile et ordinateur,
-la lecture avec son et l'absence de medias manquants.
+Galerie Commercial Photography : 9 images, sans texte.
+1. Sauvegarder le app.js actuel.
+2. Remplacer app.js par celui fourni.
+3. Ajouter le dossier assets/projects/commercial-photography/moodboard au même chemin dans le site.
+4. Recharger la page sans cache. Les autres fichiers du site restent nécessaires.
+Apercu-Moodboard.html permet de voir la galerie seule hors ligne.
+Cette mise à jour se base sur app(20260921-210507).js fourni.
