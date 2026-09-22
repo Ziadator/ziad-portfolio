@@ -288,6 +288,8 @@ const projects = [
     note: 'The collaboration spans fiction, music and experimental film, including the edit of Moonbeach and contributions to Les Crampets and Blackhouse Sessions.',
     relatedWorksLabel: 'Selected collaborations',
     relatedWorksIntro: '',
+    relatedWorksUrl: 'https://www.jumpandstay.fr/',
+    relatedWorksLinkLabel: 'Explore more work at Jump & Stay',
     facts: [
       ['Collaborators', 'Didier Poiraud / Astrid Serafini'],
       ['Moonbeach', 'Lead editing / Festival circulation'],
@@ -298,19 +300,23 @@ const projects = [
         title: 'Moonbeach',
         type: 'Narrative film',
         status: 'Festival circulation',
-        description: 'Editing: Ziad Beranger.'
+        description: 'Editing: Ziad Beranger.',
+        embed: 'https://www.youtube.com/embed/1S_RJGn72OA?playsinline=1&rel=0'
       },
       {
         title: 'Les Crampets',
         type: 'Narrative project',
-        status: 'In development',
-        description: ''
+        status: 'Episode 1 / 04:26',
+        description: '',
+        video: 'assets/projects/jump-n-stay/les-crampets-episode-1.mp4',
+        poster: 'assets/projects/jump-n-stay/les-crampets-episode-1-poster.jpg'
       },
       {
         title: 'Blackhouse Sessions',
         type: 'Music / live film',
         status: 'Selected collaboration',
-        description: ''
+        description: '',
+        embed: 'https://www.youtube.com/embed/Aaank2bLVVY?playsinline=1&rel=0'
       }
     ],
     video: 'assets/projects/jump-n-stay/jump-n-stay-loop.mp4',
@@ -826,6 +832,7 @@ function renderRelatedWorks(project) {
           </article>
         `).join('')}
       </div>
+    ${project.relatedWorksUrl ? `<a class="text-link" href="${escapeAttribute(project.relatedWorksUrl)}" target="_blank" rel="noopener noreferrer" style="margin-top:2rem">${escapeAttribute(project.relatedWorksLinkLabel)} <span aria-hidden="true">↗</span></a>` : ''}
     </section>
   `;
 }
@@ -1118,6 +1125,9 @@ function projectFromHash() {
 }
 
 function closeProject({ fromHistory = false } = {}) {
+  if (currentProject?.slug === 'jump-n-stay') {
+    content.querySelectorAll('.related-work-embed iframe').forEach(frame => frame.remove());
+  }
   if (currentProject?.slug === 'en-quete-dappart') {
     content.querySelector('.project-feature-embed iframe')?.remove();
   }
