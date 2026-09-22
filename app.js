@@ -505,7 +505,6 @@ const commercialBoardProject = projects.find(project => project.slug === 'commer
 Object.assign(commercialBoardProject, {
   galleryMode: 'moodboard',
   galleryFirst: true,
-  intro: '',
   category: 'Jewellery / Lifestyle / Portraits',
   cover: 'assets/projects/commercial-photography/08022026-DSC09945.jpg',
   galleryRows: [4, 3, 4],
@@ -590,8 +589,44 @@ Object.assign(commercialBoardProject, {
 ]
 });
 const commercialBoardStyles = document.createElement('style');
-commercialBoardStyles.textContent = "\n#project-content[data-project=\"commercial-photography\"] { background:#131310; min-height:100vh; padding:64px 18px 24px!important; }\n.commercial-board { display:flex; flex-direction:column; gap:8px; max-width:1440px; margin:0 auto; }\n.commercial-board-row { display:flex; gap:8px; align-items:flex-start; }\n.commercial-board figure { flex:var(--photo-ratio) 1 0; min-width:0; margin:0!important; padding:0!important; overflow:visible!important; }\n.commercial-board img { display:block!important; width:100%!important; height:auto!important; max-height:none!important; object-fit:contain!important; position:static!important; transform:none!important; opacity:1!important; }\n@media(max-width:720px) {\n #project-content[data-project=\"commercial-photography\"] { padding:60px 8px 12px!important; }\n .commercial-board { display:block; column-count:2; column-gap:6px; }\n .commercial-board-row { display:contents; }\n .commercial-board figure { display:block; width:100%; margin:0 0 6px!important; break-inside:avoid; }\n}\n";
+commercialBoardStyles.textContent = "\n#project-content[data-project=\"commercial-photography\"] { background:#131310; min-height:100vh; padding:0!important; }\n.commercial-board { display:flex; flex-direction:column; gap:8px; max-width:1440px; margin:0 auto; padding:24px 18px; }\n.commercial-board-row { display:flex; gap:8px; align-items:flex-start; }\n.commercial-board figure { flex:var(--photo-ratio) 1 0; min-width:0; margin:0!important; padding:0!important; overflow:visible!important; }\n.commercial-board img { display:block!important; width:100%!important; height:auto!important; max-height:none!important; object-fit:contain!important; position:static!important; transform:none!important; opacity:1!important; }\n@media(max-width:720px) {\n #project-content[data-project=\"commercial-photography\"] { padding:0!important; }\n .commercial-board { display:block; column-count:2; column-gap:6px; padding:12px 8px; }\n .commercial-board-row { display:contents; }\n .commercial-board figure { display:block; width:100%; margin:0 0 6px!important; break-inside:avoid; }\n}\n";
 document.head.append(commercialBoardStyles);
+
+// Lost in Wasteland: large, complete photographs in their original proportions.
+// Scope these rules to this project so every other gallery keeps its layout.
+const wastelandGalleryStyles = document.createElement('style');
+wastelandGalleryStyles.textContent = `
+#project-content[data-project="lost-in-wasteland"] .editorial-gallery {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  gap: clamp(12px, 2vw, 28px) !important;
+  padding: 0 !important;
+}
+#project-content[data-project="lost-in-wasteland"] .editorial-gallery-item,
+#project-content[data-project="lost-in-wasteland"] .editorial-gallery-item:nth-child(n) {
+  display: block;
+  flex: none;
+  position: static;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  grid-area: auto;
+  aspect-ratio: auto;
+  overflow: visible;
+}
+#project-content[data-project="lost-in-wasteland"] .editorial-gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+`;
+document.head.append(wastelandGalleryStyles);
 const escapeAttribute = value =>
   String(value ?? '')
     .replaceAll('&', '&amp;')
@@ -925,9 +960,6 @@ function showProject(project) {
     </button>
   `;
 
-  if (project.galleryMode === 'moodboard') {
-    content.querySelectorAll('.project-hero, .project-story, .project-colophon, .next-project').forEach(el => el.remove());
-  }
   if (!dialog.open) dialog.showModal();
   dialog.scrollTop = 0;
 
