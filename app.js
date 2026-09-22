@@ -267,7 +267,10 @@ const projects = [
       ['Format', 'Weekly property television / 52 minutes']
     ],
     video: 'assets/projects/en-quete-dappart/enquete-editing-loop.mp4',
-    featuredVideo: null,
+    featuredVideo: {
+      label: 'En quête d’appart / Watch episode',
+      embed: 'https://www.youtube.com/embed/UjXRyQgd2HE?playsinline=1&rel=0'
+    },
     cover: 'assets/projects/en-quete-dappart/enquete-cover-paris.webp',
     coverPosition: '50% 50%',
     gallery: [
@@ -1115,6 +1118,9 @@ function projectFromHash() {
 }
 
 function closeProject({ fromHistory = false } = {}) {
+  if (currentProject?.slug === 'en-quete-dappart') {
+    content.querySelector('.project-feature-embed iframe')?.remove();
+  }
   content.querySelectorAll('video').forEach(video => video.pause());
   if (dialog.open) dialog.close();
 
